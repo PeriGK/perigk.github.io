@@ -21,10 +21,10 @@ build:
     # http://devcenter.wercker.com/docs/steps/index.html
   steps:
   - arjen/hugo-build@2.2.1:
-      version:          <string> # optional, default: "0.42.1"
-      theme:            <string> # optional, default: ""
+      version:          "0.44" # optional, default: "0.42.1"
+      theme:            "bilberry-hugo-theme" # optional, default: ""
       config:           <string> # optional, default: ""
-      flags:            <string> # optional, default: ""
+      flags:            --buildDrafts=true # optional, default: ""
       basedir:          <string> # optional, default: ""
       dev_flags:        <string> # optional, default: ""
       dev_branches:     <string> # optional, default: ""
