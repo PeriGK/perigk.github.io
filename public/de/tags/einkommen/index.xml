@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Einkommen on Mein cooler neuer Blog</title>
+    <link>https://example.com/de/tags/einkommen/</link>
+    <description>Recent content in Einkommen on Mein cooler neuer Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 01 Nov 2017 18:10:14 +0100</lastBuildDate>
+    
+	<atom:link href="https://example.com/de/tags/einkommen/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Unterstütze mich und dieses Theme</title>
+      <link>https://example.com/de/article/support-me-and-this-theme/</link>
+      <pubDate>Wed, 01 Nov 2017 18:10:14 +0100</pubDate>
+      
+      <guid>https://example.com/de/article/support-me-and-this-theme/</guid>
+      <description>Hallo zusammen!
+Dieses Premium Theme ist unter einer Open Source Lizenz veröffentlicht worden, sodass du dieses für deinen Blog benutzen kannst.
+Bisher habe ich mehr als 50 Stunden Arbeitszeit investiert, um eins der besten Themes für Hugo zu erstellen, das es bisher für Hugo gibt.
+Wenn dir dieses Theme gefällt (und besonders, wenn du Geld mit deinem Blog verdienst) und du es für deine Seite verwenden möchtest, überlege, ob du einen kleineren oder größeren monatlichen Beitrag zur Unterstützung der Weiterentwicklung beitragen möchtest.</description>
+    </item>
+    
+  </channel>
+</rss>

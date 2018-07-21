@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://example.com/post/stepping-up-your-javascript-debugging-skills/</loc>
+    <lastmod>2018-06-25T00:00:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/post/django-example-book-review/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/post/doctests-the/</loc>
+    <lastmod>2018-05-29T00:00:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/post/the-art-of-leveraging-time/</loc>
+    <lastmod>2018-05-14T00:00:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/post/how-being-lazy-led-me-to-publicize-my-first-python-package/</loc>
+    <lastmod>2018-05-08T00:00:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/post/hidden-gem-books-all-software-engineers-should-check/</loc>
+    <lastmod>2018-04-09T00:00:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/post/how-to-get-familiar-with-a-new-codebase/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/post/fantastic-youtube-channels-with-high-quality-learning-for-developers/</loc>
+    <lastmod>2018-03-18T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/post/a-comprehensive-introduction-to-unit-testing-and-mocking-with-python3/</loc>
+    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/article/support-me-and-this-theme/</loc>
+    <lastmod>2017-11-01T18:10:14+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/article/support-me-and-this-theme/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/article/support-me-and-this-theme/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/gallery/my-trip-to-scotland/</loc>
+    <lastmod>2017-11-01T18:01:26+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/gallery/my-trip-to-scotland/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/gallery/my-trip-to-scotland/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/video/kilez-more-leben-und-tod-des-imperialismus/</loc>
+    <lastmod>2017-11-01T16:23:40+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/video/kilez-more-leben-und-tod-des-imperialismus/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/video/kilez-more-leben-und-tod-des-imperialismus/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/audio/kilez-more-new-world-order/</loc>
+    <lastmod>2017-11-01T16:12:47+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/audio/kilez-more-new-world-order/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/audio/kilez-more-new-world-order/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/page/about-bilberry/</loc>
+    <lastmod>2017-11-01T13:18:45+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/page/about-bilberry/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/page/about-bilberry/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/page/github/</loc>
+    <lastmod>2017-11-01T13:17:56+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/page/github/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/page/github/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/link/duckduckgo/</loc>
+    <lastmod>2017-11-01T13:05:27+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/quote/edward-snowden-privacy/</loc>
+    <lastmod>2017-11-01T13:01:14+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/code/installing-bilberry-theme/</loc>
+    <lastmod>2017-11-01T09:31:27+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/gallery/</loc>
+    <lastmod>2017-11-01T18:01:26+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/gallery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/gallery/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/article/</loc>
+    <lastmod>2017-11-01T18:10:14+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/article/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/article/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/audio/</loc>
+    <lastmod>2017-11-01T16:12:47+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/audio/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/audio/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/author/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/author/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/author/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/automated-testing/</loc>
+    <lastmod>2018-05-29T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/bilberry-theme/</loc>
+    <lastmod>2017-11-01T09:31:27+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/</loc>
+    <lastmod>2018-06-25T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/book-review/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/book-review/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/books/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/code/</loc>
+    <lastmod>2017-11-01T09:31:27+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/code_reading/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/code_reading/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/code/</loc>
+    <lastmod>2017-11-01T09:31:27+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/debugging/</loc>
+    <lastmod>2018-06-25T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/debugging/</loc>
+    <lastmod>2018-06-25T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/django/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/django/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/doctests/</loc>
+    <lastmod>2018-05-29T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/author/edward-snowden/</loc>
+    <lastmod>2017-11-01T13:01:14+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/eilean-donan-castle/</loc>
+    <lastmod>2017-11-01T18:01:26+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/tags/eilean-donan-castle/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/tags/eilean-donan-castle/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/free-speech/</loc>
+    <lastmod>2017-11-01T13:01:14+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/glennfinnan-viaduct/</loc>
+    <lastmod>2017-11-01T18:01:26+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/holidays/</loc>
+    <lastmod>2017-11-01T18:01:26+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/hugo/</loc>
+    <lastmod>2017-11-01T09:31:27+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/income/</loc>
+    <lastmod>2017-11-01T18:10:14+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/javascript/</loc>
+    <lastmod>2018-06-25T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/javascript/</loc>
+    <lastmod>2018-06-25T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/kilez-more/</loc>
+    <lastmod>2017-11-01T16:23:40+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/tags/kilez-more/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/tags/kilez-more/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/learning/</loc>
+    <lastmod>2018-03-18T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/author/lednerb/</loc>
+    <lastmod>2017-11-01T18:10:14+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/author/lednerb/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/author/lednerb/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/legacy_code/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/legacy_code/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/life-optimization/</loc>
+    <lastmod>2018-05-14T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/link/</loc>
+    <lastmod>2017-11-01T13:05:27+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/mock/</loc>
+    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/mock/</loc>
+    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/music/</loc>
+    <lastmod>2017-11-01T16:23:40+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/new_codebase/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/new_codebase/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/open_source/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/open_source/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/oss_contributions/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/oss_contributions/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/package/</loc>
+    <lastmod>2018-05-08T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/page/</loc>
+    <lastmod>2017-11-01T13:18:45+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/page/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/page/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/patreon/</loc>
+    <lastmod>2017-11-01T18:10:14+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/tags/patreon/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/tags/patreon/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/author/periklis-gkolias/</loc>
+    <lastmod>2018-06-25T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/politics/</loc>
+    <lastmod>2017-11-01T16:23:40+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/post/</loc>
+    <lastmod>2018-06-25T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/privacy/</loc>
+    <lastmod>2017-11-01T13:05:27+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/problem-solving/</loc>
+    <lastmod>2018-06-25T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/problem-solving/</loc>
+    <lastmod>2018-06-25T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/procrastination/</loc>
+    <lastmod>2018-04-09T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/productivity/</loc>
+    <lastmod>2018-05-14T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/programming/</loc>
+    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/programming/</loc>
+    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/pypi/</loc>
+    <lastmod>2018-05-08T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/python/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/python/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/python3/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/python3/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/quote/</loc>
+    <lastmod>2017-11-01T13:01:14+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/quote/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/quote/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/say-thanks/</loc>
+    <lastmod>2017-11-01T18:10:14+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/scotland/</loc>
+    <lastmod>2017-11-01T18:01:26+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/search-engine/</loc>
+    <lastmod>2017-11-01T13:05:27+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/society/</loc>
+    <lastmod>2017-11-01T13:01:14+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/support/</loc>
+    <lastmod>2017-11-01T18:10:14+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/tags/support/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/tags/support/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/survival/</loc>
+    <lastmod>2017-11-01T18:10:14+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/</loc>
+    <lastmod>2018-05-29T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/time-management/</loc>
+    <lastmod>2018-05-14T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/training/</loc>
+    <lastmod>2018-03-18T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/travelling/</loc>
+    <lastmod>2017-11-01T18:01:26+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/truth-rap/</loc>
+    <lastmod>2017-11-01T16:12:47+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/tags/truth-rap/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/tags/truth-rap/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/tutorial/</loc>
+    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/tutorial/</loc>
+    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/tutorials/</loc>
+    <lastmod>2017-11-01T09:31:27+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/unittest/</loc>
+    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/unittest/</loc>
+    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/video/</loc>
+    <lastmod>2017-11-01T16:23:40+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/categories/video/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/categories/video/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/video/</loc>
+    <lastmod>2017-11-01T16:23:40+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://example.com/de/video/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/video/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/videos/</loc>
+    <lastmod>2018-03-18T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/youtube/</loc>
+    <lastmod>2018-03-18T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
