@@ -1,4 +1,4 @@
-title = "Bitperi"
+title = "Bitperi(Periklis Gkolias)"
 baseURL = "https://perigk.github.io"
 theme = "bilberry-hugo-theme"
 
@@ -25,7 +25,7 @@ disqusShortname = "bilberry-hugo-theme"
   js_modules = []
 
   # Description and meta data for the search engines
-  author = "Periklig Gkolias"
+  author = "Periklis Gkolias"
   description = "Bitperi - productivity tips and coding for thriving people, Periklis Gkolias"
   keywords = "blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts"
 
@@ -51,7 +51,7 @@ disqusShortname = "bilberry-hugo-theme"
     gravatarEMail = ""
 
     # set an path to the image file you want to use | overwrites gravatar
-    customImage = ""
+    customImage = "/avatars/myAvatar.svg"
 
     # always display the top navigation (with pages and search) on non-mobile screens
     permanentTopNav = false
