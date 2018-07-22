@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on Bitperi(Periklis Gkolias)</title>
+    <link>https://perigk.github.io/categories/tutorial/</link>
+    <description>Recent content in Tutorial on Bitperi(Periklis Gkolias)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 30 Jan 2018 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://perigk.github.io/categories/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A1 comprehensive introduction to unit-testing and mocking with Python3</title>
+      <link>https://perigk.github.io/post/a-comprehensive-introduction-to-unit-testing-and-mocking-with-python3/</link>
+      <pubDate>Tue, 30 Jan 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/post/a-comprehensive-introduction-to-unit-testing-and-mocking-with-python3/</guid>
+      <description>Unit testing is quickly becoming a must for all job adverts. There are a few people who don&amp;rsquo;t like Test Driven Development(TDD), but at least they agree on the value, automation testing(not only unit tests) add to the overall code quality and to the debugging process.
+By the time of writing, according to dice.com, TDD is enjoying increased popularity year after year.
+Without further ado, let&amp;rsquo;s start our journey. You can download the source code from here</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Income on Bitperi(Periklis Gkolias)</title>
+    <link>https://perigk.github.io/tags/income/</link>
+    <description>Recent content in Income on Bitperi(Periklis Gkolias)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 01 Nov 2017 18:10:14 +0100</lastBuildDate>
+    
+	<atom:link href="https://perigk.github.io/tags/income/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Support Me and This Theme</title>
+      <link>https://perigk.github.io/article/support-me-and-this-theme/</link>
+      <pubDate>Wed, 01 Nov 2017 18:10:14 +0100</pubDate>
+      
+      <guid>https://perigk.github.io/article/support-me-and-this-theme/</guid>
+      <description>Hey there!
+This Premium Theme is published under an open source license so you can use it for your blog. It took me more than 50 hours of work to create one of the best Hugo themes out there.
+If you enjoy this theme (and especially if you make money with your blog) and want to use it for your site, please consider a small or generous monthly support towards me so I can keep up supporting and maintaining this theme in the future.</description>
+    </item>
+    
+  </channel>
+</rss>

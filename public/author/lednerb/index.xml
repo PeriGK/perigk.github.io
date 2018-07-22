@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lednerb on Bitperi(Periklis Gkolias)</title>
+    <link>https://perigk.github.io/author/lednerb/</link>
+    <description>Recent content in Lednerb on Bitperi(Periklis Gkolias)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 01 Nov 2017 18:10:14 +0100</lastBuildDate>
+    
+	<atom:link href="https://perigk.github.io/author/lednerb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Support Me and This Theme</title>
+      <link>https://perigk.github.io/article/support-me-and-this-theme/</link>
+      <pubDate>Wed, 01 Nov 2017 18:10:14 +0100</pubDate>
+      
+      <guid>https://perigk.github.io/article/support-me-and-this-theme/</guid>
+      <description>Hey there!
+This Premium Theme is published under an open source license so you can use it for your blog. It took me more than 50 hours of work to create one of the best Hugo themes out there.
+If you enjoy this theme (and especially if you make money with your blog) and want to use it for your site, please consider a small or generous monthly support towards me so I can keep up supporting and maintaining this theme in the future.</description>
+    </item>
+    
+    <item>
+      <title>My Trip to Scotland</title>
+      <link>https://perigk.github.io/gallery/my-trip-to-scotland/</link>
+      <pubDate>Wed, 01 Nov 2017 18:01:26 +0100</pubDate>
+      
+      <guid>https://perigk.github.io/gallery/my-trip-to-scotland/</guid>
+      <description>In June 2017 I&amp;rsquo;ve visited Scotland with my best friend for two weeks. We drove a lot through the beautiful countryside and saw a lot of different animals: cattle, deer, birds, dolphins, and sheep. Sheep everywhere!
+At one beautiful camping site, we saw cattle in fog in the very early morning and took a picture of it. The image now has the title &amp;ldquo;Rindviehcher im Nebel&amp;rdquo;, a quite funny German phrase that means cattle in the fog.</description>
+    </item>
+    
+    <item>
+      <title>About Bilberry</title>
+      <link>https://perigk.github.io/page/about-bilberry/</link>
+      <pubDate>Wed, 01 Nov 2017 13:18:45 +0100</pubDate>
+      
+      <guid>https://perigk.github.io/page/about-bilberry/</guid>
+      <description>Bilberry is a premium theme for the Hugo Static Website Builder.
+It is full of little nice features, such as:
+ built-in integration for the wonderful algolia search built-in integration for the powerful disqus comments gravatar and custom image integration for the header keyboard shortcut for the search (press the s key, type something and hit enter or esc) responsive design - optimized for desktop and mobile devices full internationalization (i18n) support (en, de, fr, ru, es out of the box!</description>
+    </item>
+    
+    <item>
+      <title>Installing Bilberry Theme</title>
+      <link>https://perigk.github.io/code/installing-bilberry-theme/</link>
+      <pubDate>Wed, 01 Nov 2017 09:31:27 +0100</pubDate>
+      
+      <guid>https://perigk.github.io/code/installing-bilberry-theme/</guid>
+      <description>&lt;p&gt;You will find all information to setup this theme with your hugo site
+on the official &lt;br&gt; &lt;a href=&#34;https://github.com/Lednerb/bilberry-hugo-theme&#34;&gt;Github Repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
