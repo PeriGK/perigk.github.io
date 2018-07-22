@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = git@github.com:perigk/perigk.github.io.git
+	branch = master

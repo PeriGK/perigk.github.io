@@ -1,0 +1,103 @@
+<footer>
+    <div class="container">
+        <div class="recent-posts">
+            <strong>{{ i18n "latestPosts" }}</strong>
+                <ul>
+                {{ range where (where (first 10 .Site.Pages.ByPublishDate.Reverse) ".Kind" "page") ".Type" "ne" "page" }}
+                    <li>
+                        <a href="{{ .URL }}">{{ .Title }}</a>
+                    </li>
+                {{ end }}
+                </ul>
+        </div>
+
+        <div class="categories">
+            <strong>{{ i18n "categories" }}</strong>
+
+            {{ with .Site.Taxonomies.categories }}
+                <ul>
+                {{ range $name, $taxonomy := . }}
+                    <li>
+                        <a href="{{ (print "/categories/" ($name | urlize)) | relLangURL }}">{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
+                    </li>
+                {{ end }}
+                </ul>
+            {{ end }}
+        </div>
+
+        <div class="right">
+            {{ if .Site.Params.showSocialMedia | default true }}
+            <div class="social-media">
+                <strong>{{ i18n "socialMedia" }}</strong>
+
+                {{ with .Site.Params.facebook }}
+                    <a href="{{ . }}" target="_blank"><i class="fa fa-facebook"></i></a>
+                {{ end }}
+                {{ with .Site.Params.twitter }}
+                    <a href="{{ . }}" target="_blank"><i class="fa fa-twitter"></i></a>
+                {{ end }}
+                {{ with .Site.Params.googleplus }}
+                    <a href="{{ . }}" target="_blank"><i class="fa fa-google-plus-official"></i></a>
+                {{ end }}
+                {{ with .Site.Params.xing }}
+                    <a href="{{ . }}" target="_blank"><i class="fa fa-xing"></i></a>
+                {{ end }}
+                {{ with .Site.Params.pinterest }}
+                    <a href="{{ . }}" target="_blank"><i class="fa fa-pinterest"></i></a>
+                {{ end }}
+                {{ with .Site.Params.instagram }}
+                    <a href="{{ . }}" target="_blank"><i class="fa fa-instagram"></i></a>
+                {{ end }}
+                {{ with .Site.Params.tumblr }}
+                    <a href="{{ . }}" target="_blank"><i class="fa fa-tumblr"></i></a>
+                {{ end }}
+                {{ with .Site.Params.youtube }}
+                    <a href="{{ . }}" target="_blank"><i class="fa fa-youtube"></i></a>
+                {{ end }}
+                {{ with .Site.Params.vimeo }}
+                    <a href="{{ . }}" target="_blank"><i class="fa fa-vimeo"></i></a>
+                {{ end }}
+                {{ with .Site.Params.github }}
+                    <a href="{{ . }}" target="_blank"><i class="fa fa-github"></i></a>
+                {{ end }}
+                {{ with .Site.Params.linkedin }}
+                    <a href="{{ . }}" target="_blank"><i class="fa fa-linkedin"></i></a>
+                {{ end }}
+            </div>
+            {{ end }}
+
+            {{ if gt .Site.Languages 1 }}
+                {{- $.Scratch.Set "language" .Language -}}
+                <div class="languages">
+                    <strong>{{ i18n "otherLanguages" }}</strong>
+                    {{ range .Site.Languages }}
+                        {{ if eq ($.Scratch.Get "language") . }}
+                            <a href="{{ . | relURL }}" class="active">{{ . }}</a>
+                        {{ else }}
+                            <a href="{{ . | relURL }}">{{ . }}</a>
+                        {{ end }}
+                    {{ end }}
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</footer>
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="{{ .Site.Params.copyrightUrl | default "https://github.com/Lednerb" }}" target="_blank">
+                &copy;
+                {{ if .Site.Params.copyrightUseCurrentYear }}
+                    {{ now.Year }}
+                {{ else }}
+                    {{ .Site.Params.copyrightYearOverride | default 2018 }}
+                {{ end }}
+                {{ .Site.Params.copyrightBy | default "by Lednerb" }}
+            </a>
+        </div>
+        <div class="author">
+            <a href="{{ .Site.Params.creditsUrl | default "https://github.com/Lednerb/bilberry-hugo-theme" }}" target="_blank">{{ .Site.Params.creditsText | default "Bilberry Hugo Theme" }}</a>
+        </div>
+    </div>
+</div>
