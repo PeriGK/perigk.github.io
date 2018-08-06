@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>New_codebase on Bitperi</title>
+    <title>New_codebase on Bitperi(Periklis Gkolias)</title>
     <link>https://perigk.github.io/tags/new_codebase/</link>
-    <description>Recent content in New_codebase on Bitperi</description>
+    <description>Recent content in New_codebase on Bitperi(Periklis Gkolias)</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 28 Mar 2018 00:00:00 +0300</lastBuildDate>
     
@@ -12,10 +12,10 @@
     
     <item>
       <title>How to get familiar with a new codebase</title>
-      <link>https://perigk.github.io/post/how-to-get-familiar-with-a-new-codebase/</link>
+      <link>https://perigk.github.io/posts/how-to-get-familiar-with-a-new-codebase/</link>
       <pubDate>Wed, 28 Mar 2018 00:00:00 +0300</pubDate>
       
-      <guid>https://perigk.github.io/post/how-to-get-familiar-with-a-new-codebase/</guid>
+      <guid>https://perigk.github.io/posts/how-to-get-familiar-with-a-new-codebase/</guid>
       <description>Most of us, quite often, are in need to familiarize with a new code base. You might be an avid open source guy/girl who wants to contribute to another project, or you just started a new job, and you want to familiarize with the platform that will be a big part of your life, during the next months/years&amp;hellip;or just for fun, because who&amp;rsquo;s watching comedies nowadays?
 Familiarizing with a new code base is a keystone skill, every software engineer should acquire on this beautiful planet.</description>
     </item>

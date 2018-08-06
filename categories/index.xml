@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Bitperi</title>
+    <title>Categories on Bitperi(Periklis Gkolias)</title>
     <link>https://perigk.github.io/categories/</link>
-    <description>Recent content in Categories on Bitperi</description>
+    <description>Recent content in Categories on Bitperi(Periklis Gkolias)</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 18 Jun 2018 00:00:00 +0300</lastBuildDate>
     
@@ -16,15 +16,6 @@
       <pubDate>Mon, 18 Jun 2018 00:00:00 +0300</pubDate>
       
       <guid>https://perigk.github.io/categories/book-review/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Code</title>
-      <link>https://perigk.github.io/categories/code/</link>
-      <pubDate>Wed, 01 Nov 2017 09:31:27 +0100</pubDate>
-      
-      <guid>https://perigk.github.io/categories/code/</guid>
       <description></description>
     </item>
     
@@ -56,15 +47,6 @@
     </item>
     
     <item>
-      <title>Holidays</title>
-      <link>https://perigk.github.io/categories/holidays/</link>
-      <pubDate>Wed, 01 Nov 2017 18:01:26 +0100</pubDate>
-      
-      <guid>https://perigk.github.io/categories/holidays/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Javascript</title>
       <link>https://perigk.github.io/categories/javascript/</link>
       <pubDate>Mon, 25 Jun 2018 00:00:00 +0300</pubDate>
@@ -88,15 +70,6 @@
       <pubDate>Tue, 30 Jan 2018 00:00:00 +0200</pubDate>
       
       <guid>https://perigk.github.io/categories/mock/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Music</title>
-      <link>https://perigk.github.io/categories/music/</link>
-      <pubDate>Wed, 01 Nov 2017 16:23:40 +0100</pubDate>
-      
-      <guid>https://perigk.github.io/categories/music/</guid>
       <description></description>
     </item>
     
@@ -128,24 +101,6 @@
     </item>
     
     <item>
-      <title>Politics</title>
-      <link>https://perigk.github.io/categories/politics/</link>
-      <pubDate>Wed, 01 Nov 2017 16:23:40 +0100</pubDate>
-      
-      <guid>https://perigk.github.io/categories/politics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Privacy</title>
-      <link>https://perigk.github.io/categories/privacy/</link>
-      <pubDate>Wed, 01 Nov 2017 13:05:27 +0100</pubDate>
-      
-      <guid>https://perigk.github.io/categories/privacy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Problem Solving</title>
       <link>https://perigk.github.io/categories/problem-solving/</link>
       <pubDate>Mon, 25 Jun 2018 00:00:00 +0300</pubDate>
@@ -157,7 +112,7 @@
     <item>
       <title>Programming</title>
       <link>https://perigk.github.io/categories/programming/</link>
-      <pubDate>Tue, 30 Jan 2018 00:00:00 +0200</pubDate>
+      <pubDate>Mon, 06 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>https://perigk.github.io/categories/programming/</guid>
       <description></description>
@@ -182,24 +137,6 @@
     </item>
     
     <item>
-      <title>Society</title>
-      <link>https://perigk.github.io/categories/society/</link>
-      <pubDate>Wed, 01 Nov 2017 13:01:14 +0100</pubDate>
-      
-      <guid>https://perigk.github.io/categories/society/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Travelling</title>
-      <link>https://perigk.github.io/categories/travelling/</link>
-      <pubDate>Wed, 01 Nov 2017 18:01:26 +0100</pubDate>
-      
-      <guid>https://perigk.github.io/categories/travelling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Tutorial</title>
       <link>https://perigk.github.io/categories/tutorial/</link>
       <pubDate>Tue, 30 Jan 2018 00:00:00 +0200</pubDate>
@@ -209,29 +146,11 @@
     </item>
     
     <item>
-      <title>Tutorials</title>
-      <link>https://perigk.github.io/categories/tutorials/</link>
-      <pubDate>Wed, 01 Nov 2017 09:31:27 +0100</pubDate>
-      
-      <guid>https://perigk.github.io/categories/tutorials/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Unittest</title>
       <link>https://perigk.github.io/categories/unittest/</link>
       <pubDate>Tue, 30 Jan 2018 00:00:00 +0200</pubDate>
       
       <guid>https://perigk.github.io/categories/unittest/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Video</title>
-      <link>https://perigk.github.io/categories/video/</link>
-      <pubDate>Wed, 01 Nov 2017 16:23:40 +0100</pubDate>
-      
-      <guid>https://perigk.github.io/categories/video/</guid>
       <description></description>
     </item>
     
