@@ -12,10 +12,10 @@
     
     <item>
       <title>Django by example(Antonio Mele) - book review</title>
-      <link>https://perigk.github.io/post/django-example-book-review/</link>
+      <link>https://perigk.github.io/posts/django-example-book-review/</link>
       <pubDate>Mon, 18 Jun 2018 00:00:00 +0300</pubDate>
       
-      <guid>https://perigk.github.io/post/django-example-book-review/</guid>
+      <guid>https://perigk.github.io/posts/django-example-book-review/</guid>
       <description>Disclaimer: At the time of starting to write this article, the next version of the book under review, has not been published yet. If you want to read the newest version, you can find it here
 Many people don&amp;rsquo;t have enough time to research for a book. I think such articles could help people, accelerate their (correct)decision.
 That&amp;rsquo;s why I decided to write this article. This is a quick and dense review of Django by example by Antonio Mele</description>
