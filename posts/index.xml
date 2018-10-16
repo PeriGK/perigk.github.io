@@ -5,10 +5,20 @@
     <link>https://perigk.github.io/posts/</link>
     <description>Recent content in Posts on Bitperi(Periklis Gkolias)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 27 Aug 2018 19:08:34 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 14 Oct 2018 20:05:29 +0300</lastBuildDate>
     
 	<atom:link href="https://perigk.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Web Assembly for Buzzword Haters</title>
+      <link>https://perigk.github.io/posts/web-assembly-for-buzzword-haters/</link>
+      <pubDate>Sun, 14 Oct 2018 20:05:29 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/posts/web-assembly-for-buzzword-haters/</guid>
+      <description>Web assembly looks like the next best thing in web technologies. Even though the first release happened fairly recently, namely in early 2017, there were rumors and anticipation long ago. With a quick google searching, I found this HackerNews article, almost 3 years ago, for example.
+So what is all the hype about WebAssembly? As with all new(and promising) technologies, there is information overload in the air, I made a compact FAQ to help you get up to speed with this new kid in the town</description>
+    </item>
     
     <item>
       <title>The Definite Guide to Pick the Correct Music While Working</title>
