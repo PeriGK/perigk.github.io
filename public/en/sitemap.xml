@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://perigk.github.io/posts/web-assembly-for-buzzword-haters/</loc>
+    <lastmod>2018-10-14T20:05:29+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/posts/the-definite-guide-to-pick-the-correct-music-while-working/</loc>
+    <lastmod>2018-08-27T19:08:34+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://perigk.github.io/posts/the-incredible-hulkython-making-python-strongly-typed/</loc>
     <lastmod>2018-08-06T00:00:00+00:00</lastmod>
   </url>
@@ -75,7 +85,7 @@
   
   <url>
     <loc>https://perigk.github.io/</loc>
-    <lastmod>2018-08-06T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-14T20:05:29+03:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -166,6 +176,18 @@
   </url>
   
   <url>
+    <loc>https://perigk.github.io/tags/flow-state/</loc>
+    <lastmod>2018-08-27T19:08:34+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/flow-state/</loc>
+    <lastmod>2018-08-27T19:08:34+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://perigk.github.io/tags/javascript/</loc>
     <lastmod>2018-06-25T00:00:00+03:00</lastmod>
     <priority>0</priority>
@@ -214,6 +236,18 @@
   </url>
   
   <url>
+    <loc>https://perigk.github.io/tags/music/</loc>
+    <lastmod>2018-08-27T19:08:34+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/music/</loc>
+    <lastmod>2018-08-27T19:08:34+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://perigk.github.io/tags/new_codebase/</loc>
     <lastmod>2018-03-28T00:00:00+03:00</lastmod>
     <priority>0</priority>
@@ -257,13 +291,13 @@
   
   <url>
     <loc>https://perigk.github.io/author/periklis-gkolias/</loc>
-    <lastmod>2018-08-06T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-27T19:08:34+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://perigk.github.io/posts/</loc>
-    <lastmod>2018-08-06T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-14T20:05:29+03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -287,7 +321,13 @@
   
   <url>
     <loc>https://perigk.github.io/tags/productivity/</loc>
-    <lastmod>2018-05-14T00:00:00+03:00</lastmod>
+    <lastmod>2018-08-27T19:08:34+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/productivity/</loc>
+    <lastmod>2018-08-27T19:08:34+03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -330,6 +370,18 @@
   <url>
     <loc>https://perigk.github.io/categories/python3/</loc>
     <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/spotify/</loc>
+    <lastmod>2018-08-27T19:08:34+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/spotify/</loc>
+    <lastmod>2018-08-27T19:08:34+03:00</lastmod>
     <priority>0</priority>
   </url>
   
