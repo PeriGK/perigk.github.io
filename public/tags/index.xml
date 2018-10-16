@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Bitperi(Periklis Gkolias)</title>
+    <link>https://perigk.github.io/tags/</link>
+    <description>Recent content in Tags on Bitperi(Periklis Gkolias)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 29 May 2018 00:00:00 +0300</lastBuildDate>
+    
+	<atom:link href="https://perigk.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Automated Testing</title>
+      <link>https://perigk.github.io/tags/automated-testing/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/automated-testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Book Review</title>
+      <link>https://perigk.github.io/tags/book-review/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/book-review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Books</title>
+      <link>https://perigk.github.io/tags/books/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code_reading</title>
+      <link>https://perigk.github.io/tags/code_reading/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/code_reading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Debugging</title>
+      <link>https://perigk.github.io/tags/debugging/</link>
+      <pubDate>Mon, 25 Jun 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/debugging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Django</title>
+      <link>https://perigk.github.io/tags/django/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Doctests</title>
+      <link>https://perigk.github.io/tags/doctests/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/doctests/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flow State</title>
+      <link>https://perigk.github.io/tags/flow-state/</link>
+      <pubDate>Mon, 27 Aug 2018 19:08:34 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/flow-state/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>https://perigk.github.io/tags/javascript/</link>
+      <pubDate>Mon, 25 Jun 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning</title>
+      <link>https://perigk.github.io/tags/learning/</link>
+      <pubDate>Sun, 18 Mar 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/tags/learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Legacy_code</title>
+      <link>https://perigk.github.io/tags/legacy_code/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/legacy_code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life Optimization</title>
+      <link>https://perigk.github.io/tags/life-optimization/</link>
+      <pubDate>Mon, 14 May 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/life-optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mock</title>
+      <link>https://perigk.github.io/tags/mock/</link>
+      <pubDate>Tue, 30 Jan 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/tags/mock/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Music</title>
+      <link>https://perigk.github.io/tags/music/</link>
+      <pubDate>Mon, 27 Aug 2018 19:08:34 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>New_codebase</title>
+      <link>https://perigk.github.io/tags/new_codebase/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/new_codebase/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open_source</title>
+      <link>https://perigk.github.io/tags/open_source/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/open_source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oss_contributions</title>
+      <link>https://perigk.github.io/tags/oss_contributions/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/oss_contributions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Package</title>
+      <link>https://perigk.github.io/tags/package/</link>
+      <pubDate>Tue, 08 May 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/package/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Problem Solving</title>
+      <link>https://perigk.github.io/tags/problem-solving/</link>
+      <pubDate>Mon, 25 Jun 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/problem-solving/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Procrastination</title>
+      <link>https://perigk.github.io/tags/procrastination/</link>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/procrastination/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://perigk.github.io/tags/productivity/</link>
+      <pubDate>Mon, 27 Aug 2018 19:08:34 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://perigk.github.io/tags/programming/</link>
+      <pubDate>Tue, 30 Jan 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pypi</title>
+      <link>https://perigk.github.io/tags/pypi/</link>
+      <pubDate>Tue, 08 May 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/pypi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://perigk.github.io/tags/python/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python3</title>
+      <link>https://perigk.github.io/tags/python3/</link>
+      <pubDate>Mon, 06 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://perigk.github.io/tags/python3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spotify</title>
+      <link>https://perigk.github.io/tags/spotify/</link>
+      <pubDate>Mon, 27 Aug 2018 19:08:34 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/spotify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Static Typing</title>
+      <link>https://perigk.github.io/tags/static-typing/</link>
+      <pubDate>Mon, 06 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://perigk.github.io/tags/static-typing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Time Management</title>
+      <link>https://perigk.github.io/tags/time-management/</link>
+      <pubDate>Mon, 14 May 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/time-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Training</title>
+      <link>https://perigk.github.io/tags/training/</link>
+      <pubDate>Sun, 18 Mar 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/tags/training/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>https://perigk.github.io/tags/tutorial/</link>
+      <pubDate>Tue, 30 Jan 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unittest</title>
+      <link>https://perigk.github.io/tags/unittest/</link>
+      <pubDate>Tue, 30 Jan 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/tags/unittest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Videos</title>
+      <link>https://perigk.github.io/tags/videos/</link>
+      <pubDate>Sun, 18 Mar 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/tags/videos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Assembly</title>
+      <link>https://perigk.github.io/tags/web-assembly/</link>
+      <pubDate>Sun, 14 Oct 2018 20:05:29 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/web-assembly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Youtube</title>
+      <link>https://perigk.github.io/tags/youtube/</link>
+      <pubDate>Sun, 18 Mar 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/tags/youtube/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

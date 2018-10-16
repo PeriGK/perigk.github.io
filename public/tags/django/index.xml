@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Django on Bitperi(Periklis Gkolias)</title>
+    <link>https://perigk.github.io/tags/django/</link>
+    <description>Recent content in Django on Bitperi(Periklis Gkolias)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 18 Jun 2018 00:00:00 +0300</lastBuildDate>
+    
+	<atom:link href="https://perigk.github.io/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Django by example(Antonio Mele) - book review</title>
+      <link>https://perigk.github.io/posts/django-example-book-review/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/posts/django-example-book-review/</guid>
+      <description>Disclaimer: At the time of starting to write this article, the next version of the book under review, has not been published yet. If you want to read the newest version, you can find it here
+Many people don&amp;rsquo;t have enough time to research for a book. I think such articles could help people, accelerate their (correct)decision.
+That&amp;rsquo;s why I decided to write this article. This is a quick and dense review of Django by example by Antonio Mele</description>
+    </item>
+    
+    <item>
+      <title>Doctests, the shy giant of testing modules</title>
+      <link>https://perigk.github.io/posts/doctests-the/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/posts/doctests-the/</guid>
+      <description>Do you use python, even to wash your clothes? Do you find unit testing boring, but still have to do it, because you find value in automated testing? Then this article is for you.
+The idea I believe you have used the python console, from time to time. Lets assume you are writing a few inline functions like below, to experiment with stuff:
+$ python Python 3.6.4 |Anaconda custom (64-bit)| (default, Jan 16 2018, 18:10:19) [GCC 7.</description>
+    </item>
+    
+    <item>
+      <title>Must-read books for software engineers - the alternative list</title>
+      <link>https://perigk.github.io/posts/hidden-gem-books-all-software-engineers-should-check/</link>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/posts/hidden-gem-books-all-software-engineers-should-check/</guid>
+      <description>There are tons of great books out there and a gazillion articles recommending them. The purpose of this article is not to recommend them again; I am pretty certain, that all such lists are very easy to be found with a few Google searches and no one needs me to tell him, that Code Complete is a must-read.
+Thus, I&amp;rsquo;m going to list some books that are not very&amp;hellip;popular, but they are totally worth reading.</description>
+    </item>
+    
+  </channel>
+</rss>

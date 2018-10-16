@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Author on Bitperi(Periklis Gkolias)</title>
+    <link>https://perigk.github.io/author/</link>
+    <description>Recent content in Author on Bitperi(Periklis Gkolias)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://perigk.github.io/author/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Periklis Gkolias</title>
+      <link>https://perigk.github.io/author/periklis-gkolias/</link>
+      <pubDate>Sun, 14 Oct 2018 20:05:29 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/author/periklis-gkolias/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://perigk.github.io/posts/web-assembly-for-buzzword-haters/</loc>
+    <lastmod>2018-10-14T20:05:29+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/posts/the-definite-guide-to-pick-the-correct-music-while-working/</loc>
+    <lastmod>2018-08-27T19:08:34+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/posts/the-incredible-hulkython-making-python-strongly-typed/</loc>
+    <lastmod>2018-08-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/posts/stepping-up-your-javascript-debugging-skills/</loc>
+    <lastmod>2018-06-25T00:00:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/posts/django-example-book-review/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/posts/doctests-the/</loc>
+    <lastmod>2018-05-29T00:00:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/posts/the-art-of-leveraging-time/</loc>
+    <lastmod>2018-05-14T00:00:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/posts/how-being-lazy-led-me-to-publicize-my-first-python-package/</loc>
+    <lastmod>2018-05-08T00:00:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/posts/hidden-gem-books-all-software-engineers-should-check/</loc>
+    <lastmod>2018-04-09T00:00:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/posts/how-to-get-familiar-with-a-new-codebase/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/posts/fantastic-youtube-channels-with-high-quality-learning-for-developers/</loc>
+    <lastmod>2018-03-18T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/posts/a-comprehensive-introduction-to-unit-testing-and-mocking-with-python3/</loc>
+    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/author/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://perigk.github.io/de/author/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://perigk.github.io/author/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/automated-testing/</loc>
+    <lastmod>2018-05-29T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/</loc>
+    <lastmod>2018-10-14T20:05:29+03:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://perigk.github.io/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://perigk.github.io/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/book-review/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/book-review/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/books/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://perigk.github.io/de/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://perigk.github.io/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/code_reading/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/code_reading/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/debugging/</loc>
+    <lastmod>2018-06-25T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/debugging/</loc>
+    <lastmod>2018-06-25T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/django/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/django/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/doctests/</loc>
+    <lastmod>2018-05-29T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/flow-state/</loc>
+    <lastmod>2018-08-27T19:08:34+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/flow-state/</loc>
+    <lastmod>2018-08-27T19:08:34+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/javascript/</loc>
+    <lastmod>2018-06-25T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/javascript/</loc>
+    <lastmod>2018-06-25T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/learning/</loc>
+    <lastmod>2018-03-18T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/legacy_code/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/legacy_code/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/life-optimization/</loc>
+    <lastmod>2018-05-14T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/mock/</loc>
+    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/mock/</loc>
+    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/music/</loc>
+    <lastmod>2018-08-27T19:08:34+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/music/</loc>
+    <lastmod>2018-08-27T19:08:34+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/new_codebase/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/new_codebase/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/open_source/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/open_source/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/oss_contributions/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/oss_contributions/</loc>
+    <lastmod>2018-03-28T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/package/</loc>
+    <lastmod>2018-05-08T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/author/periklis-gkolias/</loc>
+    <lastmod>2018-10-14T20:05:29+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/posts/</loc>
+    <lastmod>2018-10-14T20:05:29+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/problem-solving/</loc>
+    <lastmod>2018-06-25T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/problem-solving/</loc>
+    <lastmod>2018-06-25T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/procrastination/</loc>
+    <lastmod>2018-04-09T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/productivity/</loc>
+    <lastmod>2018-08-27T19:08:34+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/productivity/</loc>
+    <lastmod>2018-08-27T19:08:34+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/programming/</loc>
+    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/programming/</loc>
+    <lastmod>2018-10-14T20:05:29+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/pypi/</loc>
+    <lastmod>2018-05-08T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/python/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/python/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/python3/</loc>
+    <lastmod>2018-08-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/python3/</loc>
+    <lastmod>2018-06-18T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/spotify/</loc>
+    <lastmod>2018-08-27T19:08:34+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/spotify/</loc>
+    <lastmod>2018-08-27T19:08:34+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/static-typing/</loc>
+    <lastmod>2018-08-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/</loc>
+    <lastmod>2018-05-29T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://perigk.github.io/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://perigk.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/time-management/</loc>
+    <lastmod>2018-05-14T00:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/training/</loc>
+    <lastmod>2018-03-18T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/tutorial/</loc>
+    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/tutorial/</loc>
+    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/unittest/</loc>
+    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/unittest/</loc>
+    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/videos/</loc>
+    <lastmod>2018-03-18T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/web-assembly/</loc>
+    <lastmod>2018-10-14T20:05:29+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/youtube/</loc>
+    <lastmod>2018-03-18T00:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

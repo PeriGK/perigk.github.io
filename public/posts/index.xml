@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Bitperi(Periklis Gkolias)</title>
+    <link>https://perigk.github.io/posts/</link>
+    <description>Recent content in Posts on Bitperi(Periklis Gkolias)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 14 Oct 2018 20:05:29 +0300</lastBuildDate>
+    
+	<atom:link href="https://perigk.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Web Assembly for Buzzword Haters</title>
+      <link>https://perigk.github.io/posts/web-assembly-for-buzzword-haters/</link>
+      <pubDate>Sun, 14 Oct 2018 20:05:29 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/posts/web-assembly-for-buzzword-haters/</guid>
+      <description>Web assembly looks like the next best thing in web technologies. Even though the first release happened fairly recently, namely in early 2017, there were rumors and anticipation long ago. With a quick google searching, I found this HackerNews article, almost 3 years ago, for example.
+So what is all the hype about WebAssembly? As with all new(and promising) technologies, there is information overload in the air, I made a compact FAQ to help you get up to speed with this new kid in the town</description>
+    </item>
+    
+    <item>
+      <title>The Definite Guide to Pick the Correct Music While Working</title>
+      <link>https://perigk.github.io/posts/the-definite-guide-to-pick-the-correct-music-while-working/</link>
+      <pubDate>Mon, 27 Aug 2018 19:08:34 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/posts/the-definite-guide-to-pick-the-correct-music-while-working/</guid>
+      <description>I only know few semi-god-concentration-giants who don&amp;rsquo;t work with headphones, while being productive at their company&amp;rsquo;s -usually noisy- office and I really admire them.
+For the rest of us co-mortals, we need our headphones/earphones, to make it through. But have you ever thought, what should you listen to, at work? And I mean, in terms of best value regarding your current state.
+Below are some hints, about how you should pick the sound that will entertain your ears.</description>
+    </item>
+    
+    <item>
+      <title>The Incredible Hulk(ython): Making Python Strong(ly Typed)</title>
+      <link>https://perigk.github.io/posts/the-incredible-hulkython-making-python-strongly-typed/</link>
+      <pubDate>Mon, 06 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://perigk.github.io/posts/the-incredible-hulkython-making-python-strongly-typed/</guid>
+      <description>Python is a wonderful dynamically typed language, but quite a few people consider this as its biggest disadvantage.
+But why? Even though dynamically typed languages, remove the headache of writing &amp;ldquo;mundane&amp;rdquo; type declarations and make writing more pleasant and a little bit faster, this need is just delegated to the runtime environment of the language.
+That means, that some bugs that could have been eliminated, almost immediately after they are introduced, they will now remain silent till the code is invoked, And you know when this is going to happen, right?</description>
+    </item>
+    
+    <item>
+      <title>Stepping up your javascript debugging skills</title>
+      <link>https://perigk.github.io/posts/stepping-up-your-javascript-debugging-skills/</link>
+      <pubDate>Mon, 25 Jun 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/posts/stepping-up-your-javascript-debugging-skills/</guid>
+      <description>Almost all software developers, who have written even a few lines of code for the Web, had at least a quick glance at javascript in their life, which is one of the most in-demand programming languages currently.
+Some people love it, some hate it. Regardless of your view, if you use it, you will need to debug it eventually.
+Below I will share some tips that help me in those difficult moments.</description>
+    </item>
+    
+    <item>
+      <title>Django by example(Antonio Mele) - book review</title>
+      <link>https://perigk.github.io/posts/django-example-book-review/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/posts/django-example-book-review/</guid>
+      <description>Disclaimer: At the time of starting to write this article, the next version of the book under review, has not been published yet. If you want to read the newest version, you can find it here
+Many people don&amp;rsquo;t have enough time to research for a book. I think such articles could help people, accelerate their (correct)decision.
+That&amp;rsquo;s why I decided to write this article. This is a quick and dense review of Django by example by Antonio Mele</description>
+    </item>
+    
+    <item>
+      <title>Doctests, the shy giant of testing modules</title>
+      <link>https://perigk.github.io/posts/doctests-the/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/posts/doctests-the/</guid>
+      <description>Do you use python, even to wash your clothes? Do you find unit testing boring, but still have to do it, because you find value in automated testing? Then this article is for you.
+The idea I believe you have used the python console, from time to time. Lets assume you are writing a few inline functions like below, to experiment with stuff:
+$ python Python 3.6.4 |Anaconda custom (64-bit)| (default, Jan 16 2018, 18:10:19) [GCC 7.</description>
+    </item>
+    
+    <item>
+      <title>The art of leveraging time</title>
+      <link>https://perigk.github.io/posts/the-art-of-leveraging-time/</link>
+      <pubDate>Mon, 14 May 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/posts/the-art-of-leveraging-time/</guid>
+      <description>Oh dear, if I had a dime, every time(oh just made a rhime, twice :D) someone complained to me about the lack of time. Even if that guy is&amp;hellip;myself. Life is a bi..h, according to folk wisdom, but if it is &amp;ldquo;fair and square&amp;rdquo; with one thing it is time.
+We all have 24h per day to achieve our goals, complete our personal and professional tasks, spend quality time with our family and friends, take care of our bodies and so much more.</description>
+    </item>
+    
+    <item>
+      <title>How being lazy, led me to publicize my first python package</title>
+      <link>https://perigk.github.io/posts/how-being-lazy-led-me-to-publicize-my-first-python-package/</link>
+      <pubDate>Tue, 08 May 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/posts/how-being-lazy-led-me-to-publicize-my-first-python-package/</guid>
+      <description>How being lazy, led me to publicize my first python package There is a common saying, in the software industry, which goes like:
+ I want to hire a lazy developer because he will find the way to deal with difficult problems in the shortest and easiest manner.
+ I wasn’t there the first time this was told, but rumors say that these words belong to Bill Gates.
+I don’t know if Mr Gates would ever hire me(wink wink) but I have to admit that having that kind of laziness, has led me, from time to time, to create interesting and time saving libraries/scripts/workarounds.</description>
+    </item>
+    
+    <item>
+      <title>Must-read books for software engineers - the alternative list</title>
+      <link>https://perigk.github.io/posts/hidden-gem-books-all-software-engineers-should-check/</link>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/posts/hidden-gem-books-all-software-engineers-should-check/</guid>
+      <description>There are tons of great books out there and a gazillion articles recommending them. The purpose of this article is not to recommend them again; I am pretty certain, that all such lists are very easy to be found with a few Google searches and no one needs me to tell him, that Code Complete is a must-read.
+Thus, I&amp;rsquo;m going to list some books that are not very&amp;hellip;popular, but they are totally worth reading.</description>
+    </item>
+    
+    <item>
+      <title>How to get familiar with a new codebase</title>
+      <link>https://perigk.github.io/posts/how-to-get-familiar-with-a-new-codebase/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/posts/how-to-get-familiar-with-a-new-codebase/</guid>
+      <description>Most of us, quite often, are in need to familiarize with a new code base. You might be an avid open source guy/girl who wants to contribute to another project, or you just started a new job, and you want to familiarize with the platform that will be a big part of your life, during the next months/years&amp;hellip;or just for fun, because who&amp;rsquo;s watching comedies nowadays?
+Familiarizing with a new code base is a keystone skill, every software engineer should acquire on this beautiful planet.</description>
+    </item>
+    
+    <item>
+      <title>Fantastic youtube channels, with top-quality learning for software engineers</title>
+      <link>https://perigk.github.io/posts/fantastic-youtube-channels-with-high-quality-learning-for-developers/</link>
+      <pubDate>Sun, 18 Mar 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/posts/fantastic-youtube-channels-with-high-quality-learning-for-developers/</guid>
+      <description>Video training is undeniably one of the most popular methods, for self-taught programmers and according to Forbes, the most popular, amongst millennials.
+ Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young. The greatest thing in life is to keep your mind young. (Henry Ford)
+ As far as I know, many people are relying on one or more of the most popular video training platforms like Pluralsight, Udemy or Coursera but they use accounts funded by the company they are working for.</description>
+    </item>
+    
+    <item>
+      <title>A1 comprehensive introduction to unit-testing and mocking with Python3</title>
+      <link>https://perigk.github.io/posts/a-comprehensive-introduction-to-unit-testing-and-mocking-with-python3/</link>
+      <pubDate>Tue, 30 Jan 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/posts/a-comprehensive-introduction-to-unit-testing-and-mocking-with-python3/</guid>
+      <description>Unit testing is quickly becoming a must for all job adverts. There are a few people who don&amp;rsquo;t like Test Driven Development(TDD), but at least they agree on the value, automation testing(not only unit tests) add to the overall code quality and to the debugging process.
+By the time of writing, according to dice.com, TDD is enjoying increased popularity year after year.
+Without further ado, let&amp;rsquo;s start our journey. You can download the source code from here</description>
+    </item>
+    
+  </channel>
+</rss>
