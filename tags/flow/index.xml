@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flow on Bitperi(Periklis Gkolias)</title>
+    <link>https://perigk.github.io/tags/flow/</link>
+    <description>Recent content in Flow on Bitperi(Periklis Gkolias)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 30 Oct 2018 23:03:29 +0200</lastBuildDate>
+    
+	<atom:link href="https://perigk.github.io/tags/flow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Survive a Noisy Office Environment</title>
+      <link>https://perigk.github.io/posts/how-to-survive-noisy-office/</link>
+      <pubDate>Tue, 30 Oct 2018 23:03:29 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/posts/how-to-survive-noisy-office/</guid>
+      <description>It is the most accepted fact after the great taste of ice-cream. Software engineers absolutely hate open plans or open offices.
+They are noisy and tight, distracting, nerve breaking and the last thing they do is to help yu enter a state of flow. Unless you are lucky and your colleagues know the pain and behave accordingly.
+Unfortunately, the open office, is an inevitable resource of our day to day work and it will be for the next few years, even though there are tons of voices against.</description>
+    </item>
+    
+  </channel>
+</rss>
