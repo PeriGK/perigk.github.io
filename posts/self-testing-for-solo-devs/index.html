@@ -172,14 +172,14 @@ For each one of the above part:
 
 <p>Even though you can perform this part with manual testing, automated tests are totally the way to go. I have written about unit testing in a previous <a href="https://medium.com/@periklisgkolias/a-comprehensive-introduction-to-unit-testing-and-mocking-with-python3-3d962670c726">article</a> and if overcome the initial effort to have a great percentage of coverage you will be very compensated.</p>
 
-<p>Today, there is ubiquitous tooling(i.e Continuous integration, where the tests can run on every commit) to let you do a regression testing to your whole platform with one-click, so automated testing is, in my humble opinion, a high-reward investment.</p>
+<p>Today, there is ubiquitous tooling (i.e Continuous integration, where the tests can run on every commit) to let you do a regression testing to your whole platform with one-click, so automated testing is, in my humble opinion, a high-reward investment.</p>
 
 <h2 id="use-a-randomizer">Use a &ldquo;randomizer&rdquo;</h2>
 
 <p>Above, in point &ldquo;Plan the cases before&rdquo; we mentioned the need to identify crazy paths.
 As mentioned in the first point &ldquo;Be a badass dad and break &lsquo;em&rdquo;, we are not good at finding flaws in our code. So how about letting &ldquo;others&rdquo; decide the inputs to the system under test? That&rsquo;s where randomizers come to the rescue.</p>
 
-<p>Randomizers can be as simple as a loop of few hundred iterations, that give every combination of ASCII characters, numbers and&hellip;mongo objects(ok, I am exaggerating a bit) as input to a field representing&hellip;age and then counting the number of errors, non-graceful handling, and success. Or sophisticated <a href="https://github.com/topics/random-testing">libraries</a>.</p>
+<p>Randomizers can be as simple as a loop of few hundred iterations, that give every combination of ASCII characters, numbers and&hellip;mongo objects (ok, I am exaggerating a bit) as input to a field representing&hellip;age and then counting the number of errors, non-graceful handling, and success. Or sophisticated <a href="https://github.com/topics/random-testing">libraries</a>.</p>
 
 <h2 id="make-sure-your-tests-agree-with-the-architecture">Make sure your tests agree with the architecture.</h2>
 
@@ -191,7 +191,7 @@ As mentioned in the first point &ldquo;Be a badass dad and break &lsquo;em&rdquo
 
 <p>You can read this great article <a href="https://www.testingexcellence.com/static-analysis-vs-dynamic-analysis-software-testing/">here</a>, and <a href="https://github.com/mre/awesome-static-analysis">this</a> awesome list for static analysis tools.</p>
 
-<p>If you need a list for dynamic analysis tools, please target the search to your favorite language, looks like I could not find any massive lists, language agnostic(like with the static analysis).</p>
+<p>If you need a list for dynamic analysis tools, please target the search to your favorite language, looks like I could not find any massive lists, language agnostic (like with the static analysis).</p>
 
 <h2 id="make-sure-that-all-lines-are-executed-once">Make sure that all lines are executed once.</h2>
 
