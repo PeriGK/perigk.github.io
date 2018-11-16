@@ -47,6 +47,15 @@
     </item>
     
     <item>
+      <title>Code Quality</title>
+      <link>https://perigk.github.io/tags/code-quality/</link>
+      <pubDate>Thu, 15 Nov 2018 22:48:56 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/tags/code-quality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Code_reading</title>
       <link>https://perigk.github.io/tags/code_reading/</link>
       <pubDate>Wed, 28 Mar 2018 00:00:00 +0300</pubDate>
@@ -137,15 +146,6 @@
     </item>
     
     <item>
-      <title>Mock</title>
-      <link>https://perigk.github.io/tags/mock/</link>
-      <pubDate>Tue, 30 Jan 2018 00:00:00 +0200</pubDate>
-      
-      <guid>https://perigk.github.io/tags/mock/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Music</title>
       <link>https://perigk.github.io/tags/music/</link>
       <pubDate>Mon, 27 Aug 2018 19:08:34 +0300</pubDate>
@@ -218,15 +218,6 @@
     </item>
     
     <item>
-      <title>Programming</title>
-      <link>https://perigk.github.io/tags/programming/</link>
-      <pubDate>Tue, 30 Jan 2018 00:00:00 +0200</pubDate>
-      
-      <guid>https://perigk.github.io/tags/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Pypi</title>
       <link>https://perigk.github.io/tags/pypi/</link>
       <pubDate>Tue, 08 May 2018 00:00:00 +0300</pubDate>
@@ -254,6 +245,15 @@
     </item>
     
     <item>
+      <title>Solo Dev</title>
+      <link>https://perigk.github.io/tags/solo-dev/</link>
+      <pubDate>Thu, 15 Nov 2018 22:48:56 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/tags/solo-dev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Spotify</title>
       <link>https://perigk.github.io/tags/spotify/</link>
       <pubDate>Mon, 27 Aug 2018 19:08:34 +0300</pubDate>
@@ -272,6 +272,15 @@
     </item>
     
     <item>
+      <title>Testing</title>
+      <link>https://perigk.github.io/tags/testing/</link>
+      <pubDate>Thu, 15 Nov 2018 22:48:56 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/tags/testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Time Management</title>
       <link>https://perigk.github.io/tags/time-management/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0300</pubDate>
@@ -286,24 +295,6 @@
       <pubDate>Sun, 18 Mar 2018 00:00:00 +0200</pubDate>
       
       <guid>https://perigk.github.io/tags/training/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutorial</title>
-      <link>https://perigk.github.io/tags/tutorial/</link>
-      <pubDate>Tue, 30 Jan 2018 00:00:00 +0200</pubDate>
-      
-      <guid>https://perigk.github.io/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Unittest</title>
-      <link>https://perigk.github.io/tags/unittest/</link>
-      <pubDate>Tue, 30 Jan 2018 00:00:00 +0200</pubDate>
-      
-      <guid>https://perigk.github.io/tags/unittest/</guid>
       <description></description>
     </item>
     

@@ -5,10 +5,22 @@
     <link>https://perigk.github.io/posts/</link>
     <description>Recent content in Posts on Bitperi(Periklis Gkolias)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 30 Oct 2018 23:03:29 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 15 Nov 2018 22:48:56 +0200</lastBuildDate>
     
 	<atom:link href="https://perigk.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Self Testing for Solo Devs</title>
+      <link>https://perigk.github.io/posts/self-testing-for-solo-devs/</link>
+      <pubDate>Thu, 15 Nov 2018 22:48:56 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/posts/self-testing-for-solo-devs/</guid>
+      <description>Nothing can substitute a great team. But a real warrior, has to be able to rely on thyself, if needed.
+A few people nowadays, work on a team of one.
+People that are subject matter experts and the very best on their fields (and I am the last human on earth who can give them any professional advice).
+People that have just founded, solo, their own company (or their company partners are not technical).</description>
+    </item>
     
     <item>
       <title>How to Survive a Noisy Office Environment</title>
@@ -137,17 +149,6 @@ Familiarizing with a new code base is a keystone skill, every software engineer 
       <description>Video training is undeniably one of the most popular methods, for self-taught programmers and according to Forbes, the most popular, amongst millennials.
  Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young. The greatest thing in life is to keep your mind young. (Henry Ford)
  As far as I know, many people are relying on one or more of the most popular video training platforms like Pluralsight, Udemy or Coursera but they use accounts funded by the company they are working for.</description>
-    </item>
-    
-    <item>
-      <title>A comprehensive introduction to unit-testing and mocking with Python3</title>
-      <link>https://perigk.github.io/posts/a-comprehensive-introduction-to-unit-testing-and-mocking-with-python3/</link>
-      <pubDate>Tue, 30 Jan 2018 00:00:00 +0200</pubDate>
-      
-      <guid>https://perigk.github.io/posts/a-comprehensive-introduction-to-unit-testing-and-mocking-with-python3/</guid>
-      <description>Unit testing is quickly becoming a must for all job adverts. There are a few people who don&amp;rsquo;t like Test Driven Development(TDD), but at least they agree on the value, automation testing(not only unit tests) add to the overall code quality and to the debugging process.
-By the time of writing, according to dice.com, TDD is enjoying increased popularity year after year.
-Without further ado, let&amp;rsquo;s start our journey. You can download the source code from here</description>
     </item>
     
   </channel>

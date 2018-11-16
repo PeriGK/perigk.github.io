@@ -1,0 +1,553 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Periklis Gkolias">
+        <meta name="description" content="Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+        <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+        <meta name="generator" content="Hugo 0.44" />
+
+        <link rel="icon" type="image/png" href="https://perigk.github.io/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="https://perigk.github.io/favicon-16x16.png" sizes="16x16">
+
+        <link rel="stylesheet" href="https://perigk.github.io/dist/theme.css">
+
+        
+
+        
+            
+        
+
+        
+        <title>
+            
+                Bitperi(Periklis Gkolias) | Self Testing for Solo Devs
+            
+        </title>
+    </head>
+    <body class="bilberry-hugo-theme">
+        
+<nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+            <div id="search-box" class="search">
+                <i class="fa fa-search"></i>
+                <input id="search" type="text" placeholder="Search ...">
+            </div>
+        
+    </div>
+</nav>
+
+
+        <header>
+    <div class="container">
+        <div class="logo">
+            <a href="/" class="logo">
+                
+                    <img src="/avatars/myAvatar.svg" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a href="/">Bitperi(Periklis Gkolias)</a></h3>
+            
+                <span class="subtitle">Productivity tips and coding for thriving people</span>
+            
+        </div>
+
+    
+
+        
+        <div class="toggler">
+        
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </div>
+</header>
+
+
+        <div class="main container">
+            
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="/posts/self-testing-for-solo-devs/">
+    <i class="fa fa-fw fa-pencil"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h3><a href="/posts/self-testing-for-solo-devs/">Self Testing for Solo Devs</a></h3>
+    <div class="meta">
+        <span class="date moment">2018-11-15</span>
+
+        
+            <span class="categories">
+                
+                    <a href="/categories/solo-dev">solo-dev</a>
+                
+                    <a href="/categories/testing">testing</a>
+                
+                    <a href="/categories/code-quality">code-quality</a>
+                
+            </span>
+        
+
+        
+            <span class="author"><a href="/author/periklis-gkolias">Periklis Gkolias</a></span>
+        
+    </div>
+
+    
+        
+
+<p>Nothing can substitute a great team. But a real warrior, has to be able to rely on thyself, if needed.</p>
+
+<p>A few people nowadays, work on a team of one.</p>
+
+<p>People that are subject matter experts and the very best on their fields (and I am the last human on earth who can give them any professional advice).</p>
+
+<p>People that have just founded, solo, their own company (or their company partners are not technical).</p>
+
+<p>Or  people who work always remotely, and in a vastly different time zone compared to the headquarters, where getting help from other colleagues might be difficult.</p>
+
+<h2 id="testing-your-work-the-broccoli-of-day-to-day-software-engineering">Testing your work, the broccoli of day-to-day software engineering.</h2>
+
+<p>The first skill I can think of, that we all need to pay attention to, is to test our own dev work, more effectively. QA guys are great, but you work together on this case, you don&rsquo;t just throw your crap to the other side of the fence.</p>
+
+<p>As broccoli, it is hard to do it (or eat it) but very beneficial to your professional life (or health)</p>
+
+<p>Over time, I have gathered a few tips, the number of which I want to grow more. Let&rsquo;s start.</p>
+
+<p><img src="/img/2018/11/classic.jpeg" alt="classic" /></p>
+
+<h2 id="be-a-badass-dad-and-break-em">Be a badass dad and break &lsquo;em</h2>
+
+<p>Being a developer is mostly about giving value through the features you make. Being a tester is about giving value through the elimination of the errors that exist in the software.</p>
+
+<p>If you don&rsquo;t figure out how to become more cold-blooded against your beloved creature you can never succeed on this journey. I believe I still have work to do so any tips are appreciated.</p>
+
+<p><img src="/img/2018/11/classic.jpg" alt="classic" /></p>
+
+<h2 id="plan-the-cases-before">Plan the cases before</h2>
+
+<p>What will you test eventually? The written specifications are the only source of truth here. Do a few passes through them, until you can visualize the final product/feature, as much as possible, inside your head.</p>
+
+<p>Do not hesitate to underline the points you think important, and do follow up question to the product/feature owner(s).</p>
+
+<p>So, now that you have the big picture, you can use something like the pseudo-algorithm below to make a testing plan</p>
+
+<pre><code>Break the functionality into testable parts
+For each one of the above part:
+    Write down the &quot;happy paths&quot; that derive from the specs
+    Write down the boundary values that derive from the specs
+    Write down any crazy paths you might think off, as they might be not that crazy when released to the public
+    Think the various parts can be triggered and how this can affect the system and keep regression in mind
+</code></pre>
+
+<h2 id="test-early">Test early</h2>
+
+<p>So, you finished a function? Test it now. Did you finish a class? Test it now and I hope you have already tested the individual functions alone. Some people make it more extreme, by testing every N lines of code.</p>
+
+<p>If testing, is not possible for any reason, adding breakpoints/assertions to make sure that the <a href="https://en.wikipedia.org/wiki/Precondition">preconditions</a> and the <a href="https://en.wikipedia.org/wiki/Postcondition">postconditions</a> of each function are satisfied, should be ok for now.</p>
+
+<p>Given the chance, do not listen to other people saying that this time-consuming. YOU are in charge of the quality of your deliverables and your career, not them; so make sure you ignore the <a href="https://en.wikipedia.org/wiki/Siren_(mythology)">sirens</a> of low quality (which can be quite compelling). Unless this is a directive from the management, so maybe it is better to discuss it with them first, before ignoring them. :)</p>
+
+<p>And this is because, the earlier you find an issue, the easier (and thus with less cost) will be to tackle it <a href="https://developers.slashdot.org/story/03/10/21/0141215/software-defects---do-late-bugs-really-cost-more">effectively</a>.</p>
+
+<p>At this stage, I am talking about manual testing. But as for the TDD lovers, this is not negotiable. Tests are being written, even before the source code files are created.</p>
+
+<h2 id="test-often-and-automatically">Test often and automatically</h2>
+
+<p>Even though you can perform this part with manual testing, automated tests are totally the way to go. I have written about unit testing in a previous <a href="https://medium.com/@periklisgkolias/a-comprehensive-introduction-to-unit-testing-and-mocking-with-python3-3d962670c726">article</a> and if overcome the initial effort to have a great percentage of coverage you will be very compensated.</p>
+
+<p>Today, there is ubiquitous tooling(i.e Continuous integration, where the tests can run on every commit) to let you do a regression testing to your whole platform with one-click, so automated testing is, in my humble opinion, a high-reward investment.</p>
+
+<h2 id="use-a-randomizer">Use a &ldquo;randomizer&rdquo;</h2>
+
+<p>Above, in point &ldquo;Plan the cases before&rdquo; we mentioned the need to identify crazy paths.
+As mentioned in the first point &ldquo;Be a badass dad and break &lsquo;em&rdquo;, we are not good at finding flaws in our code. So how about letting &ldquo;others&rdquo; decide the inputs to the system under test? That&rsquo;s where randomizers come to the rescue.</p>
+
+<p>Randomizers can be as simple as a loop of few hundred iterations, that give every combination of ASCII characters, numbers and&hellip;mongo objects(ok, I am exaggerating a bit) as input to a field representing&hellip;age and then counting the number of errors, non-graceful handling, and success. Or sophisticated <a href="https://github.com/topics/random-testing">libraries</a>.</p>
+
+<h2 id="make-sure-your-tests-agree-with-the-architecture">Make sure your tests agree with the architecture.</h2>
+
+<p>That&rsquo;s simple enough, for example, don&rsquo;t do load tests, if you don&rsquo;t care about performance. If there are no non-functional requirements, to be precise.</p>
+
+<h2 id="static-and-dynamic-analysis">Static and dynamic analysis</h2>
+
+<p>Static and dynamic analyzers are tools that cannot be missing from our arsenal and can prevent a percentage of issues, in time, from being released.</p>
+
+<p>You can read this great article <a href="https://www.testingexcellence.com/static-analysis-vs-dynamic-analysis-software-testing/">here</a>, and <a href="https://github.com/mre/awesome-static-analysis">this</a> awesome list for static analysis tools.</p>
+
+<p>If you need a list for dynamic analysis tools, please target the search to your favorite language, looks like I could not find any massive lists, language agnostic(like with the static analysis).</p>
+
+<h2 id="make-sure-that-all-lines-are-executed-once">Make sure that all lines are executed once.</h2>
+
+<p>Sometimes 100% coverage for automated tests is hard, due to limitations with dependencies. So, at least try and execute all the lines by hand, by giving the necessary inputs to the function.</p>
+
+<p>It doesn&rsquo;t have to get done using the UI of the application if it is hard. For example, in Javascript apps, you may invoke the browser/NodeJS console and test each function in isolation.</p>
+
+<h2 id="last-but-not-least-you-will-never-be-as-a-good-as-a-qa">Last but not least, you will never be as a good as a QA.</h2>
+
+<p>Don&rsquo;t give in, don&rsquo;t get discouraged, don&rsquo;t settle, and know your weaknesses. Only God and chocolate are perfect in this world.</p>
+
+<h2 id="the-end">The end&hellip;</h2>
+
+<p>Thank you for reading this article, I hope you enjoyed it. I am really curious to hear the approaches of great engineers in that matter, so your comments are more than welcome. But please remember, that we are talking about a &ldquo;team of one dev&rdquo;.</p>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    <a href="/tags/solo-dev">solo-dev</a>
+                
+                    <a href="/tags/testing">testing</a>
+                
+                    <a href="/tags/code-quality">code-quality</a>
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bilberry-hugo-theme" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+     
+
+        </div>
+
+        <footer>
+    <div class="container">
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+                <ul>
+                
+                    <li>
+                        <a href="/posts/self-testing-for-solo-devs/">Self Testing for Solo Devs</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/how-to-survive-noisy-office/">How to Survive a Noisy Office Environment</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/web-assembly-for-buzzword-haters/">Web Assembly for Buzzword Haters</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/the-definite-guide-to-pick-the-correct-music-while-working/">The Definite Guide to Pick the Correct Music While Working</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/the-incredible-hulkython-making-python-strongly-typed/">The Incredible Hulk(ython): Making Python Strong(ly Typed)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/stepping-up-your-javascript-debugging-skills/">Stepping up your javascript debugging skills</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/django-example-book-review/">Django by example(Antonio Mele) - book review</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/doctests-the/">Doctests, the shy giant of testing modules</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/the-art-of-leveraging-time/">The art of leveraging time</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/how-being-lazy-led-me-to-publicize-my-first-python-package/">How being lazy, led me to publicize my first python package</a>
+                    </li>
+                
+                </ul>
+        </div>
+
+        <div class="categories">
+            <strong>Categories</strong>
+
+            
+                <ul>
+                
+                    <li>
+                        <a href="/categories/book-review">Book review (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/career">Career (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/code-quality">Code quality (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/code_reading">Code reading (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/debugging">Debugging (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/django">Django (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/flow">Flow (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/flow-state">Flow state (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/javascript">Javascript (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/legacy_code">Legacy code (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/music">Music (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/new_codebase">New codebase (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/open_source">Open source (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/oss_contributions">Oss contributions (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/problem-solving">Problem solving (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/productivity">Productivity (2)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/programming">Programming (2)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/python">Python (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/python3">Python3 (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/solo-dev">Solo dev (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/spotify">Spotify (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/testing">Testing (1)</a>
+                    </li>
+                
+                </ul>
+            
+        </div>
+
+        <div class="right">
+            
+            <div class="social-media">
+                <strong>Social media</strong>
+
+                
+                
+                    <a href="https://twitter.com/PeriTravel" target="_blank"><i class="fa fa-twitter"></i></a>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    <a href="https://github.com/PeriGK" target="_blank"><i class="fa fa-github"></i></a>
+                
+                
+                    <a href="www.linkedin.com/in/periklis-gkolias-23914a5b" target="_blank"><i class="fa fa-linkedin"></i></a>
+                
+            </div>
+            
+
+            <div class="languages">
+                    <strong>Other languages</strong>
+                    
+                        
+                            <a href="/en" class="active">en</a>
+                        
+                    
+                        
+                            <a href="/de">de</a>
+                        
+                    
+                </div>
+            
+        </div>
+    </div>
+</footer>
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/Lednerb" target="_blank">
+                &copy;
+                
+                    2017
+                
+                by Lednerb
+            </a>
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme" target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+        
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-33576432-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+        
+
+        <script src="https://perigk.github.io/dist/theme.js" type="application/javascript"></script>
+
+        
+            
+        
+
+        <script>
+            $(document).ready(function() {
+                $(".moment").each(function() {
+                    $(this).text(
+                        moment( $(this).text() )
+                            .locale( "en" )
+                            .format('LL')
+                    );
+                });
+
+                $(".footnote-return sup").html("[return]")
+            })
+        </script>
+
+        
+            <script>
+    var client = algoliasearch("Y2C4RWMPXW", "50ea7f8c41c0ad233926e0be2b769ed1");
+    var index = client.initIndex("default-content");
+
+    $('#search').autocomplete({ hint: false, autoselect: true, debug: false },
+      [
+        {
+          
+            source: $.fn.autocomplete.sources.hits(index, { hitsPerPage: 5, filters: 'language: en' }),
+          
+          displayKey: function(suggestion) {
+            return suggestion.title || suggestion.author
+          },
+          templates: {
+            suggestion: function(suggestion) {
+                return "<span class='entry " + suggestion.type + "'>"
+                      + "<span class='title'>" + suggestion.title + "</span>"
+                      + "<span class='fa fa-fw " + suggestion.iconClass + "'></span>"
+                  + "</span>"
+                ;
+            },
+            empty: function() {
+              return "<span class='empty'>Nothing found.</span>"
+            },
+            footer: function() {
+              return '<div class="branding">Powered by <img src="https:\/\/perigk.github.io\/dist\/algolia-logo-light.svg" /></div>'
+            }
+
+          },
+        }
+      ])
+      .on('autocomplete:selected', function(event, suggestion, dataset) {
+        window.location = (suggestion.url);
+      })
+      .keypress(function (event, suggestion) {
+        if (event.which == 13) {
+          window.location = (suggestion.url);
+        }
+      });
+</script>
+
+        
+
+
+    </body>
+</html>

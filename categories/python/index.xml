@@ -21,16 +21,5 @@ Many people don&amp;rsquo;t have enough time to research for a book. I think suc
 That&amp;rsquo;s why I decided to write this article. This is a quick and dense review of Django by example by Antonio Mele</description>
     </item>
     
-    <item>
-      <title>A comprehensive introduction to unit-testing and mocking with Python3</title>
-      <link>https://perigk.github.io/posts/a-comprehensive-introduction-to-unit-testing-and-mocking-with-python3/</link>
-      <pubDate>Tue, 30 Jan 2018 00:00:00 +0200</pubDate>
-      
-      <guid>https://perigk.github.io/posts/a-comprehensive-introduction-to-unit-testing-and-mocking-with-python3/</guid>
-      <description>Unit testing is quickly becoming a must for all job adverts. There are a few people who don&amp;rsquo;t like Test Driven Development(TDD), but at least they agree on the value, automation testing(not only unit tests) add to the overall code quality and to the debugging process.
-By the time of writing, according to dice.com, TDD is enjoying increased popularity year after year.
-Without further ado, let&amp;rsquo;s start our journey. You can download the source code from here</description>
-    </item>
-    
   </channel>
 </rss>

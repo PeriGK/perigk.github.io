@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://perigk.github.io/posts/self-testing-for-solo-devs/</loc>
+    <lastmod>2018-11-15T22:48:56+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://perigk.github.io/posts/how-to-survive-noisy-office/</loc>
     <lastmod>2018-10-30T23:03:29+02:00</lastmod>
   </url>
@@ -63,11 +68,6 @@
   </url>
   
   <url>
-    <loc>https://perigk.github.io/posts/a-comprehensive-introduction-to-unit-testing-and-mocking-with-python3/</loc>
-    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://perigk.github.io/author/</loc>
     <priority>0</priority>
     <xhtml:link
@@ -90,7 +90,7 @@
   
   <url>
     <loc>https://perigk.github.io/</loc>
-    <lastmod>2018-10-30T23:03:29+02:00</lastmod>
+    <lastmod>2018-11-15T22:48:56+02:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -148,6 +148,18 @@
                 hreflang="en"
                 href="https://perigk.github.io/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/code-quality/</loc>
+    <lastmod>2018-11-15T22:48:56+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/code-quality/</loc>
+    <lastmod>2018-11-15T22:48:56+02:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -253,18 +265,6 @@
   </url>
   
   <url>
-    <loc>https://perigk.github.io/tags/mock/</loc>
-    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://perigk.github.io/categories/mock/</loc>
-    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://perigk.github.io/tags/music/</loc>
     <lastmod>2018-08-27T19:08:34+03:00</lastmod>
     <priority>0</priority>
@@ -320,13 +320,13 @@
   
   <url>
     <loc>https://perigk.github.io/author/periklis-gkolias/</loc>
-    <lastmod>2018-10-30T23:03:29+02:00</lastmod>
+    <lastmod>2018-11-15T22:48:56+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://perigk.github.io/posts/</loc>
-    <lastmod>2018-10-30T23:03:29+02:00</lastmod>
+    <lastmod>2018-11-15T22:48:56+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -357,12 +357,6 @@
   <url>
     <loc>https://perigk.github.io/categories/productivity/</loc>
     <lastmod>2018-10-30T23:03:29+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://perigk.github.io/tags/programming/</loc>
-    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -403,6 +397,18 @@
   </url>
   
   <url>
+    <loc>https://perigk.github.io/tags/solo-dev/</loc>
+    <lastmod>2018-11-15T22:48:56+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/solo-dev/</loc>
+    <lastmod>2018-11-15T22:48:56+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://perigk.github.io/tags/spotify/</loc>
     <lastmod>2018-08-27T19:08:34+03:00</lastmod>
     <priority>0</priority>
@@ -437,6 +443,18 @@
   </url>
   
   <url>
+    <loc>https://perigk.github.io/tags/testing/</loc>
+    <lastmod>2018-11-15T22:48:56+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/testing/</loc>
+    <lastmod>2018-11-15T22:48:56+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://perigk.github.io/tags/time-management/</loc>
     <lastmod>2018-05-14T00:00:00+03:00</lastmod>
     <priority>0</priority>
@@ -445,30 +463,6 @@
   <url>
     <loc>https://perigk.github.io/tags/training/</loc>
     <lastmod>2018-03-18T00:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://perigk.github.io/tags/tutorial/</loc>
-    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://perigk.github.io/categories/tutorial/</loc>
-    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://perigk.github.io/tags/unittest/</loc>
-    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://perigk.github.io/categories/unittest/</loc>
-    <lastmod>2018-01-30T00:00:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   
