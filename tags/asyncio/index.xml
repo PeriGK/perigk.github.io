@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Asyncio on Bitperi(Periklis Gkolias)</title>
+    <link>https://perigk.github.io/tags/asyncio/</link>
+    <description>Recent content in Asyncio on Bitperi(Periklis Gkolias)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 20 Dec 2018 23:03:29 +0200</lastBuildDate>
+    
+	<atom:link href="https://perigk.github.io/tags/asyncio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Asyncio, the invincible</title>
+      <link>https://perigk.github.io/posts/asyncio-the-invincible/</link>
+      <pubDate>Thu, 20 Dec 2018 23:03:29 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/posts/asyncio-the-invincible/</guid>
+      <description>TL;DR / Intro Async programming is the new sexy when it comes to multitasking. It became famous with NodeJS but you can find libraries that support it in most major languages.
+For example in Python, the two most famous approaches are the usage of Tornado Web Server and the built-in library asyncio. For today we will do an introduction to the latter, as it has gone through tons of iterations and improvements lately and it is ready to charm people with its intuitive approach.</description>
+    </item>
+    
+  </channel>
+</rss>
