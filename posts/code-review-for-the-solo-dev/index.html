@@ -1,0 +1,590 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Periklis Gkolias">
+        <meta name="description" content="Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+        <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+        <meta name="generator" content="Hugo 0.44" />
+
+        <link rel="icon" type="image/png" href="https://perigk.github.io/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="https://perigk.github.io/favicon-16x16.png" sizes="16x16">
+
+        <link rel="stylesheet" href="https://perigk.github.io/dist/theme.css">
+
+        
+
+        
+            
+        
+
+        
+        <title>
+            
+                Bitperi(Periklis Gkolias) | Code Review for the Solo Dev
+            
+        </title>
+    </head>
+    <body class="bilberry-hugo-theme">
+        
+<nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+            <div id="search-box" class="search">
+                <i class="fa fa-search"></i>
+                <input id="search" type="text" placeholder="Search ...">
+            </div>
+        
+    </div>
+</nav>
+
+
+        <header>
+    <div class="container">
+        <div class="logo">
+            <a href="/" class="logo">
+                
+                    <img src="/avatars/myAvatar.svg" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a href="/">Bitperi(Periklis Gkolias)</a></h3>
+            
+                <span class="subtitle">Productivity tips and coding for thriving people</span>
+            
+        </div>
+
+    
+
+        
+        <div class="toggler">
+        
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </div>
+</header>
+
+
+        <div class="main container">
+            
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="/posts/code-review-for-the-solo-dev/">
+    <i class="fa fa-fw fa-pencil"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h3><a href="/posts/code-review-for-the-solo-dev/">Code Review for the Solo Dev</a></h3>
+    <div class="meta">
+        <span class="date moment">2018-12-31</span>
+
+        
+            <span class="categories">
+                
+                    <a href="/categories/solo-dev">solo-dev</a>
+                
+                    <a href="/categories/code-review">code-review</a>
+                
+                    <a href="/categories/code-quality">code-quality</a>
+                
+                    <a href="/categories/programming">programming</a>
+                
+            </span>
+        
+
+        
+            <span class="author"><a href="/author/periklis-gkolias">Periklis Gkolias</a></span>
+        
+    </div>
+
+    
+        
+
+<p>I will start this article, as I did with the <a href="https://hackernoon.com/self-testing-for-solo-devs-d3f9e7ae03b4">previous</a> one in the series.</p>
+
+<p>Nothing can substitute a great team. But a real warrior has to be able to rely on thyself if needed.</p>
+
+<p>A few people nowadays, work on a team of one.</p>
+
+<p>People that are subject matter experts and the very best on their fields (and I am the last human on earth who can give them any professional advice).</p>
+
+<p>People that have just founded, solo, their own company (or their company partners are not technical).</p>
+
+<p>Or people who work always remotely, and in a vastly different time zone compared to the headquarters, where getting help from other
+colleagues might be difficult.</p>
+
+<h2 id="code-review-the-milestone-of-minimum-acceptable-software-quality">Code review, the milestone of minimum acceptable software quality</h2>
+
+<p>As Jeff Atwood(the founder of StackOverflow) points in his article <a href="https://blog.codinghorror.com/code-reviews-just-do-it/">Code reviews: Just do it</a></p>
+
+<blockquote>
+<p>I  believe that peer code reviews are the single biggest thing you can do to improve your code. If you&rsquo;re not doing code reviews right now with another developer, you&rsquo;re missing a lot of bugs in your code and cheating yourself out of some key professional development opportunities. As far as I&rsquo;m concerned, my code isn&rsquo;t done until I&rsquo;ve gone over it with a fellow developer.</p>
+</blockquote>
+
+<p>If such an experienced and successful engineer supports that boldly the importance of code review, even if you disagree, you have to at least give it a try.</p>
+
+<p>Let&rsquo;s move on with the most important areas, in my opinion, that the solo engineer should focus, during reviewing their own code.</p>
+
+<h2 id="do-the-automated-builds-and-automation-tests-pass-flawlessly">Do the automated builds and automation tests pass flawlessly?</h2>
+
+<p>You don&rsquo;t have either? Too bad, there are no excuses given that services like gitlab and bitbucket offer free CI services nowadays. And no excuses as well, given that <a href="https://medium.com/@periklisgkolias/a-comprehensive-introduction-to-unit-testing-and-mocking-with-python3-3d962670c726">unit tests</a> are easier than ever to write, given the friendliness of the ubiquitous unit test frameworks.</p>
+
+<p>In case you have both and Santa brought a present for being good, failing any of the automated processes, shall ring you lots of bells. But if not, it is not a sign to settle.</p>
+
+<h2 id="have-you-written-new-tests">Have you written new tests?</h2>
+
+<p>No? Really? I am so disapointed. :(</p>
+
+<p>I will quote a paragraph from <a href="https://docs.djangoproject.com/en/dev/internals/contributing/new-contributors/">Django&rsquo;s contribution guide</a></p>
+
+<blockquote>
+<p>When we say “PEP 8, and must have docs and tests”, we mean it. If a patch doesn’t have docs and tests, there had better be a good reason. Arguments like “I couldn’t find any existing tests of this feature” don’t carry much weight–while it may be true, that means you have the extra-important job of writing the very first tests for that feature, not that you get a pass from writing tests altogether.</p>
+</blockquote>
+
+<p>TDD is <a href="https://dzone.com/articles/why-developers-dont-use-tdd">hard</a> but having unit tests and testable code has tremendous benefits.</p>
+
+<h2 id="think-how-your-code-might-affect-existing-functionality-regression">Think how your code might affect existing functionality (regression)</h2>
+
+<p>This is an area where having a great test suite will save your arse one day.
+It always depends on the coverage you have in your suite and given most people have less than 100%, your intuition and analytical thinking will be of great help here.</p>
+
+<h2 id="are-the-diffs-sensible">Are the diffs sensible?</h2>
+
+<p>Have a look using any diff tool, to see if the changes made, make sense.</p>
+
+<p>If you are working on a security issue, is a change on foo.css necessary?
+If you want to enhance a form, do you need to change 3 configuration files?</p>
+
+<p>Probably not. Be vigilant, when it comes to diffs and it will pay you back. Pretend that someone else asks you, why you changed a specific line and be ready to explain thoroughly to your fantastic friend.</p>
+
+<h2 id="run-a-security-analysis">Run a security analysis</h2>
+
+<p>Have you introduced any security holes accidentally? And I mean obvious stuff, like passing un-sanitized input to the database.
+There are plenty of security static checkers <a href="https://www.owasp.org/index.php/Source_Code_Analysis_Tools">around</a> you can pick the ones that fit more to your job.</p>
+
+<p>Also, checking that no sensitive information is being logged is crucial.</p>
+
+<p>For example, if the software is meant to be deployed to a PCI-DSS compliant company, then no card number shall be logged.
+And is very easy to forget that, while logging all the args of a function.</p>
+
+<h2 id="speaking-about-logging-are-you-under-over-logging">Speaking about logging, are you (under|over)logging?</h2>
+
+<p>Under-logging will cause you to rip your hair off when a sneaky bug come to the surface. Especially if you had logged <em>some</em> incidents around the affected area.</p>
+
+<p>Over-logging can slow down your code, increase exponentially the log files&rsquo; size and cause to you search a needle in the hay, when inspection is needed.</p>
+
+<p>My suggestion is to use log levels, where the default one can be easily changed. In that case, you can increase the logging output when investigating an issue and have more clear logs when you don&rsquo;t.
+Unless the state of investigating is way more frequent than the state of working flawlessly.</p>
+
+<h2 id="is-the-code-taking-care-of-extreme-cases-and-invalid-parameters">Is the code taking care of extreme cases and invalid parameters?</h2>
+
+<p>What will happen in your system if the network goes down in the middle of a huge DB update or if I give you my name as my telephone?</p>
+
+<p>This is a bit overlapping with the security checks laid above.</p>
+
+<h2 id="have-you-updated-the-tickets-the-documentation-and-the-changelogs">Have you updated the tickets, the documentation, and the changelogs?</h2>
+
+<p>Not really a functional requirement, but necessary if the software you are working on is not for personal use (even then, it is useful to keep track of your actions).</p>
+
+<p>Usually, this includes the following:</p>
+
+<ul>
+<li>Close the ticket in the issue tracker and add the relevant pull request link/complete diff link, if it is not done automatically (eg Jira-bitbucket integration)</li>
+<li>Close the pull-request, if you were working on a branch (highly recommended even for solo teams)</li>
+<li>Update the changelog</li>
+<li>If required, amend the API/user documents and push them to the users</li>
+</ul>
+
+<h2 id="some-more-points-that-are-worth-considering">Some more points that are worth considering</h2>
+
+<ul>
+<li>Does the code comply with the company&rsquo;s standards? Even if it is a solo company, where you are the owner? Dirty code is tempting sometimes.</li>
+<li>If you changed a function, did you remember to amend its comments?</li>
+<li>Can a complex expression and magic values be extracted to a(n) (inline) function and a constant, respectively</li>
+<li>Do the new classes/functions have proper documentation?</li>
+<li>Do the packages/classes/functions/variables have meaningful names?</li>
+<li>Did you accidentally have commented code or duplicate code in place, which pollutes the readability?</li>
+<li>If your new code is exposed to huge data volumes or traffic will it scale? Are there any quick wins to improve the situation?</li>
+<li>Will you be able to work on this functionality in two years, without wasting too much time re-familiarizing?</li>
+</ul>
+
+<h2 id="last-but-not-least-it-is-way-more-difficult-if-you-do-it-alone">Last but not least, it is way more difficult if you do it alone</h2>
+
+<p>Just like in testing, it is difficult to judge yourself hard and this is common with most humans.</p>
+
+<p>During the last years, there are services where people give your code  a second look, like <a href="https://www.pullrequest.com/">pullrequest</a>. I have not tried the service, but it looks like a good idea when being solo is the only choice and the stakes are high.</p>
+
+<h2 id="that-s-all-folks">That&rsquo;s all folks</h2>
+
+<p>Thank you for taking the time to read this article, I hope you enjoyed it. In case, you have a different approach to reviewing code, please share your wisdom.</p>
+
+<p>Wishing you all the best for the year that is coming.</p>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    <a href="/tags/solo-dev">solo-dev</a>
+                
+                    <a href="/tags/code-review">code-review</a>
+                
+                    <a href="/tags/code-quality">code-quality</a>
+                
+                    <a href="/tags/programming">programming</a>
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bilberry-hugo-theme" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+     
+
+        </div>
+
+        <footer>
+    <div class="container">
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+                <ul>
+                
+                    <li>
+                        <a href="/posts/code-review-for-the-solo-dev/">Code Review for the Solo Dev</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/asyncio-the-invincible/">Asyncio, the invincible</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/self-testing-for-solo-devs/">Self Testing for Solo Devs</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/how-to-survive-noisy-office/">How to Survive a Noisy Office Environment</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/web-assembly-for-buzzword-haters/">Web Assembly for Buzzword Haters</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/the-definite-guide-to-pick-the-correct-music-while-working/">The Definite Guide to Pick the Correct Music While Working</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/the-incredible-hulkython-making-python-strongly-typed/">The Incredible Hulk(ython): Making Python Strong(ly Typed)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/stepping-up-your-javascript-debugging-skills/">Stepping up your javascript debugging skills</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/django-example-book-review/">Django by example(Antonio Mele) - book review</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/doctests-the/">Doctests, the shy giant of testing modules</a>
+                    </li>
+                
+                </ul>
+        </div>
+
+        <div class="categories">
+            <strong>Categories</strong>
+
+            
+                <ul>
+                
+                    <li>
+                        <a href="/categories/asyncio">Asyncio (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/book-review">Book review (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/career">Career (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/code-quality">Code quality (2)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/code-review">Code review (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/code_reading">Code reading (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/debugging">Debugging (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/django">Django (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/flow">Flow (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/flow-state">Flow state (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/javascript">Javascript (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/legacy_code">Legacy code (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/music">Music (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/new_codebase">New codebase (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/open_source">Open source (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/oss_contributions">Oss contributions (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/problem-solving">Problem solving (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/productivity">Productivity (2)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/programming">Programming (4)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/python">Python (2)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/python3">Python3 (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/solo-dev">Solo dev (2)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/spotify">Spotify (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/testing">Testing (1)</a>
+                    </li>
+                
+                </ul>
+            
+        </div>
+
+        <div class="right">
+            
+            <div class="social-media">
+                <strong>Social media</strong>
+
+                
+                
+                    <a href="https://twitter.com/PeriTravel" target="_blank"><i class="fa fa-twitter"></i></a>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    <a href="https://github.com/PeriGK" target="_blank"><i class="fa fa-github"></i></a>
+                
+                
+                    <a href="www.linkedin.com/in/periklis-gkolias-23914a5b" target="_blank"><i class="fa fa-linkedin"></i></a>
+                
+            </div>
+            
+
+            <div class="languages">
+                    <strong>Other languages</strong>
+                    
+                        
+                            <a href="/en" class="active">en</a>
+                        
+                    
+                        
+                            <a href="/de">de</a>
+                        
+                    
+                </div>
+            
+        </div>
+    </div>
+</footer>
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/Lednerb" target="_blank">
+                &copy;
+                
+                    2017
+                
+                by Lednerb
+            </a>
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme" target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+        
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-33576432-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+        
+
+        <script src="https://perigk.github.io/dist/theme.js" type="application/javascript"></script>
+
+        
+            
+        
+
+        <script>
+            $(document).ready(function() {
+                $(".moment").each(function() {
+                    $(this).text(
+                        moment( $(this).text() )
+                            .locale( "en" )
+                            .format('LL')
+                    );
+                });
+
+                $(".footnote-return sup").html("[return]")
+            })
+        </script>
+
+        
+            <script>
+    var client = algoliasearch("Y2C4RWMPXW", "50ea7f8c41c0ad233926e0be2b769ed1");
+    var index = client.initIndex("default-content");
+
+    $('#search').autocomplete({ hint: false, autoselect: true, debug: false },
+      [
+        {
+          
+            source: $.fn.autocomplete.sources.hits(index, { hitsPerPage: 5, filters: 'language: en' }),
+          
+          displayKey: function(suggestion) {
+            return suggestion.title || suggestion.author
+          },
+          templates: {
+            suggestion: function(suggestion) {
+                return "<span class='entry " + suggestion.type + "'>"
+                      + "<span class='title'>" + suggestion.title + "</span>"
+                      + "<span class='fa fa-fw " + suggestion.iconClass + "'></span>"
+                  + "</span>"
+                ;
+            },
+            empty: function() {
+              return "<span class='empty'>Nothing found.</span>"
+            },
+            footer: function() {
+              return '<div class="branding">Powered by <img src="https:\/\/perigk.github.io\/dist\/algolia-logo-light.svg" /></div>'
+            }
+
+          },
+        }
+      ])
+      .on('autocomplete:selected', function(event, suggestion, dataset) {
+        window.location = (suggestion.url);
+      })
+      .keypress(function (event, suggestion) {
+        if (event.which == 13) {
+          window.location = (suggestion.url);
+        }
+      });
+</script>
+
+        
+
+
+    </body>
+</html>
