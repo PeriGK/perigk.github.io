@@ -1,0 +1,657 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Periklis Gkolias">
+        <meta name="description" content="Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+        <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+        <meta name="generator" content="Hugo 0.44" />
+
+        <link rel="icon" type="image/png" href="https://perigk.github.io/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="https://perigk.github.io/favicon-16x16.png" sizes="16x16">
+
+        <link rel="stylesheet" href="https://perigk.github.io/dist/theme.css">
+
+        
+
+        
+            
+        
+
+        
+        <title>
+            
+                Bitperi(Periklis Gkolias) | A Comprehensive Guide to Unit Testing with Python3
+            
+        </title>
+    </head>
+    <body class="bilberry-hugo-theme">
+        
+<nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+            <div id="search-box" class="search">
+                <i class="fa fa-search"></i>
+                <input id="search" type="text" placeholder="Search ...">
+            </div>
+        
+    </div>
+</nav>
+
+
+        <header>
+    <div class="container">
+        <div class="logo">
+            <a href="/" class="logo">
+                
+                    <img src="/avatars/myAvatar.svg" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a href="/">Bitperi(Periklis Gkolias)</a></h3>
+            
+                <span class="subtitle">Productivity tips and coding for thriving people</span>
+            
+        </div>
+
+    
+
+        
+        <div class="toggler">
+        
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </div>
+</header>
+
+
+        <div class="main container">
+            
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="/posts/a-comprehensive-guide-to-unit-testing/">
+    <i class="fa fa-fw fa-pencil"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h3><a href="/posts/a-comprehensive-guide-to-unit-testing/">A Comprehensive Guide to Unit Testing with Python3</a></h3>
+    <div class="meta">
+        <span class="date moment">2018-01-30</span>
+
+        
+            <span class="categories">
+                
+                    <a href="/categories/unit-testing">unit-testing</a>
+                
+                    <a href="/categories/python3">python3</a>
+                
+                    <a href="/categories/programming">programming</a>
+                
+            </span>
+        
+
+        
+            <span class="author"><a href="/author/periklis-gkolias">Periklis Gkolias</a></span>
+        
+    </div>
+
+    
+        
+
+<h1 id="a-comprehensive-introduction-to-unit-testing-and-mocking-with-python3">A comprehensive introduction to unit-testing and mocking with Python3</h1>
+
+<p>Unit testing is quickly becoming a must for all job adverts. There are a few people who don’t like Test Driven Development(TDD), but at least they agree on the value, automation testing(not only unit tests) add to the overall code quality and to the debugging process.</p>
+
+<p>By the time of writing, according to <a href="https://www.dice.com/skills/Test-driven%20development.html">dice.com</a>, TDD is enjoying increased popularity year after year.</p>
+
+<p>Without further ado, let’s start our journey. You can download the source code from <a href="https://github.com/PeriGK/filesystem_handling/">here</a></p>
+
+<h3 id="a-small-background-on-unit-tests">A small background on unit tests</h3>
+
+<p>Suppose we have a new functionality, which implements a shopping cart, which we want to test. There are two big families of test methodologies, that we can use. The automated and the non-automated ones.</p>
+
+<p>If we choose a non-automated way, we can use for example our mouse or keyboard to add some products to the cart and verify the functionality ‘as a user’. And that was the most popular way to test software for a very long time. But as new and exciting test frameworks were being created, people have started shifting their attention towards automated test methodologies.</p>
+
+<p>The automated way requires the developer to write some bytes of code, which test the (business)logic. Given the shopping cart, in the previous paragraph, instead of clicking here and there, we would use code to make this happen automatically. It is like test scenarios executed by the machine, instead of a human.</p>
+
+<h3 id="get-dirty-with-code">Get dirty(with code)</h3>
+
+<p>In the example code above, I have written a small utility which does few basic operations on the filesystem. Let’s dive into the source code and the relevant test cases, to understand the unit testing better.</p>
+
+<pre><code>import os
+def create_file(target_directory, new_file_name):
+ if check_dir_exists(target_directory) and not check_file_exists(new_file_name): 
+    new_file_name = os.path.join(target_directory, new_file_name)
+    with open(new_file_name, ‘w’) as f:
+    f.write(‘’)
+    return True
+ return False
+</code></pre>
+
+<p>In the function above, we want to create a new file. In this function, we provide the full path of the target file in two pieces, the directory it will live in and its filename. We check if the directory is there but we don’t want the file to exist already. If we satisfy both, we create the file.</p>
+
+<p>Before moving to the unit test code, for this function, let’s explain a bit what is mocking.</p>
+
+<h3 id="mocking">Mocking</h3>
+
+<p>How do <em>check_dir_exists</em> and <em>check_file_exists</em> work? That’s the nice thing with unit testing. You don’t need to know. All you need to know is, how it is called and what is the return type, in order to force the desired return value. This process is called mocking. So, instead of an actual invocation of a method/object, you use a dummy method/object, ready to be customized according to your needs.</p>
+
+<p>I like to think mocking as the art of not giving a f**k about ‘calls to outsider code’.
+&gt; My code depends on an external service, thus I cannot unit test it.</p>
+
+<p>Mock the external call and return the expected value, according to your test scenario. If the call is supposed to put some data in the database, based on an API response, return a JSON/XML/whatever response that indicates success. The respective API docs are your best friend here.
+&gt; The function you asked me to unit test is deleting an entire partition in the disk.</p>
+
+<p>That’s fine(almost). You can mock the system call(s) and verify the correct sequence of them is invoked.
+&gt; I cannot test this code, as it uses builtin function and third-party function.</p>
+
+<p>Yeap, you guessed it. Mock the aforementioned involved functions.</p>
+
+<p>As you can see, the fewer dependencies you have on your code, the easier the unit test is written. Unfortunately, this is easier said than done.</p>
+
+<p>In our case, we will be using the mock module of the unittest library to achieve such effects.</p>
+
+<h3 id="how-to-write-unit-tests-in-python-the-boilerplate-part">How to write unit tests in python — the boilerplate part.</h3>
+
+<p>A unit test in python, is a function, inside a class which inherits from <em>unittest.TestCase</em>. You may hear those called *Test Suites *but for the scope of the article we will call them <em>TestCases</em>. Each <em>TestCase</em> has some standard helper methods that move through the unit testing process.</p>
+
+<p>Below you can see an example of the two most common ones. <em>setUp</em> and <em>tearDown</em>. As explained in the comments(and maybe it is self-explanatory from their names) <em>setUp</em> is initializing values required for a unit test and is running before the execution of the test(hello captain obvious). <em>tearDown</em> does the opposite, it cleans up stuff and runs after the execution of the unit test.</p>
+
+<pre><code>import unittest
+from unittest import mock
+from fs_handler_main import *
+
+class FileSystemHandlerTest(unittest.TestCase):
+ def setUp(self):
+ “””setUp is run before each test case. 
+ It is usually used to setup(wow) some common
+ values for all test cases”””
+     print(‘setUp: Initialize instance variables’)
+     self.directory = ‘/home/periklis/’
+     self.new_filename = ‘dummy_new_filename.txt’
+
+ # Fun fact: The os module we are using is 
+ # indirectly imported from fs_handler_main and not
+ # from the python library
+     self.full_path = os.path.join(self.directory, 
+     self.new_filename)
+ def tearDown(self):
+ # This is something not very useful, it is only written
+ # this way to demonstrate how tearDown works
+     print(‘tearDown: Reset instance variables’)
+     self.directory = ‘’
+     self.new_filename = ‘’
+</code></pre>
+
+<h3 id="how-to-write-unit-tests-in-python-unit-test-the-business-logic">How to write unit tests in python — unit test the business logic.</h3>
+
+<p>For the purpose of this article, I have written three unit tests for the <em>create_file</em> function seen above. Remember you can write as many test scenarios as you want and find useful. Sky in the limit or as Buzz would say, <a href="https://www.youtube.com/watch?v=ejwrxGs_Y_I">to infinite unit tests and beyond</a></p>
+
+<pre><code> [@mock](http://twitter.com/mock).patch(‘builtins.open’, mock=mock.mock_open)
+ [@mock](http://twitter.com/mock).patch(‘fs_handler_main.check_file_exists’)
+ [@mock](http://twitter.com/mock).patch(‘fs_handler_main.check_dir_exists’)
+ def test_create_file_success(self, mock_check_dir_exists, 
+ mock_check_file_exists, mock_open_func):
+     print(‘test_create_file_success’)
+     mock_check_dir_exists.return_value = True
+     mock_check_file_exists.return_value = False
+     self.assertTrue(create_file(self.directory, self.new_filename))
+
+[@mock](http://twitter.com/mock).patch(‘builtins.open’, mock=mock.mock_open)
+ [@mock](http://twitter.com/mock).patch(‘fs_handler_main.check_file_exists’)
+ [@mock](http://twitter.com/mock).patch(‘fs_handler_main.check_dir_exists’)
+ def test_create_file_failure_dir_no_exists(self, mock_check_dir_exists, mock_check_file_exists, mock_open_func):
+     print(‘test_create_file_failure_dir_no_exists’)
+     mock_check_dir_exists.return_value = False
+     mock_check_file_exists.return_value = False
+     self.assertFalse(create_file(self.directory,self.new_filename))
+
+[@mock](http://twitter.com/mock).patch(‘builtins.open’, mock=mock.mock_open)
+ [@mock](http://twitter.com/mock).patch(‘fs_handler_main.check_file_exists’)
+ [@mock](http://twitter.com/mock).patch(‘fs_handler_main.check_dir_exists’)
+ def test_create_file_failure_file_already_exists(self, mock_check_dir_exists, mock_check_file_exists, mock_open_func):
+     print(‘test_create_file_failure_file_already_exists’)
+     mock_check_dir_exists.return_value = False
+     mock_check_file_exists.return_value = False
+     self.assertFalse(create_file(self.directory,self.new_filename))
+</code></pre>
+
+<p>Have you noticed the test function starts with <em>test_</em>? That’s because python applies a regular expression, in order to separate the actual test cases from helper function in a unit test file.</p>
+
+<p>Regarding the tests above:
+* The first unit test is checking the normal case, where the file is created smoothly. Thus the business logic function is returning <em>True</em>, value which we assert.
+* The second one is trying to create the new file, but the directory is not there. So it is asserting the file will not be created, by checking the return value of create_file is False.
+* Similarly, the third unit test, is checking if the file already exists and in such case, it is not creating it.</p>
+
+<p>Are you wondering why <em>mock_open_func</em>, which is the mock object created from <em>@mock.patch(‘builtins.open’, mock=mock.mock_open)</em> is not used? We only mocked this part, so that an actual file is NOT created in every test run. We will discuss more later.</p>
+
+<p><strong>Decorators</strong>
+But what is this <em>@</em> thingy on top of the declaration of each function? I am about to write an article for decorators, as they cannot be explained briefly in a few lines, but for now, you only need to know, that they are functions, which take other functions as arguments and return those arguments extended.</p>
+
+<p>So to be specific, <a href="http://twitter.com/mock">*@mock</a>.patch(fs_handler_main.check_file_exists)* on top of <em>test_create_file_success</em> means:
+&gt; Locate the function check_file_exists from fs_handler_main and as long we are in the scope of the function below(namely fs_handler_main) whenever check_file_exists is invoked, use a mock object called mock_check_file_exists instead.</p>
+
+<p>This is the same for python modules too. For example, if you want to mock <em>os</em> or <em>math</em> you need to provide a full path, starting from the code under test module(in our case <em>fs_handler_main</em>)</p>
+
+<h3 id="moar-mocking-and-decorators">Moar mocking and decorators</h3>
+
+<p>Let’s dive more into decorators and mocking for unit testing and examine the following pair of business logic-unit test code.</p>
+
+<pre><code>def delete_file(full_path_to_file):
+    if os.path.isfile(full_path_to_file):
+    os.remove(full_path_to_file)
+
+# We mock the fs_handler_main.os.* modules, if we mock the os provided from python directly, it will not work
+ [@mock](http://twitter.com/mock).patch(‘fs_handler_main.os.path.isfile’)
+ [@mock](http://twitter.com/mock).patch(‘fs_handler_main.os.remove’)
+ def test_delete_file_success(self, mock_os_remove, mock_os_is_file):
+     print(‘test_delete_file_success’)
+     mock_os_is_file.return_value = True
+     delete_file(self.full_path)
+     mock_os_remove.assert_called_with(self.full_path)
+</code></pre>
+
+<p>In the core logic function, we check if the given full path is actually a file and in such case we delete it.</p>
+
+<p>As we use the os module of python, we need to mock it as well and this is considered a best industry practice. <strong>Not that it won’t work otherwise.</strong> But there are too many unnecessary things to take care of, in such case, namely:
+* Make sure you have permissions to read/write in the directory provided as an argument.
+* Make sure you have the target file created, in a previous piece of code(maybe a helper function).
+* Make sure the disk has sufficient space to write, even if the all the rest prerequisites are satisfied.</p>
+
+<p>As explained above, we need to mock the os modules provided from fs_handler_main file and not the original ones(the functionality is the same, <strong>it is just a matter of how python handles namespacing</strong>).</p>
+
+<p>The important thing here is line:</p>
+
+<pre><code>mock_os_is_file.return_value = False
+</code></pre>
+
+<p>Our business logic is relying on the return value of <em>os.is_file</em>. So, first, we mock it and then we customize it, by altering the return value, according to the needs of our scenario.</p>
+
+<h3 id="things-worth-remembering">Things worth remembering</h3>
+
+<p>Thank you for reading this article. Below you can find a few points I find worth reiterating.</p>
+
+<ul>
+<li>The methods that are test scenarios start with <em>test_</em> to help python discover them easily.</li>
+<li>The fewer dependencies you have, the easier the unit test is written.</li>
+<li>Mock things using the module-under-test(the business logic) namespace, not the python ones.</li>
+</ul>
+
+<h3 id="further-reading">Further reading</h3>
+
+<ul>
+<li><a href="https://docs.python.org/3/library/unittest.html?highlight=unittest#module-unittest">Python docs</a></li>
+<li><a href="https://www.amazon.co.uk/gp/product/1118901223/ref=as_li_tl?ie=UTF8&amp;camp=1634&amp;creative=6738&amp;creativeASIN=1118901223&amp;linkCode=as2&amp;tag=bitperi-21&amp;linkId=e6220e748c81612f7f772a32d236e5b9">Testing Python: Applying Unit Testing, TDD, BDD and Acceptance Testing</a></li>
+<li><a href="http://nose.readthedocs.io/en/latest/">Nose framework</a></li>
+</ul>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    <a href="/tags/unit-testing">unit-testing</a>
+                
+                    <a href="/tags/python3">python3</a>
+                
+                    <a href="/tags/programming">programming</a>
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bilberry-hugo-theme" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+     
+
+        </div>
+
+        <footer>
+    <div class="container">
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+                <ul>
+                
+                    <li>
+                        <a href="/posts/code-review-for-the-solo-dev/">Code Review for the Solo Dev</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/asyncio-the-invincible/">Asyncio, the invincible</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/self-testing-for-solo-devs/">Self Testing for Solo Devs</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/how-to-survive-noisy-office/">How to Survive a Noisy Office Environment</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/web-assembly-for-buzzword-haters/">Web Assembly for Buzzword Haters</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/the-definite-guide-to-pick-the-correct-music-while-working/">The Definite Guide to Pick the Correct Music While Working</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/the-incredible-hulkython-making-python-strongly-typed/">The Incredible Hulk(ython): Making Python Strong(ly Typed)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/stepping-up-your-javascript-debugging-skills/">Stepping up your javascript debugging skills</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/django-example-book-review/">Django by example(Antonio Mele) - book review</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/doctests-the/">Doctests, the shy giant of testing modules</a>
+                    </li>
+                
+                </ul>
+        </div>
+
+        <div class="categories">
+            <strong>Categories</strong>
+
+            
+                <ul>
+                
+                    <li>
+                        <a href="/categories/asyncio">Asyncio (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/book-review">Book review (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/career">Career (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/code-quality">Code quality (2)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/code-review">Code review (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/code_reading">Code reading (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/debugging">Debugging (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/django">Django (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/flow">Flow (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/flow-state">Flow state (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/javascript">Javascript (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/legacy_code">Legacy code (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/music">Music (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/new_codebase">New codebase (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/open_source">Open source (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/oss_contributions">Oss contributions (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/problem-solving">Problem solving (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/productivity">Productivity (2)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/programming">Programming (5)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/python">Python (2)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/python3">Python3 (2)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/solo-dev">Solo dev (2)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/spotify">Spotify (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/testing">Testing (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/unit-testing">Unit testing (1)</a>
+                    </li>
+                
+                </ul>
+            
+        </div>
+
+        <div class="right">
+            
+            <div class="social-media">
+                <strong>Social media</strong>
+
+                
+                
+                    <a href="https://twitter.com/PeriTravel" target="_blank"><i class="fa fa-twitter"></i></a>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    <a href="https://github.com/PeriGK" target="_blank"><i class="fa fa-github"></i></a>
+                
+                
+                    <a href="www.linkedin.com/in/periklis-gkolias-23914a5b" target="_blank"><i class="fa fa-linkedin"></i></a>
+                
+            </div>
+            
+
+            <div class="languages">
+                    <strong>Other languages</strong>
+                    
+                        
+                            <a href="/en" class="active">en</a>
+                        
+                    
+                        
+                            <a href="/de">de</a>
+                        
+                    
+                </div>
+            
+        </div>
+    </div>
+</footer>
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/Lednerb" target="_blank">
+                &copy;
+                
+                    2017
+                
+                by Lednerb
+            </a>
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme" target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+        
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-33576432-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+        
+
+        <script src="https://perigk.github.io/dist/theme.js" type="application/javascript"></script>
+
+        
+            
+        
+
+        <script>
+            $(document).ready(function() {
+                $(".moment").each(function() {
+                    $(this).text(
+                        moment( $(this).text() )
+                            .locale( "en" )
+                            .format('LL')
+                    );
+                });
+
+                $(".footnote-return sup").html("[return]")
+            })
+        </script>
+
+        
+            <script>
+    var client = algoliasearch("Y2C4RWMPXW", "50ea7f8c41c0ad233926e0be2b769ed1");
+    var index = client.initIndex("default-content");
+
+    $('#search').autocomplete({ hint: false, autoselect: true, debug: false },
+      [
+        {
+          
+            source: $.fn.autocomplete.sources.hits(index, { hitsPerPage: 5, filters: 'language: en' }),
+          
+          displayKey: function(suggestion) {
+            return suggestion.title || suggestion.author
+          },
+          templates: {
+            suggestion: function(suggestion) {
+                return "<span class='entry " + suggestion.type + "'>"
+                      + "<span class='title'>" + suggestion.title + "</span>"
+                      + "<span class='fa fa-fw " + suggestion.iconClass + "'></span>"
+                  + "</span>"
+                ;
+            },
+            empty: function() {
+              return "<span class='empty'>Nothing found.</span>"
+            },
+            footer: function() {
+              return '<div class="branding">Powered by <img src="https:\/\/perigk.github.io\/dist\/algolia-logo-light.svg" /></div>'
+            }
+
+          },
+        }
+      ])
+      .on('autocomplete:selected', function(event, suggestion, dataset) {
+        window.location = (suggestion.url);
+      })
+      .keypress(function (event, suggestion) {
+        if (event.which == 13) {
+          window.location = (suggestion.url);
+        }
+      });
+</script>
+
+        
+
+
+    </body>
+</html>

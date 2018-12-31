@@ -173,5 +173,15 @@ Familiarizing with a new code base is a keystone skill, every software engineer 
  As far as I know, many people are relying on one or more of the most popular video training platforms like Pluralsight, Udemy or Coursera but they use accounts funded by the company they are working for.</description>
     </item>
     
+    <item>
+      <title>A Comprehensive Guide to Unit Testing with Python3</title>
+      <link>https://perigk.github.io/posts/a-comprehensive-guide-to-unit-testing/</link>
+      <pubDate>Tue, 30 Jan 2018 17:05:18 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/posts/a-comprehensive-guide-to-unit-testing/</guid>
+      <description>A comprehensive introduction to unit-testing and mocking with Python3 Unit testing is quickly becoming a must for all job adverts. There are a few people who don’t like Test Driven Development(TDD), but at least they agree on the value, automation testing(not only unit tests) add to the overall code quality and to the debugging process.
+By the time of writing, according to dice.com, TDD is enjoying increased popularity year after year.</description>
+    </item>
+    
   </channel>
 </rss>
