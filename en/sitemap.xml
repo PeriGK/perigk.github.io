@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://perigk.github.io/posts/devops-and-infrastructure-for-the-solo-dev/</loc>
+    <lastmod>2019-01-26T19:18:42+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://perigk.github.io/posts/code-review-for-the-solo-dev/</loc>
     <lastmod>2018-12-31T14:39:07+02:00</lastmod>
   </url>
@@ -117,7 +122,7 @@
   
   <url>
     <loc>https://perigk.github.io/</loc>
-    <lastmod>2018-12-31T14:39:07+02:00</lastmod>
+    <lastmod>2019-01-26T19:18:42+02:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -226,6 +231,18 @@
   </url>
   
   <url>
+    <loc>https://perigk.github.io/tags/devops/</loc>
+    <lastmod>2019-01-26T19:18:42+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/devops/</loc>
+    <lastmod>2019-01-26T19:18:42+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://perigk.github.io/tags/django/</loc>
     <lastmod>2018-06-18T00:00:00+03:00</lastmod>
     <priority>0</priority>
@@ -264,6 +281,18 @@
   <url>
     <loc>https://perigk.github.io/categories/flow-state/</loc>
     <lastmod>2018-08-27T19:08:34+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/infrastructure/</loc>
+    <lastmod>2019-01-26T19:18:42+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/infrastructure/</loc>
+    <lastmod>2019-01-26T19:18:42+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -359,13 +388,13 @@
   
   <url>
     <loc>https://perigk.github.io/author/periklis-gkolias/</loc>
-    <lastmod>2018-12-31T14:39:07+02:00</lastmod>
+    <lastmod>2019-01-26T19:18:42+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://perigk.github.io/posts/</loc>
-    <lastmod>2018-12-31T14:39:07+02:00</lastmod>
+    <lastmod>2019-01-26T19:18:42+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -443,13 +472,13 @@
   
   <url>
     <loc>https://perigk.github.io/tags/solo-dev/</loc>
-    <lastmod>2018-12-31T14:39:07+02:00</lastmod>
+    <lastmod>2019-01-26T19:18:42+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://perigk.github.io/categories/solo-dev/</loc>
-    <lastmod>2018-12-31T14:39:07+02:00</lastmod>
+    <lastmod>2019-01-26T19:18:42+02:00</lastmod>
     <priority>0</priority>
   </url>
   
