@@ -23,7 +23,7 @@
         
         <title>
             
-                Bitperi(Periklis Gkolias) | Problem Solving
+                Bitperi(Periklis Gkolias) | The Devops Introduction I Wish I Had
             
         </title>
     </head>
@@ -77,11 +77,10 @@
 
         <div class="main container">
             
-    
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="/posts/stepping-up-your-javascript-debugging-skills/">
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="/posts/the-devops-introduction-i-wish-i-had/">
     <i class="fa fa-fw fa-pencil"></i>
 </a>
 
@@ -89,18 +88,16 @@
     
 
     <div class="content">
-    <h3><a href="/posts/stepping-up-your-javascript-debugging-skills/">Stepping up your javascript debugging skills</a></h3>
+    <h3><a href="/posts/the-devops-introduction-i-wish-i-had/">The Devops Introduction I Wish I Had</a></h3>
     <div class="meta">
-        <span class="date moment">2018-06-25</span>
+        <span class="date moment">2019-03-11</span>
 
         
             <span class="categories">
                 
-                    <a href="/categories/javascript">javascript</a>
+                    <a href="/categories/devops">devops</a>
                 
-                    <a href="/categories/debugging">debugging</a>
-                
-                    <a href="/categories/problem-solving">problem-solving</a>
+                    <a href="/categories/infrastructure">infrastructure</a>
                 
             </span>
         
@@ -111,13 +108,144 @@
     </div>
 
     
-        Almost all software developers, who have written even a few lines of code for the Web, had at least a quick glance at javascript in their life, which is one of the most in-demand programming languages currently.
-Some people love it, some hate it. Regardless of your view, if you use it, you will need to debug it eventually.
-Below I will share some tips that help me in those difficult moments.
+        
 
-        
-            <a href="/posts/stepping-up-your-javascript-debugging-skills/" class="more">Continue reading</a>
-        
+<p>Buzzwords are everywhere. You may have noticed that I am not a big fan of them. They are used everywhere  (sometimes in a wrong fashion) and because of that, most people afraid to ask the 101-questions as they don&rsquo;t want to sound ignorant.</p>
+
+<p>Some years ago, my back-then-manager asked me if I wanted to do some devops work as part of my software engineer job. Of course, I was young and afraid (for the above reasons) to ask so I just said &ldquo;yeah, let&rsquo;s give it a try. Worst case I will die and you will take a day off to grief&rdquo;.</p>
+
+<p>Thank God, I am still alive, torturing people with my writings. So now I want to give you a nice and round overview of the terms I encountered in my initial steps and wish I knew back then, plus some more that were not invented but it is good to know them now.</p>
+
+<p>Lets start</p>
+
+<p><img src="https://images.unsplash.com/photo-1468645547353-56d325bb57ff?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Credits to William Stitt, unsplash" />
+(Credits to William Stitt, unsplash)</p>
+
+<h2 id="devops">Devops</h2>
+
+<p>The devops discipline was created to bridge the gap between the developers and the operation guys (eg IT, system engineers, DBAs etc). The main vision is to (mostly) make the transition from the development environments to the testing/production environments flawless, quick, automated and completely transparent.</p>
+
+<p>Before that, the deployments were causing a constant pillow fight and nerf-shooting wars (sometimes even keyboard throwing) between the two “tribes” and the deployments were slow, painful and required lots of working hours. You can verify that easily if you are aware of a software company that doesn&rsquo;t employ such practices.</p>
+
+<p>The movement was influenced by the increase in popularity of Agile methodologies, as you can imagine, where fast deployments are highly encouraged and are the norm when talking about serious software companies.</p>
+
+<h2 id="iaas">IaaS</h2>
+
+<p>Infrastructure as a service.
+You are given the ability to launch a VM with an OS of your choice (well, the cloud provider has to support it, <strong>but most known Windows and Linux flavors are there</strong>), specs of your choice (RAM, persistent storage, number of CPUs etc).</p>
+
+<p>As with all stripped-down VMs, you have to set up everything yourself, with the tradeoff of <strong>being more in control</strong>.</p>
+
+<p>The most known examples are EC2 from AWS, Google compute engine from Google Cloud.</p>
+
+<h2 id="paas">PaaS</h2>
+
+<p>Platform as a Service. You can think of it as an abstraction of IaaS.</p>
+
+<p>Everything apart from your business logic and the database part is a black box to you. You might know details about the infrastructure but you have very little control over it.</p>
+
+<p>For example, you might be able to change the versions of the software you use, but this will happen:</p>
+
+<ul>
+<li>From the vendor’s UI</li>
+<li>The version modification will happen in the range the vendor supports. If the vendor doesn&rsquo;t support python 3.7, you can&rsquo;t have it and if you try and update manually, it most probably is painful and there is a strong chance you will screw everything. At least, that&rsquo;s my experience.</li>
+</ul>
+
+<p>The most known examples are ElasticBeanStalk from AWS, Google AppEngine from Google Cloud.</p>
+
+<p><strong>Note</strong>: there is a combination of the *aaS components in real-world cases. PaaS and IaaS working together, are especially common. This is called <em>hybrid cloud</em>.</p>
+
+<h2 id="saas">Saas</h2>
+
+<p>Software as a Service. In that case, you want to access a piece of software (cloud-based) and you pay according to the use you do (if there are no free plans).</p>
+
+<p>You have no control over the software, apart from what the UI and a potential API allows. The most known examples are Netflix, Dropbox and most of the Google services.</p>
+
+<p>You can see a visual comparision of IaaS, Saas and PaaS in this <a href="https://www.cloudexpectations.com/managed-services/managed-service-provider-responsibility-iaas-paas-saas/attachment/demarcation-of-managed-services-provider-responsibility/">article</a>.</p>
+
+<h2 id="provisioning">Provisioning</h2>
+
+<p>Provisioning, in the devops context, means to (automatically) bootstrap the infrastructure.</p>
+
+<p>So if someone wants to provision a test environment, then he probably has to set up a few VMs (not random VMs, a specific type of VM or a certain image that is used as a template) and then set up the software required, setup any web servers etc. Sounds boring, huh?</p>
+
+<p>It totally is, that&rsquo;s why people are using provisioning tools that do the job for them automatically (so that they can browse Reddit and 9gag with no guilt while waiting).</p>
+
+<p>Two of the most beknown tools for provisioning are <a href="https://www.ansible.com/use-cases/provisioning">Ansible</a> and <a href="https://www.terraform.io/">Terraform</a>.
+I won&rsquo;t go into details for now, as this will require a 5-times longer article, but I will show an example in Terraform to show you how straightforward it is.</p>
+
+<p><a href="https://learn.hashicorp.com/terraform/getting-started/provision">copied from here</a></p>
+
+<pre><code>resource &quot;aws_instance&quot; &quot;example&quot; {
+  ami           = &quot;ami-b374d5a5&quot;
+  instance_type = &quot;t2.micro&quot;
+
+  provisioner &quot;local-exec&quot; {
+    command = &quot;echo ${aws_instance.example.public_ip} &gt; ip_address.txt&quot;
+  }
+}
+</code></pre>
+
+<p>A short explanation might be required for the example above;
+<em>ami</em> stands from Amazon Image and is pretty much a VM template.</p>
+
+<p>t2.micro refers to the computational features of a machine (CPU, RAM etc). If you haven&rsquo;t seen this before and you are curious, you can check out this <a href="https://www.ec2instances.info/">page</a>.</p>
+
+<p>Pretty much it setups a t2.micro instance with the predefined ami and when up runs the echo command, in the local-exec section.</p>
+
+<p>Ansible plays at a lower level, where you define a setup of commands, called playbook, with more detailed commands. There are great articles around, like <a href="https://deliciousbrains.com/automating-server-setup-ansible/">this</a> one, I would suggest you read it.</p>
+
+<h2 id="dockerization">Dockerization</h2>
+
+<p>Dockerazition means that you need to make some certain steps to make your application work with docker.</p>
+
+<p>Docker, in a nutshell, is a means of lightweight virtualization (a bit simplified, you could read more <a href="https://opensource.com/resources/what-docker">here</a>).</p>
+
+<p>You can define a docker image, by using the so-called DockerFile, which is pretty much a set of commands that build a Docker image step by step.</p>
+
+<p><a href="https://github.com/ianmiell/simple-dockerfile/blob/master/Dockerfile">Here</a> is one of the simplest docker files you could find, along with explanations. More images to start from can be found in <a href="https://hub.docker.com/search?q=&amp;type=image">docker hub</a>.</p>
+
+<h3 id="why-is-all-this-fuss-about-docker-though-what-does-docker-offer">Why is all this fuss about docker though? What does docker offer?</h3>
+
+<p>There are lots of benefits in using docker but for me the most important use cases are:</p>
+
+<ul>
+<li><p>Portable environments. I can use the exact same environment for development, for production, for staging environments, for reproducing a production issue, for making a demo to the client&hellip;and the list goes on. No more “works on my machine” excuses.</p></li>
+
+<li><p>Setup the environment in a couple of commands. This fits greatly with provisioning as can be seen <a href="https://www.vagrantup.com/docs/provisioning/docker.html">in this article</a>.</p></li>
+</ul>
+
+<h2 id="serverless">Serverless</h2>
+
+<p>Contrary to what the name implies, we still have servers where the backend logic runs on. What is really happening is:</p>
+
+<p>When you want to execute a certain piece of code (called a function, thus this computation model sometimes is also called function as a service - FaaS) the cloud provider allocates the necessary resources (in a dynamic way) to execute it.</p>
+
+<p>After the end of the execution, it releases those resources.</p>
+
+<p>The functions run in various occasional triggers or run periodically in a cron-like way.</p>
+
+<p>Ideally, the functions should be pure, which means they only rely on their arguments to compute a result and not on any external state (eg database), though there is no problem using an external database server or so.</p>
+
+<p>The main advantages are that you only care about your business logic and that you can scale your functions in a glimpse of an eye.</p>
+
+<p>If you want more insights on that, it might be specific to AWS but this <a href="https://blog.bitsrc.io/serverless-backend-using-aws-lambda-hands-on-guide-31806ceb735e?gi=eee07cd9bd20">article</a> is a great read.</p>
+
+<p>A pretty good video for a quick intro would be <a href="https://www.youtube.com/watch?v=drJwMlD9Mjo">this</a> one from Traversy Media.</p>
+
+<h2 id="ci-cd">CI/CD</h2>
+
+<p>Continuous integration and continuous delivery. The story is:
+Various devs work against an upcoming release or a set of parallel in-progress features. When the code is committed (usually to the main branch, though this is configurable), a set of operations run automatically and the goal is to have all the operations succeed.</p>
+
+<p>Such operations would be to make sure the code compiles, to run the unit tests successfully, to ensure the test coverage is above an acceptable threshold, the docker image of the product was generated without errors, the image was deployed to a cloud environment successfully etc.</p>
+
+<p>I think you can understand how important is to have continuous feedback and perform all the necessary steps without having to think about them, and worse, having to rely on your willpower to do it. Do you know many devs that like testing? I don&rsquo;t :D</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Thank you for reading this article. If you are now entering devops, it is a fascinating field. I hope this article made the ultra-basic terminology a little bit clearer. As always, feel free to comment on any feedback you may have.</p>
+
     
 </div>
 
@@ -130,11 +258,9 @@ Below I will share some tips that help me in those difficult moments.
             <i class="fa fa-tags"></i>
             <div class="links">
                 
-                    <a href="/tags/javascript">javascript</a>
+                    <a href="/tags/devops">devops</a>
                 
-                    <a href="/tags/debugging">debugging</a>
-                
-                    <a href="/tags/problem-solving">problem-solving</a>
+                    <a href="/tags/infrastructure">infrastructure</a>
                 
             </div>
         </div>
@@ -145,18 +271,31 @@ Below I will share some tips that help me in those difficult moments.
 
 </article>
 
-            
-        </div>
-    
-
-    
-    <div class="paginator">
-        
-
         
     </div>
 
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bilberry-hugo-theme" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
+     
 
         </div>
 
