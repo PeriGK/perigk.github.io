@@ -29,11 +29,29 @@
     </item>
     
     <item>
+      <title>Books</title>
+      <link>https://perigk.github.io/categories/books/</link>
+      <pubDate>Tue, 26 Mar 2019 21:55:08 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/categories/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Career</title>
       <link>https://perigk.github.io/categories/career/</link>
       <pubDate>Tue, 30 Oct 2018 23:03:29 +0200</pubDate>
       
       <guid>https://perigk.github.io/categories/career/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code Complete</title>
+      <link>https://perigk.github.io/categories/code-complete/</link>
+      <pubDate>Tue, 26 Mar 2019 21:55:08 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/categories/code-complete/</guid>
       <description></description>
     </item>
     
@@ -61,6 +79,15 @@
       <pubDate>Wed, 28 Mar 2018 00:00:00 +0300</pubDate>
       
       <guid>https://perigk.github.io/categories/code_reading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cover to Cover</title>
+      <link>https://perigk.github.io/categories/cover-to-cover/</link>
+      <pubDate>Tue, 26 Mar 2019 21:55:08 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/categories/cover-to-cover/</guid>
       <description></description>
     </item>
     
@@ -193,7 +220,7 @@
     <item>
       <title>Programming</title>
       <link>https://perigk.github.io/categories/programming/</link>
-      <pubDate>Mon, 31 Dec 2018 14:39:07 +0200</pubDate>
+      <pubDate>Tue, 26 Mar 2019 21:55:08 +0200</pubDate>
       
       <guid>https://perigk.github.io/categories/programming/</guid>
       <description></description>
