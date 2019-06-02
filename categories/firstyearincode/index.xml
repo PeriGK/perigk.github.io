@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Firstyearincode on Bitperi(Periklis Gkolias)</title>
+    <link>https://perigk.github.io/categories/firstyearincode/</link>
+    <description>Recent content in Firstyearincode on Bitperi(Periklis Gkolias)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 02 Jun 2019 00:07:15 +0300</lastBuildDate>
+    
+	<atom:link href="https://perigk.github.io/categories/firstyearincode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Conda Uninstall</title>
+      <link>https://perigk.github.io/post/conda-uninstall/</link>
+      <pubDate>Sun, 02 Jun 2019 00:07:15 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/post/conda-uninstall/</guid>
+      <description>It&amp;rsquo;s been a while since my last article, truth be told it was an over-demanding set of months for me and not only in my professional life. One of the best things though, I have done during this past period was to submit a chapter to First year in code (Thanks Isaac for the opportunity :) )
+Today, I am gonna showcase a python script I made, to help you uninstall all the anaconda packages that match a certain filter.</description>
+    </item>
+    
+  </channel>
+</rss>

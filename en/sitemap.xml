@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://perigk.github.io/post/conda-uninstall/</loc>
+    <lastmod>2019-06-02T00:07:15+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://perigk.github.io/posts/code-complete-cover-to-cover/</loc>
     <lastmod>2019-03-26T21:55:08+02:00</lastmod>
   </url>
@@ -137,7 +142,7 @@
   
   <url>
     <loc>https://perigk.github.io/</loc>
-    <lastmod>2019-03-26T21:55:08+02:00</lastmod>
+    <lastmod>2019-06-02T00:07:15+03:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -306,6 +311,18 @@
   </url>
   
   <url>
+    <loc>https://perigk.github.io/tags/firstyearincode/</loc>
+    <lastmod>2019-06-02T00:07:15+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/firstyearincode/</loc>
+    <lastmod>2019-06-02T00:07:15+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://perigk.github.io/tags/flow/</loc>
     <lastmod>2018-10-30T23:03:29+02:00</lastmod>
     <priority>0</priority>
@@ -378,6 +395,18 @@
   </url>
   
   <url>
+    <loc>https://perigk.github.io/tags/little-hacks/</loc>
+    <lastmod>2019-06-02T00:07:15+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/little-hacks/</loc>
+    <lastmod>2019-06-02T00:07:15+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://perigk.github.io/tags/music/</loc>
     <lastmod>2018-08-27T19:08:34+03:00</lastmod>
     <priority>0</priority>
@@ -433,7 +462,13 @@
   
   <url>
     <loc>https://perigk.github.io/author/periklis-gkolias/</loc>
-    <lastmod>2019-03-26T21:55:08+02:00</lastmod>
+    <lastmod>2019-06-02T00:07:15+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/post/</loc>
+    <lastmod>2019-06-02T00:07:15+03:00</lastmod>
     <priority>0</priority>
   </url>
   
