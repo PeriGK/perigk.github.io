@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Django on Bitperi (Periklis Gkolias)</title>
+    <title>Django on Bitperi(Periklis Gkolias)</title>
     <link>https://perigk.github.io/categories/django/</link>
-    <description>Recent content in Django on Bitperi (Periklis Gkolias)</description>
+    <description>Recent content in Django on Bitperi(Periklis Gkolias)</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 18 Jun 2018 00:00:00 +0300</lastBuildDate>
     

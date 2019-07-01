@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Bitperi (Periklis Gkolias)</title>
+    <title>Categories on Bitperi(Periklis Gkolias)</title>
     <link>https://perigk.github.io/categories/</link>
-    <description>Recent content in Categories on Bitperi (Periklis Gkolias)</description>
+    <description>Recent content in Categories on Bitperi(Periklis Gkolias)</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 20 Dec 2018 23:03:29 +0200</lastBuildDate>
     
@@ -101,6 +101,15 @@
     </item>
     
     <item>
+      <title>Deep Learning</title>
+      <link>https://perigk.github.io/categories/deep-learning/</link>
+      <pubDate>Mon, 01 Jul 2019 14:28:24 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/categories/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Devops</title>
       <link>https://perigk.github.io/categories/devops/</link>
       <pubDate>Mon, 11 Mar 2019 16:41:43 +0200</pubDate>
@@ -182,11 +191,29 @@
     </item>
     
     <item>
+      <title>Lstm</title>
+      <link>https://perigk.github.io/categories/lstm/</link>
+      <pubDate>Mon, 01 Jul 2019 14:28:24 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/categories/lstm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Music</title>
       <link>https://perigk.github.io/categories/music/</link>
       <pubDate>Mon, 27 Aug 2018 19:08:34 +0300</pubDate>
       
       <guid>https://perigk.github.io/categories/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neural Networks</title>
+      <link>https://perigk.github.io/categories/neural-networks/</link>
+      <pubDate>Mon, 01 Jul 2019 14:28:24 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/categories/neural-networks/</guid>
       <description></description>
     </item>
     
@@ -241,6 +268,15 @@
       <pubDate>Tue, 26 Mar 2019 21:55:08 +0200</pubDate>
       
       <guid>https://perigk.github.io/categories/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming Fun</title>
+      <link>https://perigk.github.io/categories/programming-fun/</link>
+      <pubDate>Mon, 01 Jul 2019 14:28:24 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/categories/programming-fun/</guid>
       <description></description>
     </item>
     

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Bitperi (Periklis Gkolias)</title>
+    <title>Tags on Bitperi(Periklis Gkolias)</title>
     <link>https://perigk.github.io/tags/</link>
-    <description>Recent content in Tags on Bitperi (Periklis Gkolias)</description>
+    <description>Recent content in Tags on Bitperi(Periklis Gkolias)</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 20 Dec 2018 23:03:29 +0200</lastBuildDate>
     
@@ -106,6 +106,15 @@
       <pubDate>Mon, 25 Jun 2018 00:00:00 +0300</pubDate>
       
       <guid>https://perigk.github.io/tags/debugging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>https://perigk.github.io/tags/deep-learning/</link>
+      <pubDate>Mon, 01 Jul 2019 14:28:24 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/deep-learning/</guid>
       <description></description>
     </item>
     
@@ -218,11 +227,29 @@
     </item>
     
     <item>
+      <title>Lstm</title>
+      <link>https://perigk.github.io/tags/lstm/</link>
+      <pubDate>Mon, 01 Jul 2019 14:28:24 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/lstm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Music</title>
       <link>https://perigk.github.io/tags/music/</link>
       <pubDate>Mon, 27 Aug 2018 19:08:34 +0300</pubDate>
       
       <guid>https://perigk.github.io/tags/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neural Networks</title>
+      <link>https://perigk.github.io/tags/neural-networks/</link>
+      <pubDate>Mon, 01 Jul 2019 14:28:24 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/neural-networks/</guid>
       <description></description>
     </item>
     
@@ -295,6 +322,15 @@
       <pubDate>Tue, 26 Mar 2019 21:55:08 +0200</pubDate>
       
       <guid>https://perigk.github.io/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming Fun</title>
+      <link>https://perigk.github.io/tags/programming-fun/</link>
+      <pubDate>Mon, 01 Jul 2019 14:28:24 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/tags/programming-fun/</guid>
       <description></description>
     </item>
     

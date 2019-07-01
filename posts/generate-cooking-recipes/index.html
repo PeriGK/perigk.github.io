@@ -1,0 +1,726 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Periklis Gkolias">
+        <meta name="description" content="Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+        <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+        <meta name="generator" content="Hugo 0.44" />
+
+        <link rel="icon" type="image/png" href="https://perigk.github.io/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="https://perigk.github.io/favicon-16x16.png" sizes="16x16">
+
+        <link rel="stylesheet" href="https://perigk.github.io/dist/theme.css">
+
+        
+
+        
+            
+        
+
+        
+        <title>
+            
+                Bitperi(Periklis Gkolias) | Generate cooking recipes that guarantee food poisoning, with LSTM based libraries
+            
+        </title>
+    </head>
+    <body class="bilberry-hugo-theme">
+        
+<nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+            <div id="search-box" class="search">
+                <i class="fa fa-search"></i>
+                <input id="search" type="text" placeholder="Search ...">
+            </div>
+        
+    </div>
+</nav>
+
+
+        <header>
+    <div class="container">
+        <div class="logo">
+            <a href="/" class="logo">
+                
+                    <img src="/avatars/myAvatar.svg" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a href="/">Bitperi(Periklis Gkolias)</a></h3>
+            
+                <span class="subtitle">Productivity tips and coding for thriving people</span>
+            
+        </div>
+
+    
+
+        
+        <div class="toggler">
+        
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </div>
+</header>
+
+
+        <div class="main container">
+            
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="/posts/generate-cooking-recipes/">
+    <i class="fa fa-fw fa-pencil"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h3><a href="/posts/generate-cooking-recipes/">Generate cooking recipes that guarantee food poisoning, with LSTM based libraries</a></h3>
+    <div class="meta">
+        <span class="date moment">2019-07-01</span>
+
+        
+            <span class="categories">
+                
+                    <a href="/categories/deep-learning">deep-learning</a>
+                
+                    <a href="/categories/lstm">LSTM</a>
+                
+                    <a href="/categories/neural-networks">neural-networks</a>
+                
+                    <a href="/categories/programming-fun">programming-fun</a>
+                
+            </span>
+        
+
+        
+            <span class="author"><a href="/author/periklis-gkolias">Periklis Gkolias</a></span>
+        
+    </div>
+
+    
+        
+
+<p>Unless you are living in an Amazonian forest with no access to the Internet, there is literally
+no chance that you have not heard about the Deep Learning boom, of the last few years.</p>
+
+<p>Training neural networks, that can make decisions, distinguish fake images or generate fake videos, in a
+relatively short time is becoming the norm.</p>
+
+<p>It doesn&rsquo;t all have to be scary though. Sometimes you can just have fun with all that power.</p>
+
+<p>As part of today&rsquo;s article, we will attempt to generate cooking recipes. But on the contrary to other articles,
+you don&rsquo;t need to read 3 textbooks of deep learning, only the section below. In the next part, we will do the same work using pure deep learning code by setting up an LSTM.</p>
+
+<h2 id="lstm-and-predicting-next-values">LSTM and predicting &ldquo;next values&rdquo;</h2>
+
+<p>LSTM is a type of software (specifically, neural network) which can learn the pattern a sequence of data (you might hear that as time-series data) follows and thus predict the next &ldquo;values&rdquo; of the sequence.</p>
+
+<p>Have you ever used Gmail? You might have seen the smart compose in action and if you haven&rsquo;t here is a
+a great visual explanation of it.</p>
+
+<p><img src="/../../public/img/2019/06/google-gmail-smart-compose-2.jpg" alt="androidauthority.com" />
+(Credits to androidauthority.com)</p>
+
+<p>Gmail is <strong>probably</strong> using an LSTM here, which is trained on various sequences. So it can safely
+predict that if the token &ldquo;tomorrow?&rdquo; is close enough to the token &ldquo;when is&rdquo; then the most probable set of
+&ldquo;next tokens&rdquo; is &ldquo;a good time for you?&rdquo;</p>
+
+<h2 id="building-our-psychic">Building our psychic</h2>
+
+<p>In this article, we are going to follow a coder&rsquo;s approach, as I mentioned before. That means you don&rsquo;t need any special knowledge of LSTM or deep learning to do the job</p>
+
+<p>We are going to use a great library called</p>
+
+<pre><code>textgenrnn
+```. The steps to follow are:
+
+- Setup the dev environment
+- Prepare the data in a friendly format
+- Call the library with your data
+- Predict
+
+## Setup the environment
+
+First, we create a new virtualenv in a new folder
+</code></pre>
+
+<p>virtualenv -p python3 myenv
+And we source it
+source myenv/bin/activate</p>
+
+<h1 id="we-install-the-library-as-instructed-from-the-readme-of-the-module-https-github-com-minimaxir-textgenrnn">We install the library, as instructed from the README of the <a href="https://github.com/minimaxir/textgenrnn">module</a></h1>
+
+<pre><code>pip install tensorflow
+</code></pre>
+
+<pre><code>pip install textgenrnn
+</code></pre>
+
+<p>Verify all went good by doing</p>
+
+<pre><code>import textgenrnn
+Using TensorFlow backend.
+</code></pre>
+
+<p>Prepare the data in a friendly format</p>
+
+<p>By glancing a bit in the <a href="https://github.com/minimaxir/textgenrnn/tree/master/datasets">datasets</a> folder it
+looks like we want each sample on top. But according to the documentation it can be trained on any file so let&rsquo;s create a recipes txt and try to train. Or maybe find something ready.</p>
+
+<p>By Googling around, I have <a href="http://www.shieldsgenealogy.com/recipe-nyc-dl.html">this</a> wonderful page and downloaded the chili dataset. Let&rsquo;s try to feed it as is and see how it goes. Here is an excerpt of the chili file</p>
+
+<pre><code>@@@@@ Now You're Cooking! Export Format
+</code></pre>
+
+<pre><code>1981 WORLD CHAMP BUTTERFIELD STAGELINE CHILI
+
+meats, chili
+
+4 medium onions, minced
+10-pound lean beef brisket, finely ch
+1/4 cup oil
+1 1/2 cloves garlic; minced
+</code></pre>
+
+<p>Lets train the model:
+- Import the library</p>
+
+<pre><code>from textgenrnn import textgenrnn
+</code></pre>
+
+<ul>
+<li>Initialize the model
+<code>
+textgen = textgenrnn()
+</code></li>
+<li>Start training by giving input
+<code>
+textgen.train_from_file('chili.txt', num_epochs=20)
+</code></li>
+</ul>
+
+<h2 id="the-first-results">The first results</h2>
+
+<p>The results that are returned, are quite a descent. But something is wrong. For example:
+If I run</p>
+
+<pre><code>textgen.generate()
+</code></pre>
+
+<p>I get</p>
+
+<pre><code>simmer for an hour. Originally slightly to cut into ground beef in brown.  Add to the chili powder. Simmer for 1
+</code></pre>
+
+<p>This is incredible, especially if you think that the neural network we trained, knows nothing
+about language rules or speech patterns. It just understands character sequences. For more details, you
+can read <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">this</a> wonderful article from Andrej Karpathy</p>
+
+<p>So, we need to change somehow the input format. If we open it, we see a lot of useless, for our training, stuff. For example,</p>
+
+<pre><code>Exported from Now You're Cooking! v5.93
+</code></pre>
+
+<p>By checking the <a href="https://github.com/minimaxir/textgenrnn/blob/master/datasets/reddit_apple_android_2000.txt">examples</a> of the library looks like it is expecting one training sequence per line.</p>
+
+<p>We have the option to clean the chili.txt file either by hand or with python. Or get a more suitable dataset</p>
+
+<h2 id="finding-data-for-our-training">Finding data for our training</h2>
+
+<p>Kaggle is the one-stop-shop for such purposes. By digging, a bit I found <a href="https://www.kaggle.com/gjbroughton/christmas-recipes">this</a> dataset which looks structured and clean</p>
+
+<p>Let&rsquo;s transform the data into a format which is suitable to our needs (one recipe per line).</p>
+
+<p>Here is how I did that and trained the network. Please note, that the network in
+order to be trained in a timely manner needs to leverage a GPU; because GPUs are very good at matrix multiplications, which is the foundation of neural network training.</p>
+
+<p>So I have run this code in Google collab, though if you have a computer with an NVIDIA GPU you can do it <a href="https://www.tensorflow.org/install/gpu">locally</a> too.</p>
+
+<pre><code>import json
+from textgenrnn import textgenrnn
+
+recipes_file = open('./recipes.json')
+
+lines = recipes_file.readlines()
+
+lines = [dict(json.loads(line)) for line in lines]
+
+recipes = []
+for line in lines:
+  features = []
+  
+  description = line['Description']
+  ingredients = line['Ingredients']
+  method = line['Method']
+  
+  for key in [description, ingredients, method]:
+    if key != None and len(key) &gt; 0:
+      features.append(method)
+  recipes.append(features)
+
+recipes_text = [ '.'.join(recipe_list[0]) for recipe_list in recipes]
+
+write_to = open('recipes_text.txt', 'w')
+write_to.write('\n'.join(recipes_text))
+
+textgen = textgenrnn()
+textgen.train_from_file('recipes_text.txt', num_epochs=20)
+
+
+for i in range(5):
+    textgen.generate()
+</code></pre>
+
+<h2 id="the-results">The results</h2>
+
+<p>Having trained RNNs/LSTMs before, I am impressed from both the quality of results the library returns, the speed it has (it took me about 2 minutes per epoch with the current dataset) and of course the ease of use.</p>
+
+<p>Here is a result:</p>
+
+<pre><code>Put the sponge and sugar in a saucepan with the mustard and bake for 15 mins. 
+Meanwhile, make the frosted custard and stir to the sugar. 
+Stir the chopped chili flakes and stir in the flour, peel and some seasoning. Cook for a further 3 mins until the sugar has dissolved. Add the dressing and top 
+
+</code></pre>
+
+<p>As I mentioned above, this is an incredible result, because the network doesn&rsquo;t understand the meaning of words or even words. It just learns the character-sequence pattern of the dataset!!</p>
+
+<p>And even though it is a readable paragraph, you can still get food poisoning. At least that&rsquo;s what I would get if I ate sponge with sugar. :)</p>
+
+<h2 id="read-more-if-you-are-interested">Read more if you are interested</h2>
+
+<p>Thank you for reading this article and I hope you enjoyed it. RNNs and LSTMs are complex technologies and it is worth investigating them a bit more, even if you are just happy with consuming such libraries (which is great, you don&rsquo;t have to be an AI expert just to add some intelligence to your app).</p>
+
+<p>Some resources worth checking out are:</p>
+
+<ul>
+<li><a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">The Unreasonable Effectiveness of Recurrent Neural Networks</a></li>
+<li><a href="https://towardsdatascience.com/understanding-lstm-and-its-quick-implementation-in-keras-for-sentiment-analysis-af410fd85b47">Understanding LSTM</a></li>
+<li><a href="https://www.youtube.com/watch?v=WCUNPb-5EYI">RNNs and LSTMs from Brandon Rohrer</a></li>
+<li><a href="https://www.youtube.com/watch?v=6niqTuYFZLQ">Related Stanford course</a></li>
+</ul>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    <a href="/tags/deep-learning">deep-learning</a>
+                
+                    <a href="/tags/lstm">LSTM</a>
+                
+                    <a href="/tags/neural-networks">neural-networks</a>
+                
+                    <a href="/tags/programming-fun">programming-fun</a>
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bilberry-hugo-theme" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+     
+
+        </div>
+
+        <footer>
+    <div class="container">
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+                <ul>
+                
+                    <li>
+                        <a href="/posts/generate-cooking-recipes/">Generate cooking recipes that guarantee food poisoning, with LSTM based libraries</a>
+                    </li>
+                
+                    <li>
+                        <a href="/post/conda-uninstall/">A quick way to automate your conda uninstalls</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/code-complete-cover-to-cover/">I just finished Code complete cover to cover. Here are the most unexpected things I learned</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/the-devops-introduction-i-wish-i-had/">The Devops Introduction I Wish I Had</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/dear-technical-recruiter/">Dear Technical Recruiter...</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/devops-and-infrastructure-for-the-solo-dev/">Devops and Infrastructure for the Solo Dev</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/code-review-for-the-solo-dev/">Code Review for the Solo Dev</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/asyncio-the-invincible/">Asyncio, the invincible</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/self-testing-for-solo-devs/">Self Testing for Solo Devs</a>
+                    </li>
+                
+                    <li>
+                        <a href="/posts/how-to-survive-noisy-office/">How to Survive a Noisy Office Environment</a>
+                    </li>
+                
+                </ul>
+        </div>
+
+        <div class="categories">
+            <strong>Categories</strong>
+
+            
+                <ul>
+                
+                    <li>
+                        <a href="/categories/asyncio">Asyncio (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/book-review">Book review (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/books">Books (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/career">Career (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/code-complete">Code complete (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/code-quality">Code quality (2)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/code-review">Code review (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/code_reading">Code reading (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/cover-to-cover">Cover to cover (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/debugging">Debugging (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/deep-learning">Deep learning (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/devops">Devops (2)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/django">Django (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/firstyearincode">Firstyearincode (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/flow">Flow (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/flow-state">Flow state (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/infrastructure">Infrastructure (2)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/javascript">Javascript (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/legacy_code">Legacy code (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/little-hacks">Little hacks (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/lstm">Lstm (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/music">Music (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/neural-networks">Neural networks (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/new_codebase">New codebase (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/open_source">Open source (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/oss_contributions">Oss contributions (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/problem-solving">Problem solving (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/productivity">Productivity (2)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/programming">Programming (6)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/programming-fun">Programming fun (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/python">Python (2)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/python3">Python3 (2)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/recruitment">Recruitment (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/software-engineers">Software engineers (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/solo-dev">Solo dev (3)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/spotify">Spotify (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/testing">Testing (1)</a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/unit-testing">Unit testing (1)</a>
+                    </li>
+                
+                </ul>
+            
+        </div>
+
+        <div class="right">
+            
+            <div class="social-media">
+                <strong>Social media</strong>
+
+                
+                
+                    <a href="https://twitter.com/PeriTravel" target="_blank"><i class="fa fa-twitter"></i></a>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    <a href="https://github.com/PeriGK" target="_blank"><i class="fa fa-github"></i></a>
+                
+                
+                    <a href="www.linkedin.com/in/periklis-gkolias-23914a5b" target="_blank"><i class="fa fa-linkedin"></i></a>
+                
+            </div>
+            
+
+            <div class="languages">
+                    <strong>Other languages</strong>
+                    
+                        
+                            <a href="/en" class="active">en</a>
+                        
+                    
+                        
+                            <a href="/de">de</a>
+                        
+                    
+                </div>
+            
+        </div>
+    </div>
+</footer>
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/Lednerb" target="_blank">
+                &copy;
+                
+                    2017
+                
+                by Lednerb
+            </a>
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme" target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+        
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-33576432-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+        
+
+        <script src="https://perigk.github.io/dist/theme.js" type="application/javascript"></script>
+
+        
+            
+        
+
+        <script>
+            $(document).ready(function() {
+                $(".moment").each(function() {
+                    $(this).text(
+                        moment( $(this).text() )
+                            .locale( "en" )
+                            .format('LL')
+                    );
+                });
+
+                $(".footnote-return sup").html("[return]")
+            })
+        </script>
+
+        
+            <script>
+    var client = algoliasearch("Y2C4RWMPXW", "50ea7f8c41c0ad233926e0be2b769ed1");
+    var index = client.initIndex("default-content");
+
+    $('#search').autocomplete({ hint: false, autoselect: true, debug: false },
+      [
+        {
+          
+            source: $.fn.autocomplete.sources.hits(index, { hitsPerPage: 5, filters: 'language: en' }),
+          
+          displayKey: function(suggestion) {
+            return suggestion.title || suggestion.author
+          },
+          templates: {
+            suggestion: function(suggestion) {
+                return "<span class='entry " + suggestion.type + "'>"
+                      + "<span class='title'>" + suggestion.title + "</span>"
+                      + "<span class='fa fa-fw " + suggestion.iconClass + "'></span>"
+                  + "</span>"
+                ;
+            },
+            empty: function() {
+              return "<span class='empty'>Nothing found.</span>"
+            },
+            footer: function() {
+              return '<div class="branding">Powered by <img src="https:\/\/perigk.github.io\/dist\/algolia-logo-light.svg" /></div>'
+            }
+
+          },
+        }
+      ])
+      .on('autocomplete:selected', function(event, suggestion, dataset) {
+        window.location = (suggestion.url);
+      })
+      .keypress(function (event, suggestion) {
+        if (event.which == 13) {
+          window.location = (suggestion.url);
+        }
+      });
+</script>
+
+        
+
+
+    </body>
+</html>
