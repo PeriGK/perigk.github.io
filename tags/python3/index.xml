@@ -5,10 +5,21 @@
     <link>https://perigk.github.io/tags/python3/</link>
     <description>Recent content in Python3 on Bitperi(Periklis Gkolias)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 06 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jul 2019 14:28:24 +0300</lastBuildDate>
     
 	<atom:link href="https://perigk.github.io/tags/python3/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Generate cooking recipes that guarantee food poisoning, with LSTM based libraries</title>
+      <link>https://perigk.github.io/posts/generate-cooking-recipes/</link>
+      <pubDate>Mon, 01 Jul 2019 14:28:24 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/posts/generate-cooking-recipes/</guid>
+      <description>Unless you are living in the Amazonian forest with no access to the Internet, there is literally no chance that you have not heard about the Deep Learning boom, of the last few years.
+Training neural networks, that can make decisions, distinguish fake images or generate fake videos, in a relatively short time is becoming the norm.
+It doesn&amp;rsquo;t all have to be scary though. Sometimes you can just have fun with all that power.</description>
+    </item>
     
     <item>
       <title>The Incredible Hulk(ython): Making Python Strong(ly Typed)</title>
