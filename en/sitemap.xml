@@ -394,6 +394,11 @@
   </url>
   
   <url>
+    <loc>https://perigk.github.io/categories/learning/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://perigk.github.io/tags/legacy_code/</loc>
     <lastmod>2018-03-28T00:00:00+03:00</lastmod>
     <priority>0</priority>
@@ -472,6 +477,10 @@
   </url>
   
   <url>
+    <loc>https://perigk.github.io/posts/podcasts-why-do-you-have-to-suck/</loc>
+  </url>
+  
+  <url>
     <loc>https://perigk.github.io/tags/open_source/</loc>
     <lastmod>2018-03-28T00:00:00+03:00</lastmod>
     <priority>0</priority>
@@ -504,6 +513,16 @@
   <url>
     <loc>https://perigk.github.io/author/periklis-gkolias/</loc>
     <lastmod>2019-07-01T14:28:24+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/podcasts/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/podcasts/</loc>
     <priority>0</priority>
   </url>
   
