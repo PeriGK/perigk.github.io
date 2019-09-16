@@ -5,10 +5,22 @@
     <link>https://perigk.github.io/posts/</link>
     <description>Recent content in Posts on Bitperi(Periklis Gkolias)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 01 Jul 2019 14:28:24 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 13 Sep 2019 23:08:45 +0300</lastBuildDate>
     
 	<atom:link href="https://perigk.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Oh Podcasts, Why Do You Have to Suck</title>
+      <link>https://perigk.github.io/posts/podcasts-why-do-you-have-to-suck/</link>
+      <pubDate>Fri, 13 Sep 2019 23:08:45 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/posts/podcasts-why-do-you-have-to-suck/</guid>
+      <description>I find podcasts extremely overrated. Yeap, I know this is an extremely selfish and biased opinion, especially given the popularity of this &amp;ldquo;means of entertainment&amp;rdquo;.
+But on the other hand, most things that suck have traction. I can&amp;rsquo;t recall something that was super ugly and didn&amp;rsquo;t have fanatic and passionate friends.
+I will try to explain my view.
+Bad equipment Too many podcasts have bad equipment. I find it extremely disrespectful and annoying to hear only half of what is discussed, due to low quality microphones.</description>
+    </item>
     
     <item>
       <title>Generate cooking recipes that guarantee food poisoning, with LSTM based libraries</title>
@@ -236,18 +248,6 @@ Familiarizing with a new code base is a keystone skill, every software engineer 
       <guid>https://perigk.github.io/posts/a-comprehensive-guide-to-unit-testing/</guid>
       <description>A comprehensive introduction to unit-testing and mocking with Python3 Unit testing is quickly becoming a must for all job adverts. There are a few people who don’t like Test Driven Development(TDD), but at least they agree on the value, automation testing(not only unit tests) add to the overall code quality and to the debugging process.
 By the time of writing, according to dice.com, TDD is enjoying increased popularity year after year.</description>
-    </item>
-    
-    <item>
-      <title>Oh Podcasts, Why Do You Have to Suck</title>
-      <link>https://perigk.github.io/posts/podcasts-why-do-you-have-to-suck/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://perigk.github.io/posts/podcasts-why-do-you-have-to-suck/</guid>
-      <description>I find podcasts extremely overrated. Yeap, I know this is an extremely selfish and biased opinion, especially given the popularity of this &amp;ldquo;means of entertainment&amp;rdquo;.
-But on the other hand, most things that suck have traction. I can&amp;rsquo;t recall something that was super ugly and didn&amp;rsquo;t have fanatic and passionate friends.
-I will try to explain my view.
-Bad equipment Too many podcasts have bad equipment. I find it extremely disrespectful and annoying to hear only half of what is discussed, due to low quality microphones.</description>
     </item>
     
   </channel>
