@@ -16,8 +16,8 @@
       <pubDate>Sun, 24 Nov 2019 22:04:50 +0200</pubDate>
       
       <guid>https://perigk.github.io/posts/a-primer-on-partial-functions/</guid>
-      <description>Partial functions, is one of the most &amp;ldquo;terryfying concepts&amp;rdquo; I hear people talking about. Personally, I think the idea is fairly easy to grasp. That is, I will try to explain in a few paragraphs with python and help you escape the math labyrinth of &amp;ldquo;official documentation&amp;rdquo;.
-What is a partial function Partial functions is a computer science concept where we can derive a function with x parameters to a function with fewer parameters and constant values set for the more limited function.</description>
+      <description>Partial functions are one of the most &amp;ldquo;terrifying concepts&amp;rdquo; I hear people talking about. Personally, I think the idea is fairly easy to grasp. That is, I will try to explain in a few paragraphs with python and help you escape the math labyrinth of &amp;ldquo;official documentation&amp;rdquo;.
+What is a partial function Partial functions are a computer science concept where we can derive a function with x parameters to a function with fewer parameters and constant values set for the more limited function.</description>
     </item>
     
   </channel>

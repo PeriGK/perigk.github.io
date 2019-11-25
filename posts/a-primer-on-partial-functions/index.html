@@ -112,15 +112,15 @@
     
         
 
-<p>Partial functions, is one of the most &ldquo;terryfying concepts&rdquo; I hear people talking about. Personally, I think the idea is fairly easy to grasp. That is, I will try to explain in a few paragraphs with python and help you escape the math labyrinth of &ldquo;official documentation&rdquo;.</p>
+<p>Partial functions are one of the most &ldquo;terrifying concepts&rdquo; I hear people talking about. Personally, I think the idea is fairly easy to grasp. That is, I will try to explain in a few paragraphs with python and help you escape the math labyrinth of &ldquo;official documentation&rdquo;.</p>
 
 <h2 id="what-is-a-partial-function">What is a partial function</h2>
 
-<p>Partial functions is a computer science concept where we can derive a function with x parameters to a function with fewer parameters and constant values set for the more limited function.</p>
+<p>Partial functions are a computer science concept where we can derive a function with x parameters to a function with fewer parameters and constant values set for the more limited function.</p>
 
-<p>They became more mainstream, as functional programming arised and the main pillars of it (map, filter, reduce etc), require functions as an argument.</p>
+<p>They became more mainstream, as functional programming arose and the main pillars of it (map, filter, reduce, etc), require functions as an argument.</p>
 
-<p>Lets break this down</p>
+<p>Let&rsquo;s break this down</p>
 
 <h2 id="an-example">An example</h2>
 
@@ -135,22 +135,22 @@
 
 <p>So, we have function <code>int</code> which, as you can imagine, takes an argument (number or string) and converts it to an integer (if technically possible). This function also takes various arguments. One of them is <code>base</code>.</p>
 
-<p>Dont worry about the <code>__doc__</code> thing, it is the message that is printed when you asked for the documentation of the function.</p>
+<p>Don&rsquo;t worry about the <code>__doc__</code> thing, it is the message that is printed when you asked for the documentation of the function.</p>
 
 <p>So in the example above, we invoke the <code>partial</code> factory, to derive a new (more specialized) function from the <code>int</code> one.</p>
 
-<h2 id="why-dont-we-just-use-default-arguments">Why dont we just use default arguments?</h2>
+<h2 id="why-don-t-we-just-use-default-arguments">Why don&rsquo;t we just use default arguments?</h2>
 
-<p>Interesting question, thanks for asking. The difference between the example above and your proposal, is that calling
+<p>Interesting question, thanks for asking. The difference between the example above and your proposal is that calling
 <code>int('110', base=2)</code> will return an <strong>integer</strong> or in general the <strong>result of the execution</strong> of the function.</p>
 
 <p><code>basetwo</code> on the other hand, is a function reference, which in turn you can use it as input for more partial functions or to functions that get other functions as arguments eg <code>map</code>.</p>
 
 <h2 id="so-is-this-like-overloading-and-overriding">So is this like overloading and overriding?</h2>
 
-<p>Overloading is when you have one function, with the same name but different signature. When you create a partial function, you give the function a different name (unless you want for some reason to shadow the original one).</p>
+<p>Overloading is when you have one function, with the same name but a different signature. When you create a partial function, you give the function a different name (unless you want for some reason to shadow the original one).</p>
 
-<p>Overriding on the other hand, refers to a language feature that allows a subclass to provide a specific implementation of a method that is already provided by one of its super-classes. Partial functions provide specialized versions of initial functions but that usually is under a different name and for sure it is not bound to inheritance trees</p>
+<p>Overriding, on the other hand, refers to a language feature that allows a subclass to provide a specific implementation of a method that is already provided by one of its super-classes. Partial functions provide specialized versions of initial functions but that usually is under a different name and for sure it is not bound to inheritance trees</p>
 
 <h2 id="i-see-so-it-is-just-a-function-that-modifies-functions-on-the-fly">I see, so it is just a function that modifies functions on the fly</h2>
 
