@@ -5,10 +5,20 @@
     <link>https://perigk.github.io/posts/</link>
     <description>Recent content in Posts on Bitperi(Periklis Gkolias)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 13 Sep 2019 23:08:45 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 24 Nov 2019 22:04:50 +0200</lastBuildDate>
     
 	<atom:link href="https://perigk.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Primer on Python Partial Functions</title>
+      <link>https://perigk.github.io/posts/a-primer-on-partial-functions/</link>
+      <pubDate>Sun, 24 Nov 2019 22:04:50 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/posts/a-primer-on-partial-functions/</guid>
+      <description>Partial functions, is one of the most &amp;ldquo;terryfying concepts&amp;rdquo; I hear people talking about. Personally, I think the idea is fairly easy to grasp. That is, I will try to explain in a few paragraphs with python and help you escape the math labyrinth of &amp;ldquo;official documentation&amp;rdquo;.
+What is a partial function Partial functions is a computer science concept where we can derive a function with x parameters to a function with fewer parameters and constant values set for the more limited function.</description>
+    </item>
     
     <item>
       <title>Oh Podcasts, Why Do You Have to Suck</title>

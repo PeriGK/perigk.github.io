@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://perigk.github.io/posts/a-primer-on-partial-functions/</loc>
+    <lastmod>2019-11-24T22:04:50+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://perigk.github.io/posts/podcasts-why-do-you-have-to-suck/</loc>
     <lastmod>2019-09-13T23:08:45+03:00</lastmod>
   </url>
@@ -152,7 +157,7 @@
   
   <url>
     <loc>https://perigk.github.io/</loc>
-    <lastmod>2019-09-13T23:08:45+03:00</lastmod>
+    <lastmod>2019-11-24T22:04:50+02:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -369,6 +374,18 @@
   </url>
   
   <url>
+    <loc>https://perigk.github.io/tags/functional-programming/</loc>
+    <lastmod>2019-11-24T22:04:50+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/functional-programming/</loc>
+    <lastmod>2019-11-24T22:04:50+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://perigk.github.io/tags/infrastructure/</loc>
     <lastmod>2019-03-11T16:41:43+02:00</lastmod>
     <priority>0</priority>
@@ -513,8 +530,20 @@
   </url>
   
   <url>
+    <loc>https://perigk.github.io/tags/partial-functions/</loc>
+    <lastmod>2019-11-24T22:04:50+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/partial-functions/</loc>
+    <lastmod>2019-11-24T22:04:50+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://perigk.github.io/author/periklis-gkolias/</loc>
-    <lastmod>2019-09-13T23:08:45+03:00</lastmod>
+    <lastmod>2019-11-24T22:04:50+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -532,7 +561,7 @@
   
   <url>
     <loc>https://perigk.github.io/posts/</loc>
-    <lastmod>2019-09-13T23:08:45+03:00</lastmod>
+    <lastmod>2019-11-24T22:04:50+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -616,13 +645,13 @@
   
   <url>
     <loc>https://perigk.github.io/tags/python3/</loc>
-    <lastmod>2019-07-01T14:28:24+03:00</lastmod>
+    <lastmod>2019-11-24T22:04:50+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://perigk.github.io/categories/python3/</loc>
-    <lastmod>2019-07-01T14:28:24+03:00</lastmod>
+    <lastmod>2019-11-24T22:04:50+02:00</lastmod>
     <priority>0</priority>
   </url>
   
