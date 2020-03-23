@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scrum Master on Bitperi(Periklis Gkolias)</title>
+    <link>https://perigk.github.io/tags/scrum-master/</link>
+    <description>Recent content in Scrum Master on Bitperi(Periklis Gkolias)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 22 Mar 2020 23:14:29 +0200</lastBuildDate>
+    
+	<atom:link href="https://perigk.github.io/tags/scrum-master/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to get certified as a professional scrum master, the fast and the slow way</title>
+      <link>https://perigk.github.io/posts/the-fastest-track-to-psm-i/</link>
+      <pubDate>Sun, 22 Mar 2020 23:14:29 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/posts/the-fastest-track-to-psm-i/</guid>
+      <description>A few months ago, I got the Professional Scrum Master Certification (PSM I).
+As this is a trending certification nowadays, because most companies operate in some kind of agile methodologies, I would share some tips that helped me get 98% on the first try.
+I will provide a fast and a slow track.
+I would urge you to lean more towards the slow track, as the fast track, most of the time, will give you just enough knowledge to pass the certification; but this is totally not enough to solve business day to day team problems with scrum, which is what a big part of what a scrum master does.</description>
+    </item>
+    
+  </channel>
+</rss>

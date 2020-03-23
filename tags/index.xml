@@ -5,10 +5,19 @@
     <link>https://perigk.github.io/tags/</link>
     <description>Recent content in Tags on Bitperi(Periklis Gkolias)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 20 Dec 2018 23:03:29 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2020 23:14:29 +0200</lastBuildDate>
     
 	<atom:link href="https://perigk.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Agile</title>
+      <link>https://perigk.github.io/tags/agile/</link>
+      <pubDate>Sun, 22 Mar 2020 23:14:29 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/tags/agile/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Asyncio</title>
@@ -394,6 +403,15 @@
       <pubDate>Tue, 05 Mar 2019 19:08:57 +0200</pubDate>
       
       <guid>https://perigk.github.io/tags/recruitment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scrum Master</title>
+      <link>https://perigk.github.io/tags/scrum-master/</link>
+      <pubDate>Sun, 22 Mar 2020 23:14:29 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/tags/scrum-master/</guid>
       <description></description>
     </item>
     
