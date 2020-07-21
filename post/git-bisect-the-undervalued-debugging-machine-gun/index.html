@@ -236,17 +236,12 @@ Bisecting: 0 revisions left to test after this (roughly 0 steps)
 <p>If we run the script again, it of course fails. And if we mark it as bad git says:</p>
 <pre><code>git bisect bad cbfa2f5
 cbfa2f5f52b7e8a0c3a510a151ac7653377cfae1 is the first bad commit
-</code></pre><p>themes/bilberry-hugo-theme</p>
-<pre><code>
-By then, you may either fix the bug or contact whoever committed the bad code/input/configuration. Here is how to get the details:
+</code></pre><p>By then, you may either fix the bug or contact whoever committed the bad code/input/configuration. Here is how to get the details:</p>
+<pre><code>$ git show -s --format='%an, %ae' cbfa2f5
+Periklis Gkolias, myemail@domain.com
+</code></pre><h3 id="conclusion">Conclusion</h3>
+<p>Thank you for reading this article. Feel free to comment on  your thoughts towards this great tool.</p>
 
-</code></pre><p>$ git show -s &ndash;format=&rsquo;%an, %ae&rsquo; cbfa2f5
-Periklis Gkolias, <a href="mailto:myemail@domain.com">myemail@domain.com</a></p>
-<pre><code>
-
-### Conclusion
-Thank you for reading this article. Feel free to comment on  your thoughts towards this great tool.
-</code></pre>
     
 </div>
 
