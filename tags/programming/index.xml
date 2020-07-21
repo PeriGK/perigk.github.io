@@ -1,14 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on Bitperi(Periklis Gkolias)</title>
     <link>https://perigk.github.io/tags/programming/</link>
     <description>Recent content in Programming on Bitperi(Periklis Gkolias)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 26 Mar 2019 21:55:08 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2020 12:48:46 +0300</lastBuildDate>
     
 	<atom:link href="https://perigk.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git Bisect the Undervalued Debugging Machine Gun</title>
+      <link>https://perigk.github.io/post/git-bisect-the-undervalued-debugging-machine-gun/</link>
+      <pubDate>Tue, 21 Jul 2020 12:48:46 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/post/git-bisect-the-undervalued-debugging-machine-gun/</guid>
+      <description>Git bisect is a fantastic tool that could make debugging a breeze. Yet, very few people use it actively.
+In this quick article, I will showcase how git bisect can point out the where your bug cause lies, fairly fast.
+But first, lets talk about&amp;hellip;
+Delta debugging Delta debugging is a process where you do many steps and in each one your plan is to eliminate half the &amp;ldquo;problem&amp;rdquo;. You can think of it as the binary search of debugging.</description>
+    </item>
     
     <item>
       <title>I just finished Code complete cover to cover. Here are the most unexpected things I learned</title>
@@ -18,7 +30,8 @@
       <guid>https://perigk.github.io/posts/code-complete-cover-to-cover/</guid>
       <description>I got code complete several years ago. Actually, it was a graduation gift.
 I sometimes peaked into some of its chapters but never thought I was able to read it all at once. It was like a superhuman task for me.
-Until this year, where I decided, in the game of no excuses, to play hard. One of the battles I chose to give was to finish the book.</description>
+Until this year, where I decided, in the game of no excuses, to play hard. One of the battles I chose to give was to finish the book.
+During this time, I learned a lot of stuff.</description>
     </item>
     
     <item>

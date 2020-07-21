@@ -1,0 +1,484 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Periklis Gkolias">
+    <meta name="description" content="Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.74.2" />
+    <title>
+        
+           
+               Git Bisect the Undervalued Debugging Machine Gun &vert; Bitperi(Periklis Gkolias)
+           
+        
+    </title>
+    <meta name="description" content="Git Bisect the Undervalued Debugging Machine Gun - Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+    <meta itemprop="name" content="Git Bisect the Undervalued Debugging Machine Gun">
+    <meta itemprop="description" content="Git Bisect the Undervalued Debugging Machine Gun - Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+    <meta property="og:title" content="Git Bisect the Undervalued Debugging Machine Gun">
+    <meta property="og:description" content="Git Bisect the Undervalued Debugging Machine Gun - Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://perigk.github.io/post/git-bisect-the-undervalued-debugging-machine-gun/">
+    <meta property="og:site_name" content="Bitperi(Periklis Gkolias)">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="/post/git-bisect-the-undervalued-debugging-machine-gun/" rel="alternate" type="application/rss+xml" title="Bitperi(Periklis Gkolias)" />
+    <link href="/post/git-bisect-the-undervalued-debugging-machine-gun/" rel="feed" type="application/rss+xml" title="Bitperi(Periklis Gkolias)" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://perigk.github.io/theme.css">
+
+    
+
+    
+    
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+        <div id="search-box" class="search">
+            <i class="fas fa-search"></i>
+            <input id="search" type="text" placeholder="Search ...">
+        </div>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/avatars/myAvatar.svg" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="/">Bitperi(Periklis Gkolias)</a></h3>
+            
+            <span class="subtitle">Productivity tips and coding for thriving people</span>
+            
+        </div>
+
+        
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://perigk.github.io/post/git-bisect-the-undervalued-debugging-machine-gun/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://perigk.github.io/post/git-bisect-the-undervalued-debugging-machine-gun/">Git Bisect the Undervalued Debugging Machine Gun</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-07-21</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                
+                <a href="https://perigk.github.io/categories/debugging/">Debugging</a>
+                
+            
+                
+                
+                <a href="https://perigk.github.io/categories/little-hacks/">little-hacks</a>
+                
+            
+                
+                
+                <a href="https://perigk.github.io/categories/problem-solving/">Problem solving</a>
+                
+            
+                
+                
+                <a href="https://perigk.github.io/categories/programming/">Programming</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            
+            <a href="https://perigk.github.io/author/periklis-gkolias/">Periklis Gkolias</a>
+            
+        </span>
+        
+    </div>
+
+    
+    <p><em>Git bisect</em> is a fantastic tool that could make debugging a breeze. Yet, very few people use it actively.</p>
+<p>In this quick article, I will showcase how <em>git bisect</em> can point out the where your bug cause lies, fairly fast.</p>
+<p>But first, lets talk about&hellip;</p>
+<h3 id="delta-debugging">Delta debugging</h3>
+<p>Delta debugging is a process where you do many steps and in each one your plan is to eliminate half the &ldquo;problem&rdquo;. You can think of it as the binary search of debugging. Or as the man who made the term popular, <a href="https://andreas-zeller.info/">Andreas Zeller</a> is saying:</p>
+<blockquote>
+<p>Delta Debugging automates the scientific method of debugging. The basic idea of the scientific method is to establish a hypothesis on why something does not work. You test this hypothesis, and you refine or reject it depending on the test outcome. When debugging, people are doing this all the time. Manually. Delta Debugging automates this process</p>
+</blockquote>
+<p><em>Git bisect</em> is how we apply delta debugging with git.</p>
+<p>Assuming we have an injected bug and we try to find the root cause, in every step of our investigation for a solution, we eliminate half the solution space. Configuration, code, input&hellip;anything. Lets see an example to make it more clear.</p>
+<h3 id="example">Example</h3>
+<p>Initialize a repository to track our work.</p>
+<pre><code>mkdir test_git_bisect &amp;&amp; cd test_git_bisect &amp;&amp; git init
+</code></pre><p>Let&rsquo;s say we will make a script that gets an epoch and converts to <code>datetime</code>. We will do that by using an input file (named epochs.txt) that <em>should</em> contain only epochs.</p>
+<p>Please note, that in order to run a <em>git bisect</em> smoothly, we need to have quite a few commits.</p>
+<p>The python script <code>parse_epochs.py</code> we will use, nothing special here.</p>
+<pre><code>
+from time import localtime, strftime
+
+with open('epochs.txt', 'r') as handler:
+    epochs = handler.readlines()
+    for epoch in epochs:
+        current_datetime = strftime('%Y-%m-%d %H:%M:%S', localtime(int(epoch)))
+        print(current_datetime)
+
+</code></pre><p>Let&rsquo;s commit the first change:
+<code>git add . &amp;&amp; git commit -m &quot;Created epoch parser&quot;</code></p>
+<p>then create the input:</p>
+<p><code>for i in {1..100}; do   sleep 3;   date +%s &gt;&gt; epochs.txt; done</code></p>
+<p>which is essentially all epochs from the time we started the script (plus 3 seconds) till five minutes later, with a 3 seconds step.</p>
+<p>Again commit the change:</p>
+<p><code>git add . &amp;&amp; git commit -m &quot;Generated the first version of input&quot;</code></p>
+<p>If we now run the initial script, we get all inputs parsed to dates:</p>
+<pre><code>$ python3 parse_epochs.py
+2020-07-21 16:08:39
+2020-07-21 16:10:40
+2020-07-21 16:10:43
+2020-07-21 16:10:46
+2020-07-21 16:10:49
+2020-07-21 16:10:52
+...
+</code></pre><p>Let&rsquo;s amend the input now to make it faulty:</p>
+<pre><code>echo &quot;random string&quot; &gt;&gt; epochs.txt
+</code></pre><p>and commit again</p>
+<pre><code>git add . &amp;&amp; git commit -m &quot;Added faulty input&quot;
+</code></pre><p>For the sake of entropy, to make the example more complex, let&rsquo;s add more faulty inputs - commits.</p>
+<pre><code>echo &quot;This is not an epoch&quot; &gt;&gt; epochs.txt 
+&amp;&amp; git add . &amp;&amp; git commit -m &quot;Added faulty input v2&quot;
+</code></pre><pre><code>echo &quot;Stop this, the script will break&quot; &gt;&gt; epochs.txt
+&amp;&amp; git add . &amp;&amp; git commit -m &quot;Added faulty input v3&quot;
+</code></pre><p>Here is the commit log we have created:</p>
+<pre><code>$ git log --pretty=format:&quot;%h - %an, %ar : %s&quot;
+b811d35 - Periklis Gkolias, 2 minutes ago: Added faulty input v3
+dbf75cd - Periklis Gkolias, 2 minutes ago: Added faulty input v2
+cbfa2f5 - Periklis Gkolias, 8 minutes ago: Added faulty input
+d02eae8 - Periklis Gkolias, 20 minutes ago: Generated first version of input
+a969f3d - Periklis Gkolias, 26 minutes ago: Created epoch parser
+</code></pre><p>if we run the script again, it will obviously fail with the error:</p>
+<pre><code>Traceback (most recent call last):
+  File &quot;parse_epochs.py&quot;, line 6, in &lt;module&gt;
+    current_datetime = strftime('%Y-%m-%d %H:%M:%S', localtime(int(epoch)))
+ValueError: invalid literal for int() with base 10: 'random string\n'
+
+</code></pre><p>Looks like we need <em>git bisect</em> to fix this. To do so we need to start the investigation:</p>
+<p><code>git bisect start</code></p>
+<p>and mark one commit as bad (the last one usually) and one commit as good. This would be the second commit when we generated the input:</p>
+<pre><code>git bisect bad b811d35 &amp;&amp; git bisect good d02eae8
+</code></pre><p>After that git bisect will split the history between the good and the bad commit in two. You can see that by doing <code>git bisect visualize</code> to see the commits that are considered the culprits and <code>git show</code> to print the currently checked out one, in our case <code>dbf75cd</code>.</p>
+<p>If we run the script it will still fail. So we mark the current commit as bad</p>
+<p><code>git bisect bad dbf75cd</code></p>
+<p>It is worth mentioning the output of git in that case:</p>
+<pre><code>git bisect bad dbf75cd
+Bisecting: 0 revisions left to test after this (roughly 0 steps)
+[cbfa2f5f52b7e8a0c3a510a151ac7653377cfae1] Added faulty input
+</code></pre><p>Git knows we are almost there. Yay!!!</p>
+<p>If we run the script again, it of course fails. And if we mark it as bad git says:</p>
+<pre><code>git bisect bad cbfa2f5
+cbfa2f5f52b7e8a0c3a510a151ac7653377cfae1 is the first bad commit
+</code></pre><p>themes/bilberry-hugo-theme</p>
+<pre><code>
+By then, you may either fix the bug or contact whoever committed the bad code/input/configuration. Here is how to get the details:
+
+</code></pre><p>$ git show -s &ndash;format=&rsquo;%an, %ae&rsquo; cbfa2f5
+Periklis Gkolias, <a href="mailto:myemail@domain.com">myemail@domain.com</a></p>
+<pre><code>
+
+### Conclusion
+Thank you for reading this article. Feel free to comment on  your thoughts towards this great tool.
+</code></pre>
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://perigk.github.io/tags/debugging/">Debugging</a>
+                    
+                
+                    
+                    
+                    <a href="https://perigk.github.io/tags/little-hacks/">little-hacks</a>
+                    
+                
+                    
+                    
+                    <a href="https://perigk.github.io/tags/problem-solving/">Problem solving</a>
+                    
+                
+                    
+                    
+                    <a href="https://perigk.github.io/tags/programming/">Programming</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bilberry-hugo-theme" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            
+
+        </div>
+    
+
+     
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                <li>
+                    <a href="https://perigk.github.io/post/git-bisect-the-undervalued-debugging-machine-gun/">Git Bisect the Undervalued Debugging Machine Gun</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/the-fastest-track-to-psm-i/">How to get certified as a professional scrum master, the fast and the slow way</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/ways-to-keep-up-with-the-software-trends/">12 Ways to Keep Up With the Software Trends</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/30-tips-for-software-engineering-careers-30-years-of-life/">30 Tips for Software Engineering Careers, After 30 Years of Life</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/a-primer-on-partial-functions/">A Primer on Python Partial Functions</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/podcasts-why-do-you-have-to-suck/">Oh Podcasts, Why Do You Have to Suck</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/generate-cooking-recipes/">Generate cooking recipes that guarantee food poisoning, with LSTM based libraries</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/programming">Programming
+                        (7)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python3">Python3
+                        (4)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/productivity">Productivity
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/solo-dev">Solo dev
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/career">Career
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/code-quality">Code quality
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/debugging">Debugging
+                        (2)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+            </div>
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/Lednerb" target="_blank">
+                &copy;
+                
+                2017
+                
+                by Lednerb
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-33576432-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+
+    <script type="text/javascript" src="https://perigk.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="Y2C4RWMPXW">
+  <input type="hidden" id="algolia-search-apiKey" value="50ea7f8c41c0ad233926e0be2b769ed1">
+  <input type="hidden" id="algolia-search-indexName" value="default-content">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>
