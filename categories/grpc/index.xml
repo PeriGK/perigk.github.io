@@ -17,7 +17,8 @@
       
       <guid>https://perigk.github.io/posts/grpc/</guid>
       <description>I keep hearing about gRPC those days; not sure if the existing trend is soaring or it is a coincidence. In any case, as I have never dug to the concept, I thought it is a good time to do so.
-High-level view of gRPC gRPC is an RPC framework, created by Google. Interestingly enough, the initial &amp;ldquo;g&amp;rdquo; stands for &amp;ldquo;general (purpose)&amp;rdquo; and not for &amp;ldquo;google&amp;rdquo;. So gRPC is an RPC framework that can be used in any kind of situation where an RPC style communication is required.</description>
+High-level view of gRPC gRPC is an RPC framework, created by Google. Interestingly enough, the initial &amp;ldquo;g&amp;rdquo; stands for &amp;ldquo;general (purpose)&amp;rdquo; and not for &amp;ldquo;google&amp;rdquo;.
+So gRPC is an RPC framework that can be used in any kind of situation where an RPC style communication is required.</description>
     </item>
     
   </channel>

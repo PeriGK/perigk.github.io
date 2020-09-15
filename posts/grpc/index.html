@@ -150,11 +150,15 @@
     
     <p>I keep hearing about gRPC those days; not sure if the existing trend is soaring or it is a coincidence. In any case, as I have never dug to the concept, I thought it is a good time to do so.</p>
 <h2 id="high-level-view-of-grpc">High-level view of gRPC</h2>
-<p>gRPC is an RPC framework, created by Google. Interestingly enough, the initial &ldquo;g&rdquo; stands for &ldquo;general (purpose)&rdquo; and not for &ldquo;google&rdquo;. So gRPC is an RPC framework that can be used in any kind of situation where an RPC style communication is required. Usually, we are talking about communications between services.</p>
-<p>gRPC takes care of all the boring stuff that is required for communication between services, like defining service interfaces, communication formats, authentication, health checking, etc. But in order to do so, we need to do some upfront work first.</p>
+<p>gRPC is an RPC framework, created by Google. Interestingly enough, the initial &ldquo;g&rdquo; stands for &ldquo;general (purpose)&rdquo; and not for &ldquo;google&rdquo;.</p>
+<p>So gRPC is an RPC framework that can be used in any kind of situation where an RPC style communication is required.</p>
+<p>Usually, we are talking about communications between services.</p>
+<p>gRPC takes care of all the boring stuff that is required for communication between services, like defining service interfaces, communication formats, authentication, health checking, etc.</p>
+<p>But in order to do so, we need to do some upfront work first.</p>
 <h2 id="waitwhat-is-rpc">Wait&hellip;What is RPC</h2>
 <p>I understand you might have encountered some unknown terminologies in the previous paragraph.</p>
-<p>So, RPC is a technique (and used to be very popular before RESTful APIs take over) to make service-to-service calls. In that case service, A calls service B but from a code reader perspective, it looks like this is on the same machine.</p>
+<p>So, RPC is a technique (and used to be very popular before RESTful APIs take over) to make service-to-service calls.</p>
+<p>In that case service, A calls service B but from a code reader perspective, it looks like this is on the same machine.</p>
 <p>As with all high-quality abstractions, RPC does great work at hiding the low-level details that are required to perform network communication.</p>
 <p>RPC also has different conventions and semantics from REST. From example, whereas in RPC you can see calls like</p>
 <pre><code>POST /addNewProduct
@@ -166,7 +170,8 @@
 <p>Below is a nice diagram I borrowed from <a href="https://www.geeksforgeeks.org/remote-procedure-call-rpc-in-operating-system/">geekstogeeks</a> which shows an RPC client-server communication</p>
 <p><img src="https://storage.googleapis.com/slite-api-files-production/files/~03dINw~4A/2dabd822-da4e-4280-9358-860fb50d895d/operating-system-remote-procedure-call-1.png" alt="operating-system-remote-procedure-call-1.png"></p>
 <h2 id="protocol-buffers">Protocol Buffers</h2>
-<p>Protocol buffers are the most popular entity of the gRPC framework. They are part of the &ldquo;upfront work we need to do&rdquo; in order to leverage gRPC. What they do is to serialize and deserialize data at both ends of the communication. You can declare them in a struct-like format like:</p>
+<p>Protocol buffers are the most popular entity of the gRPC framework. They are part of the &ldquo;upfront work we need to do&rdquo; in order to leverage gRPC.</p>
+<p>What they do is to serialize and deserialize data at both ends of the communication. You can declare them in a struct-like format like:</p>
 <pre><code>message Point {
   int32 x = 1;
   int32 y = 2;
