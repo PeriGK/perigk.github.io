@@ -3,22 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://perigk.github.io/posts/grpc/</loc>
-    <lastmod>2020-09-15T21:23:24+03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://perigk.github.io/author/</loc>
-    <lastmod>2020-09-15T21:23:24+03:00</lastmod>
+    <lastmod>2020-09-28T18:45:31+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://perigk.github.io/</loc>
-    <lastmod>2020-09-15T21:23:24+03:00</lastmod>
+    <lastmod>2020-09-28T18:45:31+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://perigk.github.io/categories/</loc>
+    <lastmod>2020-09-28T18:45:31+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/posts/self-teaching-myths/</loc>
+    <lastmod>2020-09-28T18:45:31+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/author/periklis-gkolias/</loc>
+    <lastmod>2020-09-28T18:45:31+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/posts/</loc>
+    <lastmod>2020-09-28T18:45:31+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/programming/</loc>
+    <lastmod>2020-09-28T18:45:31+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/programming/</loc>
+    <lastmod>2020-09-28T18:45:31+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/self-taught/</loc>
+    <lastmod>2020-09-28T18:45:31+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/self-taught/</loc>
+    <lastmod>2020-09-28T18:45:31+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/</loc>
+    <lastmod>2020-09-28T18:45:31+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/posts/grpc/</loc>
     <lastmod>2020-09-15T21:23:24+03:00</lastmod>
   </url>
   
@@ -29,31 +69,6 @@
   
   <url>
     <loc>https://perigk.github.io/categories/grpc/</loc>
-    <lastmod>2020-09-15T21:23:24+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://perigk.github.io/author/periklis-gkolias/</loc>
-    <lastmod>2020-09-15T21:23:24+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://perigk.github.io/posts/</loc>
-    <lastmod>2020-09-15T21:23:24+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://perigk.github.io/tags/programming/</loc>
-    <lastmod>2020-09-15T21:23:24+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://perigk.github.io/categories/programming/</loc>
-    <lastmod>2020-09-15T21:23:24+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://perigk.github.io/tags/</loc>
     <lastmod>2020-09-15T21:23:24+03:00</lastmod>
   </url>
   
