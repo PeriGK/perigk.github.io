@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>serverless on Bitperi(Periklis Gkolias)</title>
+    <link>https://perigk.github.io/tags/serverless/</link>
+    <description>Recent content in serverless on Bitperi(Periklis Gkolias)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 16 May 2021 16:48:18 +0200</lastBuildDate>
+    
+	<atom:link href="https://perigk.github.io/tags/serverless/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Managed vs Serverless</title>
+      <link>https://perigk.github.io/posts/managed-vs-serverless/</link>
+      <pubDate>Sun, 16 May 2021 16:48:18 +0200</pubDate>
+      
+      <guid>https://perigk.github.io/posts/managed-vs-serverless/</guid>
+      <description>A common confusion between people who have their first touchpoint with cloud technologies is: What is the difference between serverless technologies and managed services?
+Managed services A managed service, enables the end user to focus on using a service rather setting up the service. Not that the cloud provider can detect your thoughts, but rather any input the service requires is happening via a user friendly form. Managed services fit into the category of PaaS products (Platform as a Service).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,420 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Periklis Gkolias">
+    <meta name="description" content="Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.74.2" />
+    <title>
+        
+           
+               Managed vs Serverless &vert; Bitperi(Periklis Gkolias)
+           
+        
+    </title>
+    <meta name="description" content="Managed vs Serverless - Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+    <meta itemprop="name" content="Managed vs Serverless">
+    <meta itemprop="description" content="Managed vs Serverless - Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+    <meta property="og:title" content="Managed vs Serverless">
+    <meta property="og:description" content="Managed vs Serverless - Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://perigk.github.io/posts/managed-vs-serverless/">
+    <meta property="og:site_name" content="Bitperi(Periklis Gkolias)">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="/posts/managed-vs-serverless/" rel="alternate" type="application/rss+xml" title="Bitperi(Periklis Gkolias)" />
+    <link href="/posts/managed-vs-serverless/" rel="feed" type="application/rss+xml" title="Bitperi(Periklis Gkolias)" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://perigk.github.io/theme.css">
+
+    
+
+    
+    
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+        <div id="search-box" class="search">
+            <i class="fas fa-search"></i>
+            <input id="search" type="text" placeholder="Search ...">
+        </div>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/avatars/myAvatar.svg" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="/">Bitperi(Periklis Gkolias)</a></h3>
+            
+            <span class="subtitle">Productivity tips and coding for thriving people</span>
+            
+        </div>
+
+        
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://perigk.github.io/posts/managed-vs-serverless/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://perigk.github.io/posts/managed-vs-serverless/">Managed vs Serverless</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2021-05-16</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                
+                <a href="https://perigk.github.io/categories/cloud/">cloud</a>
+                
+            
+                
+                
+                <a href="https://perigk.github.io/categories/serverless/">serverless</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            
+            <a href="https://perigk.github.io/author/periklis-gkolias/">Periklis Gkolias</a>
+            
+        </span>
+        
+    </div>
+
+    
+    <p>A common confusion between people who have their first touchpoint with cloud technologies is: What is the difference between serverless technologies and managed services?</p>
+<p><img src="https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Clouds. Credits to Zbynek Burival"></p>
+<h2 id="managed-services">Managed services</h2>
+<p>A managed service, enables the end user to focus on <em>using</em> a service rather <em>setting up</em> the service. Not that the cloud provider can detect your thoughts, but rather any input the service requires is happening via a user friendly form. Managed services fit into the category of PaaS products (Platform as a Service).</p>
+<p>One of the most famous managed services around is Amazon&rsquo;s <a href="https://aws.amazon.com/elasticbeanstalk/">Elastic Beanstalk</a>. In ElasticBeanstalk you can setup some parameters and provide a docker image and the service will setup for you. Things like:</p>
+<ul>
+<li>Virtual machines</li>
+<li>A web server (if needed)</li>
+<li>Expose your application to the public</li>
+<li>Monitoring and logging infrastructure</li>
+<li>Semi-automated configuration</li>
+<li>Load balancing</li>
+<li>Scaling etc.</li>
+</ul>
+<p>You will be able to see the results of the Elastic Beanstalk eg the virtual machines that were bootstrapped as a result. Usually you wont be able to access and fiddle around with them (otherwise it is not a managed service, you are the manager).</p>
+<p><img src="https://cdn-images-1.medium.com/fit/t/1600/480/1*Fd6rk1k1FHPZcg4aK_OXtQ.png" alt="AWS ElasticBeanStalk"></p>
+<p>So a managed service is essentially an abstraction of a&hellip;non managed service. The abstraction is usually interfaced via web forms. Additionally in a managed service as a user you dont bother with updates, patches etc (as you have no access to the machines, someone has to do the laundry). Usually you have only limited choices, if any, on the underlying system eg operating system, vendor and version of application software used.</p>
+<p>Fairly simple, right? Lets go to serverless who is a bit more complex.</p>
+<h2 id="serverless">Serverless</h2>
+<p>With the word serverless we refer to a different computing model, on the contrary to the &ldquo;traditional&rdquo; one which is server oriented. In server-oriented computing (or serverfull if you like more sophisticated words), we use virtual or physical machines to setup and execute our application. Qualities like the availability and the performance of our applications are strongly bound to the health of your machines.</p>
+<p>Clusterisation solutions have been perfected over time (amongst other reasons) in order to make the detoriations of machines&rsquo; health less and less important.</p>
+<p>What about cost though? Why do we still pay for idle or underutilized servers (either in money or in lost cpu cycles)? If we need to scale a cluster of machines why does this take time?</p>
+<p>Here comes serverless. Serverless fit in the category of FaaS products (Function as a service).</p>
+<p>The name is a bit misleading; the server where &ldquo;the code&rdquo; runs does exist.</p>
+<p>Though you dont care, just like in managed services. Serverless goes a bit further. Your application runs, when it is needed and for just as long as it should. Idle times are eliminated. You never get to see the server in your virtual machine dashboard and of course you dont know any details about it/them.</p>
+<p>Serverless implementations are usually event-driven. The instances are idle unless an event occurs (apart from the case where you have instructed them to not be idle aka &ldquo;scale-to-zero&rdquo;). They get busy and when done, they go to idle again. If they get too busy they get support from other clones aka horizontal scaling.</p>
+<p>A big benefit with serverless implementations is that they are scaling easily and effectively, as they are usually based on lightweight installation media, like Docker images/containers and there is no need to provision extra machines. In theory, with serverless computing you have the whole cloud infrastructure of the provider on your feet. With the respective cost of course. :)</p>
+<p>Speaking about costs, serverless code is usually billed and evaluated (in public cloud providers) per second and in a higher rate than a machine. So it is recommended to run for relatively short workloads in time. Some providers, put a hard limit on how long  serverless code can run to avoid unpleasant surprises on your bill (again, if you are using a public provider).</p>
+<p>One notable example of fullstack serverless and the cost benefits that come with it is acloud.guru. I remember studying for the AWS Architect certification using one of their courses (awesome content btw, highly recommended) and the instructor mentioning that &ldquo;We pay 400$ per month with Serverless and it would be round 100000$ using servers&rdquo;.</p>
+<p>One of the cons serverless architectures have is on time critical applications. Usually, newly deployed serverless functions, experience some kind of latency also known as &ldquo;cold start&rdquo;. There are mitigations around that, called -surprise, surprise- &ldquo;warm starts&rdquo; but you may want to check other architectures for such a requirement.</p>
+<p>By the way, serverless solutions provided by the cloud providers are i.e AWS Lambda, Azure Functions are&hellip;managed themselves. That means you can setup your serverless architecture using high level abstractions and input your preferences/configuration with provided forms.</p>
+<h2 id="services-that-have-both-flavors">Services that have both flavors</h2>
+<p>As you have probably figured by now, serverless and managed services have some interesting similarities which sum up to the following: Dont worry about the infrastructure, focus on your business value.</p>
+<p>There is a very interesting public service which comes with both flavors, managed and serverless. This is AWS Aurora. Aurora is a managed database, compatible with MySQL and Postgresql. There are two flavors of Aurora.</p>
+<p><img src="https://miro.medium.com/max/960/1*1_5fnrCrSYmyCUhugLxU5A.jpeg" alt="Lend from David Zhang"></p>
+<p>The managed one, where you setup a database using a form, and this brings up a few virtual machines and takes care of their health. You may just focus on deploying a good database schema. This flavor, the database is running 24/7/365 or at least thats the goal, as it offer very high availability and otherwise work in the same way as any database server you have used in the past.</p>
+<p>There is also the serveless flavor, where Aurora is setup as such. In that case, you have the storage &ldquo;deployed&rdquo; 24/7/365 as above. You cannot have serverless storage, is contradictory (accroding to my current knowledge at least). :) The processes though that perform data manipulations on your data like fetch and update can be easily to serverless functions. Aurora serverless can have significant cost reductions, as the data manipulations run on a as-needed basis. Though if the database is fairly busy the cost might be higher than in a serverfull architecture. That being said Aurora serverless is better used when your workload is intermittent and unpredictable.</p>
+<h2 id="openfaas">Openfaas</h2>
+<p>During this article, I explained those technologies with public cloud providers.</p>
+<p>If you want to run serverless computing / FaaS without relying on a public provider you may use OpenFaas (future article to come).</p>
+<p><img src="https://avatars.githubusercontent.com/u/27013154?s=280&amp;v=4" alt="OpenFaaS logo"></p>
+<p>This technology will not only give you more control over your architecture, it will help you realize that the serverless model relies heavily on clustering technologies like Kubernetes and how you can setup scaling rules and cold/warm starts.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Thank you for reading till the end. We spoke about Serverless technologies and compared them with managed services. They have serious overlap but cover different needs too. If you need to add something I would love to hear your view.</p>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://perigk.github.io/tags/cloud/">cloud</a>
+                    
+                
+                    
+                    
+                    <a href="https://perigk.github.io/tags/serverless/">serverless</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bilberry-hugo-theme" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            
+
+        </div>
+    
+
+     
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/managed-vs-serverless/">Managed vs Serverless</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/self-teaching-myths/">Myths about self teaching that need to be busted</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/grpc/">A gRPC primer from a non-gRPC dev</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/post/git-bisect-the-undervalued-debugging-machine-gun/">Git Bisect, the Undervalued Debugging Machine Gun</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/the-fastest-track-to-psm-i/">How to get certified as a professional scrum master, the fast and the slow way</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/ways-to-keep-up-with-the-software-trends/">12 Ways to Keep Up With the Software Trends</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/30-tips-for-software-engineering-careers-30-years-of-life/">30 Tips for Software Engineering Careers, After 30 Years of Life</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/programming">Programming
+                        (9)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python3">Python3
+                        (4)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/productivity">Productivity
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/solo-dev">Solo dev
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/career">Career
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/code-quality">Code quality
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/debugging">Debugging
+                        (2)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+            </div>
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/Lednerb" target="_blank">
+                &copy;
+                
+                2017
+                
+                by Lednerb
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-33576432-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+
+    <script type="text/javascript" src="https://perigk.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="Y2C4RWMPXW">
+  <input type="hidden" id="algolia-search-apiKey" value="50ea7f8c41c0ad233926e0be2b769ed1">
+  <input type="hidden" id="algolia-search-indexName" value="default-content">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>
