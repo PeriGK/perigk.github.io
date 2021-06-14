@@ -4,17 +4,47 @@
   
   <url>
     <loc>https://perigk.github.io/author/</loc>
-    <lastmod>2021-05-16T16:48:18+02:00</lastmod>
+    <lastmod>2021-06-14T20:48:18+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://perigk.github.io/</loc>
-    <lastmod>2021-05-16T16:48:18+02:00</lastmod>
+    <lastmod>2021-06-14T20:48:18+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://perigk.github.io/categories/</loc>
-    <lastmod>2021-05-16T16:48:18+02:00</lastmod>
+    <lastmod>2021-06-14T20:48:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/posts/tech-trends-2030/</loc>
+    <lastmod>2021-06-14T20:48:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/author/periklis-gkolias/</loc>
+    <lastmod>2021-06-14T20:48:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/posts/</loc>
+    <lastmod>2021-06-14T20:48:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/</loc>
+    <lastmod>2021-06-14T20:48:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/tags/trends/</loc>
+    <lastmod>2021-06-14T20:48:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://perigk.github.io/categories/trends/</loc>
+    <lastmod>2021-06-14T20:48:18+02:00</lastmod>
   </url>
   
   <url>
@@ -33,27 +63,12 @@
   </url>
   
   <url>
-    <loc>https://perigk.github.io/author/periklis-gkolias/</loc>
-    <lastmod>2021-05-16T16:48:18+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://perigk.github.io/posts/</loc>
-    <lastmod>2021-05-16T16:48:18+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://perigk.github.io/tags/serverless/</loc>
     <lastmod>2021-05-16T16:48:18+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://perigk.github.io/categories/serverless/</loc>
-    <lastmod>2021-05-16T16:48:18+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://perigk.github.io/tags/</loc>
     <lastmod>2021-05-16T16:48:18+02:00</lastmod>
   </url>
   
