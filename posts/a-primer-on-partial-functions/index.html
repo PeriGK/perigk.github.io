@@ -9,7 +9,7 @@
     <meta name="author" content="Periklis Gkolias">
     <meta name="description" content="Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.74.2" />
+    <meta name="generator" content="Hugo 0.89.4" />
     <title>
         
            
@@ -160,7 +160,7 @@
 <p>Let&rsquo;s break this down</p>
 <h2 id="an-example">An example</h2>
 <p>Searching the official python documentation I found this example:</p>
-<pre><code>&gt;&gt;&gt; from functools import partial
+<pre tabindex="0"><code>&gt;&gt;&gt; from functools import partial
 &gt;&gt;&gt; basetwo = partial(int, base=2)
 &gt;&gt;&gt; basetwo.__doc__ = 'Convert base 2 string to an int.'
 &gt;&gt;&gt; basetwo('10010')
@@ -178,7 +178,7 @@
 <h2 id="i-see-so-it-is-just-a-function-that-modifies-functions-on-the-fly">I see, so it is just a function that modifies functions on the fly</h2>
 <p>You can say it this way, too.</p>
 <p>Based on the python examples again, this is how the partial factory would look like:</p>
-<pre><code>def partial(func, *args, **keywords):
+<pre tabindex="0"><code>def partial(func, *args, **keywords):
     def newfunc(*fargs, **fkeywords):
         newkeywords = keywords.copy()
         newkeywords.update(fkeywords)

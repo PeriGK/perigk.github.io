@@ -5,11 +5,7 @@
     <link>https://perigk.github.io/tags/grpc/</link>
     <description>Recent content in grpc on Bitperi(Periklis Gkolias)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Sep 2020 21:23:24 +0300</lastBuildDate>
-    
-	<atom:link href="https://perigk.github.io/tags/grpc/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 15 Sep 2020 21:23:24 +0300</lastBuildDate><atom:link href="https://perigk.github.io/tags/grpc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A gRPC primer from a non-gRPC dev</title>
       <link>https://perigk.github.io/posts/grpc/</link>

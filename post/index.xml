@@ -5,11 +5,7 @@
     <link>https://perigk.github.io/post/</link>
     <description>Recent content in Posts on Bitperi(Periklis Gkolias)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 21 Jul 2020 12:48:46 +0300</lastBuildDate>
-    
-	<atom:link href="https://perigk.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 21 Jul 2020 12:48:46 +0300</lastBuildDate><atom:link href="https://perigk.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git Bisect, the Undervalued Debugging Machine Gun</title>
       <link>https://perigk.github.io/post/git-bisect-the-undervalued-debugging-machine-gun/</link>

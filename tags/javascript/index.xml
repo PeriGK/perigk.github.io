@@ -5,15 +5,11 @@
     <link>https://perigk.github.io/tags/javascript/</link>
     <description>Recent content in javascript on Bitperi(Periklis Gkolias)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 25 Jun 2018 00:00:00 +0300</lastBuildDate>
-    
-	<atom:link href="https://perigk.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 25 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://perigk.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stepping up your javascript debugging skills</title>
       <link>https://perigk.github.io/posts/stepping-up-your-javascript-debugging-skills/</link>
-      <pubDate>Mon, 25 Jun 2018 00:00:00 +0300</pubDate>
+      <pubDate>Mon, 25 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://perigk.github.io/posts/stepping-up-your-javascript-debugging-skills/</guid>
       <description>Almost all software developers, who have written even a few lines of code for the Web, had at least a quick glance at javascript in their life, which is one of the most in-demand programming languages currently.

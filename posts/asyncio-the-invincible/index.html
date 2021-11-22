@@ -9,7 +9,7 @@
     <meta name="author" content="Periklis Gkolias">
     <meta name="description" content="Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.74.2" />
+    <meta name="generator" content="Hugo 0.89.4" />
     <title>
         
            
@@ -173,7 +173,7 @@ know that writing commands one after another doesn&rsquo;t mean they will be exe
 <h2 id="asyncio---i-choose-you">Asyncio - I choose you</h2>
 <p><a href="https://docs.python.org/3/library/asyncio.html">asyncio</a> is a library to write concurrent code using the async/await syntax. In that way, even though you write asynchronous code, you end up with a synchronous visual perception of it, which makes maintainability a bit easier.</p>
 <p>So here is how to write async code with python, with comments to explain each step</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># First import the library that provides all those bells and whistles</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># First import the library that provides all those bells and whistles</span>
 <span style="color:#f92672">import</span> asyncio
 
 <span style="color:#75715e"># Import datetime and calendar as our example is based on date handling</span>
@@ -186,21 +186,21 @@ know that writing commands one after another doesn&rsquo;t mean they will be exe
 <span style="color:#75715e"># of an async context it will print something like: </span>
 <span style="color:#75715e"># &lt;coroutine object show_me_the_day at 0x7f89d55a0e60&gt; </span>
 <span style="color:#75715e"># and not the result you would expect in a synchronous execution.</span>
-async <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">show_me_the_day</span>():
+<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">show_me_the_day</span>():
     <span style="color:#75715e"># Calendar is not asynchronous, so we duse asyncio.sleep to emulate the async nature</span>
     <span style="color:#75715e"># If for any reason you want to block the execution while</span>
     <span style="color:#75715e"># an async function is executed (eg you need the return value), use await.</span>
     <span style="color:#75715e"># Await can only be used in async functions, and only inside async functions</span>
-    await asyncio<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">1</span>)
+    <span style="color:#66d9ef">await</span> asyncio<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">1</span>)
     <span style="color:#66d9ef">return</span> calendar<span style="color:#f92672">.</span>day_name[datetime<span style="color:#f92672">.</span>date<span style="color:#f92672">.</span>today()<span style="color:#f92672">.</span>weekday()]
 
 
-async <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+<span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
     <span style="color:#75715e"># If for any reason you want to block the execution while</span>
     <span style="color:#75715e"># an async function is executed (eg you need the return value), use await.</span>
     <span style="color:#75715e"># Await can only be used in async functions, and only inside async functions</span>
-    day <span style="color:#f92672">=</span> await show_me_the_day()
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;Yo, today is &#39;</span>, day)
+    day <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> show_me_the_day()
+    print(<span style="color:#e6db74">&#39;Yo, today is &#39;</span>, day)
    
 asyncio<span style="color:#f92672">.</span>run(main())
 

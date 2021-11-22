@@ -9,7 +9,7 @@
     <meta name="author" content="Periklis Gkolias">
     <meta name="description" content="Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.74.2" />
+    <meta name="generator" content="Hugo 0.89.4" />
     <title>
         
            
@@ -249,7 +249,7 @@ class FileSystemHandlerTest(unittest.TestCase):
      mock_check_file_exists.return_value = False
      self.assertFalse(create_file(self.directory,self.new_filename))
 </code></pre>
-<p>Have you noticed the test function starts with *test_*? That’s because python applies a regular expression, in order to separate the actual test cases from helper function in a unit test file.</p>
+<p>Have you noticed the test function starts with <em>test_</em>? That’s because python applies a regular expression, in order to separate the actual test cases from helper function in a unit test file.</p>
 <p>Regarding the tests above:</p>
 <ul>
 <li>The first unit test is checking the normal case, where the file is created smoothly. Thus the business logic function is returning <em>True</em>, value which we assert.</li>
@@ -259,7 +259,7 @@ class FileSystemHandlerTest(unittest.TestCase):
 <p>Are you wondering why <em>mock_open_func</em>, which is the mock object created from <em>@mock.patch(‘builtins.open’, mock=mock.mock_open)</em> is not used? We only mocked this part, so that an actual file is NOT created in every test run. We will discuss more later.</p>
 <p><strong>Decorators</strong>
 But what is this <em>@</em> thingy on top of the declaration of each function? I am about to write an article for decorators, as they cannot be explained briefly in a few lines, but for now, you only need to know, that they are functions, which take other functions as arguments and return those arguments extended.</p>
-<p>So to be specific, <a href="http://twitter.com/mock">*@mock</a>.patch(fs_handler_main.check_file_exists)* on top of *test_create_file_success* means:</p>
+<p>So to be specific, <a href="http://twitter.com/mock">*@mock</a>.patch(fs_handler_main.check_file_exists)* on top of <em>test_create_file_success</em> means:</p>
 <blockquote>
 <p>Locate the function check_file_exists from fs_handler_main and as long we are in the scope of the function below(namely fs_handler_main) whenever check_file_exists is invoked, use a mock object called mock_check_file_exists instead.</p>
 </blockquote>
@@ -294,7 +294,7 @@ But what is this <em>@</em> thingy on top of the declaration of each function? I
 <h3 id="things-worth-remembering">Things worth remembering</h3>
 <p>Thank you for reading this article. Below you can find a few points I find worth reiterating.</p>
 <ul>
-<li>The methods that are test scenarios start with *test_* to help python discover them easily.</li>
+<li>The methods that are test scenarios start with <em>test_</em> to help python discover them easily.</li>
 <li>The fewer dependencies you have, the easier the unit test is written.</li>
 <li>Mock things using the module-under-test(the business logic) namespace, not the python ones.</li>
 </ul>

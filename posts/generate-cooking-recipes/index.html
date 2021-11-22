@@ -9,7 +9,7 @@
     <meta name="author" content="Periklis Gkolias">
     <meta name="description" content="Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.74.2" />
+    <meta name="generator" content="Hugo 0.89.4" />
     <title>
         
            
@@ -182,7 +182,7 @@ predict that if the token &ldquo;tomorrow?&rdquo; is close enough to the token &
 <h2 id="building-our-psychic">Building our psychic</h2>
 <p>In this article, we are going to follow a coder&rsquo;s approach, as I mentioned before. That means you don&rsquo;t need any special knowledge of LSTM or deep learning to do the job</p>
 <p>We are going to use a great library called</p>
-<pre><code>textgenrnn
+<pre tabindex="0"><code>textgenrnn
 ```. 
 
 The steps to follow are:
@@ -199,17 +199,17 @@ First, we create a new virtualenv in a new folder
 And we source it
 source myenv/bin/activate</p>
 <h1 id="we-install-the-library-as-instructed-from-the-readme-of-the-modulehttpsgithubcomminimaxirtextgenrnn">We install the library, as instructed from the README of the <a href="https://github.com/minimaxir/textgenrnn">module</a></h1>
-<pre><code>pip install tensorflow
-</code></pre><pre><code>pip install textgenrnn
+<pre tabindex="0"><code>pip install tensorflow
+</code></pre><pre tabindex="0"><code>pip install textgenrnn
 </code></pre><p>Verify all went good by doing</p>
-<pre><code>import textgenrnn
+<pre tabindex="0"><code>import textgenrnn
 Using TensorFlow backend.
 </code></pre><p>Prepare the data in a friendly format</p>
 <p>By glancing a bit in the <a href="https://github.com/minimaxir/textgenrnn/tree/master/datasets">datasets</a> folder it
 looks like we want each sample on top. But according to the documentation it can be trained on any file so let&rsquo;s create a recipes txt and try to train. Or maybe find something ready.</p>
 <p>By Googling around, I have <a href="http://www.shieldsgenealogy.com/recipe-nyc-dl.html">this</a> wonderful page and downloaded the chili dataset. Let&rsquo;s try to feed it as is and see how it goes. Here is an excerpt of the chili file</p>
-<pre><code>@@@@@ Now You're Cooking! Export Format
-</code></pre><pre><code>1981 WORLD CHAMP BUTTERFIELD STAGELINE CHILI
+<pre tabindex="0"><code>@@@@@ Now You're Cooking! Export Format
+</code></pre><pre tabindex="0"><code>1981 WORLD CHAMP BUTTERFIELD STAGELINE CHILI
 
 meats, chili
 
@@ -221,26 +221,26 @@ meats, chili
 <ul>
 <li>Import the library</li>
 </ul>
-<pre><code>from textgenrnn import textgenrnn
+<pre tabindex="0"><code>from textgenrnn import textgenrnn
 </code></pre><ul>
 <li>Initialize the model</li>
 </ul>
-<pre><code>textgen = textgenrnn()
+<pre tabindex="0"><code>textgen = textgenrnn()
 </code></pre><ul>
 <li>Start training by giving input</li>
 </ul>
-<pre><code>textgen.train_from_file('chili.txt', num_epochs=20)
+<pre tabindex="0"><code>textgen.train_from_file('chili.txt', num_epochs=20)
 </code></pre><h2 id="the-first-results">The first results</h2>
 <p>The results that are returned, are quite a descent. But something is wrong. For example:
 If I run</p>
-<pre><code>textgen.generate()
+<pre tabindex="0"><code>textgen.generate()
 </code></pre><p>I get</p>
-<pre><code>simmer for an hour. Originally slightly to cut into ground beef in brown.  Add to the chili powder. Simmer for 1
+<pre tabindex="0"><code>simmer for an hour. Originally slightly to cut into ground beef in brown.  Add to the chili powder. Simmer for 1
 </code></pre><p>This is incredible, especially if you think that the neural network we trained, knows nothing
 about language rules or speech patterns. It just understands character sequences. For more details, you
 can read <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">this</a> wonderful article from Andrej Karpathy</p>
 <p>So, we need to change somehow the input format. If we open it, we see a lot of useless, for our training, stuff. For example,</p>
-<pre><code>Exported from Now You're Cooking! v5.93
+<pre tabindex="0"><code>Exported from Now You're Cooking! v5.93
 </code></pre><p>By checking the <a href="https://github.com/minimaxir/textgenrnn/blob/master/datasets/reddit_apple_android_2000.txt">examples</a> of the library looks like it is expecting one training sequence per line.</p>
 <p>We have the option to clean the chili.txt file either by hand or with python. Or get a more suitable dataset</p>
 <h2 id="finding-data-for-our-training">Finding data for our training</h2>
@@ -249,7 +249,7 @@ can read <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">this<
 <p>Here is how I did that and trained the network. Please note, that the network in
 order to be trained in a timely manner needs to leverage a GPU; because GPUs are very good at matrix multiplications, which is the foundation of neural network training.</p>
 <p>So I have run this code in Google collab, though if you have a computer with an NVIDIA GPU you can do it <a href="https://www.tensorflow.org/install/gpu">locally</a> too.</p>
-<pre><code>import json
+<pre tabindex="0"><code>import json
 from textgenrnn import textgenrnn
 
 recipes_file = open('./recipes.json')
@@ -285,7 +285,7 @@ for i in range(5):
 </code></pre><h2 id="the-results">The results</h2>
 <p>Having trained RNNs/LSTMs before, I am impressed from both the quality of results the library returns, the speed it has (it took me about 2 minutes per epoch with the current dataset) and of course the ease of use.</p>
 <p>Here is a result:</p>
-<pre><code>Put the sponge and sugar in a saucepan with the mustard and bake for 15 mins. 
+<pre tabindex="0"><code>Put the sponge and sugar in a saucepan with the mustard and bake for 15 mins. 
 Meanwhile, make the frosted custard and stir to the sugar. 
 Stir the chopped chili flakes and stir in the flour, peel and some seasoning. Cook for a further 3 mins until the sugar has dissolved. Add the dressing and top 
 

@@ -5,11 +5,7 @@
     <link>https://perigk.github.io/categories/python/</link>
     <description>Recent content in python on Bitperi(Periklis Gkolias)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 20 Dec 2018 23:03:29 +0200</lastBuildDate>
-    
-	<atom:link href="https://perigk.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 20 Dec 2018 23:03:29 +0200</lastBuildDate><atom:link href="https://perigk.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Asyncio, the invincible</title>
       <link>https://perigk.github.io/posts/asyncio-the-invincible/</link>
@@ -23,7 +19,7 @@ For example in Python, the two most famous approaches are the usage of Tornado W
     <item>
       <title>Django by example(Antonio Mele) - book review</title>
       <link>https://perigk.github.io/posts/django-example-book-review/</link>
-      <pubDate>Mon, 18 Jun 2018 00:00:00 +0300</pubDate>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://perigk.github.io/posts/django-example-book-review/</guid>
       <description>Disclaimer: At the time of starting to write this article, the next version of the book under review, has not been published yet. If you want to read the newest version, you can find it here

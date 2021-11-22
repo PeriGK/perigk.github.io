@@ -5,11 +5,7 @@
     <link>https://perigk.github.io/categories/</link>
     <description>Recent content in Categories on Bitperi(Periklis Gkolias)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 14 Jun 2021 20:48:18 +0200</lastBuildDate>
-    
-	<atom:link href="https://perigk.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 14 Jun 2021 20:48:18 +0200</lastBuildDate><atom:link href="https://perigk.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>trends</title>
       <link>https://perigk.github.io/categories/trends/</link>
@@ -373,7 +369,7 @@
     <item>
       <title>javascript</title>
       <link>https://perigk.github.io/categories/javascript/</link>
-      <pubDate>Mon, 25 Jun 2018 00:00:00 +0300</pubDate>
+      <pubDate>Mon, 25 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://perigk.github.io/categories/javascript/</guid>
       <description></description>
@@ -382,7 +378,7 @@
     <item>
       <title>book-review</title>
       <link>https://perigk.github.io/categories/book-review/</link>
-      <pubDate>Mon, 18 Jun 2018 00:00:00 +0300</pubDate>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://perigk.github.io/categories/book-review/</guid>
       <description></description>
@@ -391,7 +387,7 @@
     <item>
       <title>django</title>
       <link>https://perigk.github.io/categories/django/</link>
-      <pubDate>Mon, 18 Jun 2018 00:00:00 +0300</pubDate>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://perigk.github.io/categories/django/</guid>
       <description></description>
@@ -400,7 +396,7 @@
     <item>
       <title>code_reading</title>
       <link>https://perigk.github.io/categories/code_reading/</link>
-      <pubDate>Wed, 28 Mar 2018 00:00:00 +0300</pubDate>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://perigk.github.io/categories/code_reading/</guid>
       <description></description>
@@ -409,7 +405,7 @@
     <item>
       <title>legacy_code</title>
       <link>https://perigk.github.io/categories/legacy_code/</link>
-      <pubDate>Wed, 28 Mar 2018 00:00:00 +0300</pubDate>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://perigk.github.io/categories/legacy_code/</guid>
       <description></description>
@@ -418,7 +414,7 @@
     <item>
       <title>new_codebase</title>
       <link>https://perigk.github.io/categories/new_codebase/</link>
-      <pubDate>Wed, 28 Mar 2018 00:00:00 +0300</pubDate>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://perigk.github.io/categories/new_codebase/</guid>
       <description></description>
@@ -427,7 +423,7 @@
     <item>
       <title>open_source</title>
       <link>https://perigk.github.io/categories/open_source/</link>
-      <pubDate>Wed, 28 Mar 2018 00:00:00 +0300</pubDate>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://perigk.github.io/categories/open_source/</guid>
       <description></description>
@@ -436,7 +432,7 @@
     <item>
       <title>oss_contributions</title>
       <link>https://perigk.github.io/categories/oss_contributions/</link>
-      <pubDate>Wed, 28 Mar 2018 00:00:00 +0300</pubDate>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://perigk.github.io/categories/oss_contributions/</guid>
       <description></description>

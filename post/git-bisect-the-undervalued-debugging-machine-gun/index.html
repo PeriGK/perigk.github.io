@@ -9,7 +9,7 @@
     <meta name="author" content="Periklis Gkolias">
     <meta name="description" content="Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.74.2" />
+    <meta name="generator" content="Hugo 0.89.4" />
     <title>
         
            
@@ -170,11 +170,11 @@
 <p>Assuming we have an injected bug and we try to find the root cause, in every step of our investigation for a solution, we eliminate half the solution space. Configuration, code, input&hellip;anything. Lets see an example to make it more clear.</p>
 <h3 id="example">Example</h3>
 <p>Initialize a repository to track our work.</p>
-<pre><code>mkdir test_git_bisect &amp;&amp; cd test_git_bisect &amp;&amp; git init
+<pre tabindex="0"><code>mkdir test_git_bisect &amp;&amp; cd test_git_bisect &amp;&amp; git init
 </code></pre><p>Let&rsquo;s say we will make a script that gets an epoch and converts to <code>datetime</code>. We will do that by using an input file (named epochs.txt) that <em>should</em> contain only epochs.</p>
 <p>Please note, that in order to run a <em>git bisect</em> smoothly, we need to have quite a few commits.</p>
 <p>The python script <code>parse_epochs.py</code> we will use, nothing special here.</p>
-<pre><code>
+<pre tabindex="0"><code>
 from time import localtime, strftime
 
 with open('epochs.txt', 'r') as handler:
@@ -191,7 +191,7 @@ with open('epochs.txt', 'r') as handler:
 <p>Again commit the change:</p>
 <p><code>git add . &amp;&amp; git commit -m &quot;Generated the first version of input&quot;</code></p>
 <p>If we now run the initial script, we get all inputs parsed to dates:</p>
-<pre><code>$ python3 parse_epochs.py
+<pre tabindex="0"><code>$ python3 parse_epochs.py
 2020-07-21 16:08:39
 2020-07-21 16:10:40
 2020-07-21 16:10:43
@@ -200,23 +200,23 @@ with open('epochs.txt', 'r') as handler:
 2020-07-21 16:10:52
 ...
 </code></pre><p>Let&rsquo;s amend the input now to make it faulty:</p>
-<pre><code>echo &quot;random string&quot; &gt;&gt; epochs.txt
+<pre tabindex="0"><code>echo &quot;random string&quot; &gt;&gt; epochs.txt
 </code></pre><p>and commit again</p>
-<pre><code>git add . &amp;&amp; git commit -m &quot;Added faulty input&quot;
+<pre tabindex="0"><code>git add . &amp;&amp; git commit -m &quot;Added faulty input&quot;
 </code></pre><p>For the sake of entropy, to make the example more complex, let&rsquo;s add more faulty inputs - commits.</p>
-<pre><code>echo &quot;This is not an epoch&quot; &gt;&gt; epochs.txt 
+<pre tabindex="0"><code>echo &quot;This is not an epoch&quot; &gt;&gt; epochs.txt 
 &amp;&amp; git add . &amp;&amp; git commit -m &quot;Added faulty input v2&quot;
-</code></pre><pre><code>echo &quot;Stop this, the script will break&quot; &gt;&gt; epochs.txt
+</code></pre><pre tabindex="0"><code>echo &quot;Stop this, the script will break&quot; &gt;&gt; epochs.txt
 &amp;&amp; git add . &amp;&amp; git commit -m &quot;Added faulty input v3&quot;
 </code></pre><p>Here is the commit log we have created:</p>
-<pre><code>$ git log --pretty=format:&quot;%h - %an, %ar : %s&quot;
+<pre tabindex="0"><code>$ git log --pretty=format:&quot;%h - %an, %ar : %s&quot;
 b811d35 - Periklis Gkolias, 2 minutes ago: Added faulty input v3
 dbf75cd - Periklis Gkolias, 2 minutes ago: Added faulty input v2
 cbfa2f5 - Periklis Gkolias, 8 minutes ago: Added faulty input
 d02eae8 - Periklis Gkolias, 20 minutes ago: Generated first version of input
 a969f3d - Periklis Gkolias, 26 minutes ago: Created epoch parser
 </code></pre><p>if we run the script again, it will obviously fail with the error:</p>
-<pre><code>Traceback (most recent call last):
+<pre tabindex="0"><code>Traceback (most recent call last):
   File &quot;parse_epochs.py&quot;, line 6, in &lt;module&gt;
     current_datetime = strftime('%Y-%m-%d %H:%M:%S', localtime(int(epoch)))
 ValueError: invalid literal for int() with base 10: 'random string\n'
@@ -224,20 +224,20 @@ ValueError: invalid literal for int() with base 10: 'random string\n'
 </code></pre><p>Looks like we need <em>git bisect</em> to fix this. To do so we need to start the investigation:</p>
 <p><code>git bisect start</code></p>
 <p>and mark one commit as bad (the last one usually) and one commit as good. This would be the second commit when we generated the input:</p>
-<pre><code>git bisect bad b811d35 &amp;&amp; git bisect good d02eae8
+<pre tabindex="0"><code>git bisect bad b811d35 &amp;&amp; git bisect good d02eae8
 </code></pre><p>After that git bisect will split the history between the good and the bad commit in two. You can see that by doing <code>git bisect visualize</code> to see the commits that are considered the culprits and <code>git show</code> to print the currently checked out one, in our case <code>dbf75cd</code>.</p>
 <p>If we run the script it will still fail. So we mark the current commit as bad</p>
 <p><code>git bisect bad dbf75cd</code></p>
 <p>It is worth mentioning the output of git in that case:</p>
-<pre><code>git bisect bad dbf75cd
+<pre tabindex="0"><code>git bisect bad dbf75cd
 Bisecting: 0 revisions left to test after this (roughly 0 steps)
 [cbfa2f5f52b7e8a0c3a510a151ac7653377cfae1] Added faulty input
 </code></pre><p>Git knows we are almost there. Yay!!!</p>
 <p>If we run the script again, it of course fails. And if we mark it as bad git says:</p>
-<pre><code>git bisect bad cbfa2f5
+<pre tabindex="0"><code>git bisect bad cbfa2f5
 cbfa2f5f52b7e8a0c3a510a151ac7653377cfae1 is the first bad commit
 </code></pre><p>By then, you may either fix the bug or contact whoever committed the bad code/input/configuration. Here is how to get the details:</p>
-<pre><code>$ git show -s --format='%an, %ae' cbfa2f5
+<pre tabindex="0"><code>$ git show -s --format='%an, %ae' cbfa2f5
 Periklis Gkolias, myemail@domain.com
 </code></pre><h3 id="conclusion">Conclusion</h3>
 <p>Thank you for reading this article. Feel free to comment on  your thoughts towards this great tool.</p>

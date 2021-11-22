@@ -5,11 +5,7 @@
     <link>https://perigk.github.io/categories/serverless/</link>
     <description>Recent content in serverless on Bitperi(Periklis Gkolias)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 16 May 2021 16:48:18 +0200</lastBuildDate>
-    
-	<atom:link href="https://perigk.github.io/categories/serverless/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 16 May 2021 16:48:18 +0200</lastBuildDate><atom:link href="https://perigk.github.io/categories/serverless/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How different are managed and serverless services?</title>
       <link>https://perigk.github.io/posts/managed-vs-serverless/</link>
