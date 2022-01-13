@@ -1,0 +1,403 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Periklis Gkolias">
+    <meta name="description" content="Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.89.4" />
+    <title>
+        
+           
+               What can La Casa De Papel teach you about Cybersecurity &vert; Bitperi(Periklis Gkolias)
+           
+        
+    </title>
+    <meta name="description" content="What can La Casa De Papel teach you about Cybersecurity - Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+    <meta itemprop="name" content="What can La Casa De Papel teach you about Cybersecurity">
+    <meta itemprop="description" content="What can La Casa De Papel teach you about Cybersecurity - Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+    <meta property="og:title" content="What can La Casa De Papel teach you about Cybersecurity">
+    <meta property="og:description" content="What can La Casa De Papel teach you about Cybersecurity - Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://perigk.github.io/post/casa-de-papel-cybersecurity/">
+    <meta property="og:site_name" content="Bitperi(Periklis Gkolias)">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="/post/casa-de-papel-cybersecurity/" rel="alternate" type="application/rss+xml" title="Bitperi(Periklis Gkolias)" />
+    <link href="/post/casa-de-papel-cybersecurity/" rel="feed" type="application/rss+xml" title="Bitperi(Periklis Gkolias)" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://perigk.github.io/theme.css">
+
+    
+
+    
+    
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+        <div id="search-box" class="search">
+            <i class="fas fa-search"></i>
+            <input id="search" type="text" placeholder="Search ...">
+        </div>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/avatars/myAvatar.svg" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="/">Bitperi(Periklis Gkolias)</a></h3>
+            
+            <span class="subtitle">Productivity tips and coding for thriving people</span>
+            
+        </div>
+
+        
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://perigk.github.io/post/casa-de-papel-cybersecurity/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://perigk.github.io/post/casa-de-papel-cybersecurity/">What can La Casa De Papel teach you about Cybersecurity</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2022-01-13</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                
+                <a href="https://perigk.github.io/categories/cybersecurity/">cybersecurity</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            
+            <a href="https://perigk.github.io/author/periklis-gkolias/">Periklis Gkolias</a>
+            
+        </span>
+        
+    </div>
+
+    
+    <p>What can La Casa De Papel teach you about Cybersecurity</p>
+<p>I was watching the TV series, La Casa De Papel (Money Heist) on Netflix, a few weeks ago. I realized that the story of the gang can reveal some best practices we should use while dealing with the security of the products we build.</p>
+<p><img src="https://i.imgur.com/Tqxbnow.jpg" alt="A gang with a Salvador Dali mask"></p>
+<p>Beware, the text contains spoilers. If you haven&rsquo;t seen the show till the end and you are planning to, please visit the article on a later day. Or proceed with your own responsibility :)</p>
+<h2 id="threat-modeling-can-protect-you-against-unexpected-events">Threat modeling can protect you against unexpected events</h2>
+<p>First of all, <strong>what is threat modeling</strong>?
+Threat modeling, in layman terms, is an analytical process. In there, the engineers who build a product coordinate with the security team. They collaborate towards the security architecture of the product.</p>
+<p>More specifically, the model, how someone can attack the product, and what is worth protecting (assets). They also model what they can be loose about. Being loose, not because they don&rsquo;t care. But because protecting it can be more costly than the asset itself.</p>
+<p>Threat modeling can get you a long way and protect you from events, against the odds. What is threat modeling in our &ldquo;Money Heist&rdquo; case? It is Professor&rsquo;s (aka Sergio Marquina&rsquo;s) plan against all potential routes the plan will take. In having alternatives, even for the edgiest scenarios. The assets are clearly, the stolen money or his comrades in the heist.</p>
+<h2 id="a-single-point-of-failure-can-cause-a-chain-of-bad-reactions">A single point of failure can cause a chain of bad reactions</h2>
+<p>Threat modeling might help you recover from many security problems that will arise. You can recover from a cyber-attack but things will never be the same. A crack in the security wall can have a domino effect.</p>
+<p>Imagine a lake dam, with a few cracks around, going unnoticed and being exploited by nature. You can always fix it, but it might take time for the lake visitors to establish trust again.</p>
+<p>Like the Professor, where he lost respect after the gold (temporarily) vanished. Even though his great problem-solving skills, helped resolve the issue, things got hairy very fast.</p>
+<p><img src="https://i.imgur.com/3047AXD.jpg" alt="Chain reactions"></p>
+<h2 id="luck-is-not-a-strategy-in-the-long-term">Luck is not a strategy in the long term.</h2>
+<p>In the show, there are some provocative cases of luck. For example:</p>
+<ul>
+<li>Raquel renegading the police organization</li>
+<li>Police and army failing plans to invade the bank</li>
+<li>Failing to shoot to the target many times. From troops, that are supposed to be professional shooters.</li>
+</ul>
+<p>Snitches and below-expectations defense might give you some extra time. to move with your plan or escape. But you have to take advantage of it. To either move with your plan or escape. Always think your luck might go away, any time soon.</p>
+<h2 id="never-drop-the-weapons">Never drop the weapons</h2>
+<p>This is not specific to cybersecurity but to life in general.</p>
+<p>Pain is temporary, quitting lasts forever. Accept your mistakes, remediate them and learn from them. As long as your heart is pumping blood, you are not dead yet.</p>
+<p>Architectural mistake? Patch it immediately and re-architect the product (yeah, I know delivery and business constraints)
+Below expectations monitoring? Fix it now. Add more people and see how they can be more effective
+Serious defects in the code? Train your team insecure practices and code review focused on security. Buy a license to a package like Snyk or Nessus. Plan some percentage of your capacity to patch the most severe ones.</p>
+<p><img src="https://i.imgur.com/BtMM0JS.jpg" alt="Budget constraints"></p>
+<h2 id="even-in-the-worst-of-moments-keep-your-composure">Even in the worst of moments, keep your composure</h2>
+<p>Imagine a ransomware attack. It is there, it is happening. Screaming over people&rsquo;s heads will not solve the problem.</p>
+<p>When you cannot win against an attack, you still have to do your best, to at least not lose. For sure, don&rsquo;t panic. As the Stoics say, you have to be your best self on the things you control. And let the rest, just be. Accept them.</p>
+<p>You cannot control the next stage of an attack. But you can do your best to prevent it, to not repeat the same mistakes, and to close the open doors that exist now.</p>
+<p>Don&rsquo;t lose your temper and clear mind,. Like Tamayo lost it, when he realized the gang was blackmailing him for various reasons.</p>
+<p>He got angry, he got blackmailed, he was even ridiculed in the eyes of the European Central Bank. And what was the result? He lost, hands down, even though he lied to the media about winning.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Top-notch cybersecurity is not a free lunch. And not everyone can do it, as the caveats are so many. But with some discipline, retrospection, and humility, you can do wonders. Also, the show is great, if you haven&rsquo;t seen it, please do.</p>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://perigk.github.io/tags/cybersecurity/">cybersecurity</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bilberry-hugo-theme" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            
+
+        </div>
+    
+
+     
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                <li>
+                    <a href="https://perigk.github.io/post/casa-de-papel-cybersecurity/">What can La Casa De Papel teach you about Cybersecurity</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/post/certification-worth-it/">How to evaluate if a Certification is worth it (for you)</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/tech-trends-2030/">Not so obvious tech that I believe will become mainstream</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/managed-vs-serverless/">How different are managed and serverless services?</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/self-teaching-myths/">Myths about self teaching that need to be busted</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/grpc/">A gRPC primer from a non-gRPC dev</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/post/git-bisect-the-undervalued-debugging-machine-gun/">Git Bisect, the Undervalued Debugging Machine Gun</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/programming">Programming
+                        (9)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python3">Python3
+                        (4)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/career">Career
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/productivity">Productivity
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/solo-dev">Solo dev
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/code-quality">Code quality
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/debugging">Debugging
+                        (2)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+            </div>
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/Lednerb" target="_blank">
+                &copy;
+                
+                2017
+                
+                by Lednerb
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-33576432-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+
+    <script type="text/javascript" src="https://perigk.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="Y2C4RWMPXW">
+  <input type="hidden" id="algolia-search-apiKey" value="50ea7f8c41c0ad233926e0be2b769ed1">
+  <input type="hidden" id="algolia-search-indexName" value="default-content">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>
