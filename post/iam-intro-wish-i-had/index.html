@@ -1,0 +1,473 @@
+
+  
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Periklis Gkolias">
+    <meta name="description" content="Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.89.4" />
+    <title>
+        
+           
+               The IAM introduction I wish I had &vert; Bitperi(Periklis Gkolias)
+           
+        
+    </title>
+    <meta name="description" content="The IAM introduction I wish I had - Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+    <meta itemprop="name" content="The IAM introduction I wish I had">
+    <meta itemprop="description" content="The IAM introduction I wish I had - Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+    <meta property="og:title" content="The IAM introduction I wish I had">
+    <meta property="og:description" content="The IAM introduction I wish I had - Bitperi - productivity tips and coding for thriving people, Periklis Gkolias">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://perigk.github.io/post/iam-intro-wish-i-had/">
+    <meta property="og:site_name" content="Bitperi(Periklis Gkolias)">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="/post/iam-intro-wish-i-had/" rel="alternate" type="application/rss+xml" title="Bitperi(Periklis Gkolias)" />
+    <link href="/post/iam-intro-wish-i-had/" rel="feed" type="application/rss+xml" title="Bitperi(Periklis Gkolias)" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://perigk.github.io/theme.css">
+
+    
+
+    
+    
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+
+        
+        <div id="search-box" class="search">
+            <i class="fas fa-search"></i>
+            <input id="search" type="text" placeholder="Search ...">
+        </div>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/avatars/myAvatar.svg" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="/">Bitperi(Periklis Gkolias)</a></h3>
+            
+            <span class="subtitle">Productivity tips and coding for thriving people</span>
+            
+        </div>
+
+        
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://perigk.github.io/post/iam-intro-wish-i-had/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://perigk.github.io/post/iam-intro-wish-i-had/">The IAM introduction I wish I had</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2022-03-29</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                
+                <a href="https://perigk.github.io/categories/iam/">iam</a>
+                
+            
+                
+                
+                <a href="https://perigk.github.io/categories/cloud/">cloud</a>
+                
+            
+                
+                
+                <a href="https://perigk.github.io/categories/authentication/">authentication</a>
+                
+            
+                
+                
+                <a href="https://perigk.github.io/categories/authorization/">authorization</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            
+            <a href="https://perigk.github.io/author/periklis-gkolias/">Periklis Gkolias</a>
+            
+        </span>
+        
+    </div>
+
+    
+    <p>The term IAM is one of the common you hear in cloud-native environments. What does such a system do, though? And if you do know, how long did it take you to understand the full purpose? I will explain the main concepts behind this massive software family, having the busy engineer in mind.</p>
+<p>The fundamentals described here are vendor agnostic. Though most of my experience derives from AWS&rsquo;s implementation.</p>
+<h2 id="what-is-iam">What is IAM</h2>
+<p>IAM stands for Identity Access Management. It is a complex system of entities (humans, applications, etc) that request access to a system, on the one hand. And also, there is a complex hierarchical set of rules, to grant or deny the requested access. Before we go any further, below are the main terms you will encounter.</p>
+<ul>
+<li>
+<p><strong>Resource</strong>: Anything worth protecting. A storage service a virtual machine etc</p>
+</li>
+<li>
+<p><strong>Policy</strong>: A set of rules which dictate &ldquo;who can what&rdquo; on which resource. And of course, who cannot</p>
+</li>
+<li>
+<p><strong>Action</strong>: Anything someone can do, inside the cloud environment. For example, creating a virtual machine</p>
+</li>
+<li>
+<p><strong>User</strong>: Well&hellip;a user :)</p>
+</li>
+<li>
+<p><strong>Group</strong>: A group of users, with the same permissions, applied</p>
+</li>
+<li>
+<p><strong>Principal</strong>: A user or an application requesting access</p>
+</li>
+<li>
+<p><strong>Role</strong>: A set of powers assigned to a principal. Usually for a limited amount of time.</p>
+</li>
+</ul>
+<h2 id="why-it-is-useful">Why it is useful</h2>
+<p>Its main usage roams in the realms of authentication, authorization, granular access, governance. Let&rsquo;s see what those things are:</p>
+<ul>
+<li>
+<p><strong>Authentication</strong>: We have verified who you are</p>
+</li>
+<li>
+<p><strong>Authorization</strong>: We want to identify if you can perform the action you ask for. Usually, combined with Authentication but not necessary.</p>
+</li>
+<li>
+<p><strong>Granular access</strong>: Each action that can happen in a resource, is controlled by permission. Having access to see the firewall rules doesn&rsquo;t mean you can change them. This is implemented with <a href="https://en.wikipedia.org/wiki/Role-based_access_control">Role-Based Access Control</a></p>
+</li>
+<li>
+<p><strong>Governance</strong>: The actions you take to know what the f@ck is happening to your environment. Mostly from a budget, compliance, proper access scope.</p>
+</li>
+</ul>
+<p>Are you a company of 1-3 people? Then, setting up a full-blown IAM solution is overkill and a burden to maintain. But if you are more than that or you are planning to scale, then you should start considering it</p>
+<h2 id="problems-from-the-lack-of-one">Problems from the lack of one</h2>
+<p>I believe you can see the benefits of an IAM solution. Let&rsquo;s see what are some common problems organizations face in the absence of it.</p>
+<h3 id="hard-to-audit-and-administer-access">Hard to audit and administer access</h3>
+<p>Have you heard of cases where an employee had more access than they should? And additionally, no one knew? This can be prevented with a properly set-up IAM solution.</p>
+<h3 id="setting-up-new-hire-accounts-is-a-pain">Setting up new hire accounts is a pain</h3>
+<p>With a properly set-up IAM solution, this is a matter of a few clicks. Namely, set up the users, add them to the IAM groups their teams use. And that&rsquo;s all.</p>
+<p>But without it? You need to do all the permission settings from scratch. You might have a reference user to &ldquo;copy from&rdquo;. But do we need all the permissions this reference user has? Do we want to have special handling for users that are less than 6 months in the company? Does the reference user have superuser permissions that should not accidentally be assigned to the new hire?</p>
+<h3 id="offboarding-people">Offboarding people</h3>
+<p>Here you have problems of a similar nature to the &ldquo;new hire case&rdquo;. But you also need to change the password to all the accounts they <strong>potentially</strong> used. This can turn ugly very fast, not to mention the side effects it has on other team members.</p>
+<p>For example, one will have to update all the password occurrences on every offboarding. In every script and application. What if you have a team change 2-3 times per month? How productive this will be?</p>
+<h3 id="commodity-identity-tasks-need-human-intervention">Commodity identity tasks need human intervention</h3>
+<p>By commodity, I mean tasks like, resetting a password or re-enabling an account that was locked. The top-tier IAM solutions have a way to resolve such issues fast without much hassle.</p>
+<h2 id="best-practices">Best practices</h2>
+<p>Below are some best practices I have derived. It is far from being a full list, it is only my personal experience. I have seen them in more than one team though, so they are probably good enough.</p>
+<h3 id="no-full-accessever">No full access&hellip;EVER</h3>
+<p>In a real-world scenario, you don’t want every user to have unlimited access to your AWS account. Ideally, no one should have (apart from the account owner).
+If Jack is working on monitoring logs, they should have read access to that tool. They should not be able to restart a service. Or the accounting team should only view billing information.</p>
+<p>Knowing how the VM scalability rules are set is not gonna help anyone.</p>
+<h3 id="groups-vs-multiple-users">Groups vs multiple users</h3>
+<p>Prefer a single group to multiple users when you have a choice. The groups make administration exponentially easier.</p>
+<h3 id="roles-vs-multiple-groups-vs-a-new-user">Roles vs multiple groups vs a new user</h3>
+<p>When you have the choice, prefer assigning a role to a user, rather than creating a new user. For example, don&rsquo;t create an admin user and share the password between 10 people. Create an admin role and assign it to whoever needs it for a limited amount of time.</p>
+<h3 id="permissions-should-be-frequently-audited">Permissions should be frequently audited</h3>
+<p>It is easy to make mistakes or perform malicious actions. At the very least, a company should audit that only the proper people have access and this is at the minimum level.</p>
+<p>You could also send an email to a certain team when a suspicious action happens. For example, assigning an Admin role to a new hire.</p>
+<h3 id="setup-boundaries-beforehand">Setup boundaries beforehand</h3>
+<p>If the IAM solution allows it, add boundaries to your ecosystem. Copying from Amazon&rsquo;s documentation ( I know, I promised vendor-agnostic :) )</p>
+<blockquote>
+<p>A permissions boundary is an advanced feature for using a managed policy to set the maximum permissions that an identity-based policy can grant to an IAM entity. An entity&rsquo;s permissions boundary allows it to perform only the actions that are allowed by both its identity-based policies and its permissions boundaries.</p>
+</blockquote>
+<p>In layman&rsquo;s terms, you can define the &ldquo;maximum&rdquo; permissions that can be assigned to anyone. For example, a user will at most be able to view the logs from the relevant tool and restart a service. If someone attempts to get a role to create a new virtual machine they will be disallowed.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Thank you for reading this far. I hoped you enjoyed the introduction to the IAM technologies. Any questions, please reach out.</p>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://perigk.github.io/tags/iam/">iam</a>
+                    
+                
+                    
+                    
+                    <a href="https://perigk.github.io/tags/cloud/">cloud</a>
+                    
+                
+                    
+                    
+                    <a href="https://perigk.github.io/tags/authentication/">authentication</a>
+                    
+                
+                    
+                    
+                    <a href="https://perigk.github.io/tags/authorization/">authorization</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bilberry-hugo-theme" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            
+
+        </div>
+    
+
+     
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                <li>
+                    <a href="https://perigk.github.io/post/iam-intro-wish-i-had/">The IAM introduction I wish I had</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/post/casa-de-papel-cybersecurity/">What can La Casa De Papel teach you about Cybersecurity</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/post/certification-worth-it/">How to evaluate if a Certification is worth it (for you)</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/tech-trends-2030/">Not so obvious tech that I believe will become mainstream</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/managed-vs-serverless/">How different are managed and serverless services?</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/self-teaching-myths/">Myths about self teaching that need to be busted</a>
+                </li>
+                
+                <li>
+                    <a href="https://perigk.github.io/posts/grpc/">A gRPC primer from a non-gRPC dev</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/programming">Programming
+                        (9)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python3">Python3
+                        (4)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/career">Career
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/productivity">Productivity
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/solo-dev">Solo dev
+                        (3)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/cloud">Cloud
+                        (2)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/code-quality">Code quality
+                        (2)</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+            </div>
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/Lednerb" target="_blank">
+                &copy;
+                
+                2017
+                
+                by Lednerb
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-33576432-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+
+    <script type="text/javascript" src="https://perigk.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="Y2C4RWMPXW">
+  <input type="hidden" id="algolia-search-apiKey" value="50ea7f8c41c0ad233926e0be2b769ed1">
+  <input type="hidden" id="algolia-search-indexName" value="default-content">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>

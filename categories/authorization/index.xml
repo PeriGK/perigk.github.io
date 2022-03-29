@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>authorization on Bitperi(Periklis Gkolias)</title>
+    <link>https://perigk.github.io/categories/authorization/</link>
+    <description>Recent content in authorization on Bitperi(Periklis Gkolias)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 29 Mar 2022 18:52:40 +0300</lastBuildDate><atom:link href="https://perigk.github.io/categories/authorization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The IAM introduction I wish I had</title>
+      <link>https://perigk.github.io/post/iam-intro-wish-i-had/</link>
+      <pubDate>Tue, 29 Mar 2022 18:52:40 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/post/iam-intro-wish-i-had/</guid>
+      <description>The term IAM is one of the common you hear in cloud-native environments. What does such a system do, though? And if you do know, how long did it take you to understand the full purpose? I will explain the main concepts behind this massive software family, having the busy engineer in mind.
+The fundamentals described here are vendor agnostic. Though most of my experience derives from AWS&amp;rsquo;s implementation.
+What is IAM IAM stands for Identity Access Management.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,7 +5,18 @@
     <link>https://perigk.github.io/tags/cloud/</link>
     <description>Recent content in cloud on Bitperi(Periklis Gkolias)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 16 May 2021 16:48:18 +0200</lastBuildDate><atom:link href="https://perigk.github.io/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Mar 2022 18:52:40 +0300</lastBuildDate><atom:link href="https://perigk.github.io/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The IAM introduction I wish I had</title>
+      <link>https://perigk.github.io/post/iam-intro-wish-i-had/</link>
+      <pubDate>Tue, 29 Mar 2022 18:52:40 +0300</pubDate>
+      
+      <guid>https://perigk.github.io/post/iam-intro-wish-i-had/</guid>
+      <description>The term IAM is one of the common you hear in cloud-native environments. What does such a system do, though? And if you do know, how long did it take you to understand the full purpose? I will explain the main concepts behind this massive software family, having the busy engineer in mind.
+The fundamentals described here are vendor agnostic. Though most of my experience derives from AWS&amp;rsquo;s implementation.
+What is IAM IAM stands for Identity Access Management.</description>
+    </item>
+    
     <item>
       <title>How different are managed and serverless services?</title>
       <link>https://perigk.github.io/posts/managed-vs-serverless/</link>

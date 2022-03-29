@@ -2,28 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://perigk.github.io/tags/authentication/</loc>
+    <lastmod>2022-03-29T18:52:40+03:00</lastmod>
+  </url><url>
+    <loc>https://perigk.github.io/categories/authentication/</loc>
+    <lastmod>2022-03-29T18:52:40+03:00</lastmod>
+  </url><url>
     <loc>https://perigk.github.io/author/</loc>
-    <lastmod>2022-01-13T20:59:03+02:00</lastmod>
+    <lastmod>2022-03-29T18:52:40+03:00</lastmod>
+  </url><url>
+    <loc>https://perigk.github.io/tags/authorization/</loc>
+    <lastmod>2022-03-29T18:52:40+03:00</lastmod>
+  </url><url>
+    <loc>https://perigk.github.io/categories/authorization/</loc>
+    <lastmod>2022-03-29T18:52:40+03:00</lastmod>
   </url><url>
     <loc>https://perigk.github.io/</loc>
-    <lastmod>2022-01-13T20:59:03+02:00</lastmod>
+    <lastmod>2022-03-29T18:52:40+03:00</lastmod>
   </url><url>
     <loc>https://perigk.github.io/categories/</loc>
-    <lastmod>2022-01-13T20:59:03+02:00</lastmod>
+    <lastmod>2022-03-29T18:52:40+03:00</lastmod>
+  </url><url>
+    <loc>https://perigk.github.io/tags/cloud/</loc>
+    <lastmod>2022-03-29T18:52:40+03:00</lastmod>
+  </url><url>
+    <loc>https://perigk.github.io/categories/cloud/</loc>
+    <lastmod>2022-03-29T18:52:40+03:00</lastmod>
+  </url><url>
+    <loc>https://perigk.github.io/tags/iam/</loc>
+    <lastmod>2022-03-29T18:52:40+03:00</lastmod>
+  </url><url>
+    <loc>https://perigk.github.io/categories/iam/</loc>
+    <lastmod>2022-03-29T18:52:40+03:00</lastmod>
+  </url><url>
+    <loc>https://perigk.github.io/author/periklis-gkolias/</loc>
+    <lastmod>2022-03-29T18:52:40+03:00</lastmod>
+  </url><url>
+    <loc>https://perigk.github.io/post/</loc>
+    <lastmod>2022-03-29T18:52:40+03:00</lastmod>
+  </url><url>
+    <loc>https://perigk.github.io/tags/</loc>
+    <lastmod>2022-03-29T18:52:40+03:00</lastmod>
+  </url><url>
+    <loc>https://perigk.github.io/post/iam-intro-wish-i-had/</loc>
+    <lastmod>2022-03-29T18:52:40+03:00</lastmod>
   </url><url>
     <loc>https://perigk.github.io/tags/cybersecurity/</loc>
     <lastmod>2022-01-13T20:59:03+02:00</lastmod>
   </url><url>
     <loc>https://perigk.github.io/categories/cybersecurity/</loc>
-    <lastmod>2022-01-13T20:59:03+02:00</lastmod>
-  </url><url>
-    <loc>https://perigk.github.io/author/periklis-gkolias/</loc>
-    <lastmod>2022-01-13T20:59:03+02:00</lastmod>
-  </url><url>
-    <loc>https://perigk.github.io/post/</loc>
-    <lastmod>2022-01-13T20:59:03+02:00</lastmod>
-  </url><url>
-    <loc>https://perigk.github.io/tags/</loc>
     <lastmod>2022-01-13T20:59:03+02:00</lastmod>
   </url><url>
     <loc>https://perigk.github.io/post/casa-de-papel-cybersecurity/</loc>
@@ -61,12 +88,6 @@
   </url><url>
     <loc>https://perigk.github.io/categories/trends/</loc>
     <lastmod>2021-06-14T20:48:18+02:00</lastmod>
-  </url><url>
-    <loc>https://perigk.github.io/tags/cloud/</loc>
-    <lastmod>2021-05-16T16:48:18+02:00</lastmod>
-  </url><url>
-    <loc>https://perigk.github.io/categories/cloud/</loc>
-    <lastmod>2021-05-16T16:48:18+02:00</lastmod>
   </url><url>
     <loc>https://perigk.github.io/posts/managed-vs-serverless/</loc>
     <lastmod>2021-05-16T16:48:18+02:00</lastmod>
