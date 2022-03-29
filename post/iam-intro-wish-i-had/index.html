@@ -160,6 +160,7 @@
     
     <p>The term IAM is one of the common you hear in cloud-native environments. What does such a system do, though? And if you do know, how long did it take you to understand the full purpose? I will explain the main concepts behind this massive software family, having the busy engineer in mind.</p>
 <p>The fundamentals described here are vendor agnostic. Though most of my experience derives from AWS&rsquo;s implementation.</p>
+<p><img src="https://i.imgur.com/g7In5Xr.jpg" alt="Human form of IAM"></p>
 <h2 id="what-is-iam">What is IAM</h2>
 <p>IAM stands for Identity Access Management. It is a complex system of entities (humans, applications, etc) that request access to a system, on the one hand. And also, there is a complex hierarchical set of rules, to grant or deny the requested access. Before we go any further, below are the main terms you will encounter.</p>
 <ul>
@@ -202,6 +203,7 @@
 </li>
 </ul>
 <p>Are you a company of 1-3 people? Then, setting up a full-blown IAM solution is overkill and a burden to maintain. But if you are more than that or you are planning to scale, then you should start considering it</p>
+<p><img src="https://i.imgur.com/WxyvyO4.jpg" alt="IAM pillars"></p>
 <h2 id="problems-from-the-lack-of-one">Problems from the lack of one</h2>
 <p>I believe you can see the benefits of an IAM solution. Let&rsquo;s see what are some common problems organizations face in the absence of it.</p>
 <h3 id="hard-to-audit-and-administer-access">Hard to audit and administer access</h3>
@@ -215,6 +217,7 @@
 <h3 id="commodity-identity-tasks-need-human-intervention">Commodity identity tasks need human intervention</h3>
 <p>By commodity, I mean tasks like, resetting a password or re-enabling an account that was locked. The top-tier IAM solutions have a way to resolve such issues fast without much hassle.</p>
 <h2 id="best-practices">Best practices</h2>
+<p><img src="https://i.imgur.com/M7N8blv.jpg" alt="Best practices"></p>
 <p>Below are some best practices I have derived. It is far from being a full list, it is only my personal experience. I have seen them in more than one team though, so they are probably good enough.</p>
 <h3 id="no-full-accessever">No full access&hellip;EVER</h3>
 <p>In a real-world scenario, you don’t want every user to have unlimited access to your AWS account. Ideally, no one should have (apart from the account owner).
